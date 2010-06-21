@@ -1,0 +1,118 @@
+/*** generic rules ***/
+
+body {
+	font-family: Verdana, sans-serif;
+	color: black;
+	background-color: #FFFFFF;
+	font-size: 10pt;
+	text-align: center; /*for IE to center the divs*/
+}
+
+a, a:visited {
+	text-decoration: none;
+	color: #712F3D;
+}
+
+a:hover {
+	color: #520A07;
+}
+
+/*** container divs ***/
+
+#outer {
+	text-align: left; /* to work around the body text-align IE hack*/
+	margin: auto auto;
+	width: 800px;
+}
+
+#header {
+	margin-bottom: 15px;
+	/*clear: both;*/
+	clear: both;	/* we don't want to have stuff floating on the left or right... */
+	overflow: hidden; /* make the stuff after our header */
+	width: 100%;	/* start on a new line */
+}
+
+#inner {
+	clear: both;	/* we don't want to have stuff floating on the left or right... */
+	overflow: hidden; /* make the stuff after our inner */
+	width: 100%;	/* start on a new line */
+}
+
+#footer {
+	width: 800px;
+	position: relative;
+	bottom: 0px;
+}
+
+/*** navigation ***/
+
+#navcontainer {
+	width: 800px;
+}
+
+#navlist
+{
+	border-top: 1px solid #DBDBDB;
+	margin: 0;
+	padding-bottom: 19px;
+	padding-left: 10px;
+}
+
+#navlist ul, #navlist li
+{
+	display: inline;
+	list-style-type: none;
+}
+
+#navlist a, #navlist a:visited
+{
+	background: #DBDBDB;
+	border: 1px solid #DBDBDB;
+	border-top: none;
+	color: #712F3D;
+	float: left;
+	font-size: small;
+	font-weight: normal;
+	line-height: 14px;
+	margin-left: 4px;
+	margin-right: 4px;
+	/*padding: 2px 10px 2px 10px;*/
+	padding-top: 2px;
+	padding-right: 10px;
+	padding-bottom: 2px;
+	padding-left: 10px;
+	text-decoration: none;
+}
+
+#navlist a#current, #navlist a#current
+{
+	background: #FFFFFF;
+	color: #000000;
+	padding: 2px 10px 2px 10px;
+}
+
+#navlist a:hover { color: #520A07; }
+
+/*** People ***/
+
+div.person {
+	float: left;
+	width: 156px;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+
+div.left {
+	margin-left: 0px;
+}
+
+#aboutus {
+	float: left;
+	width: 380px;
+	padding: 10px;
+	min-height: 100px;
+	background-color: #DBDBDB;
+	/*margin-right: 20px;*/
+	/*border-right: 1px solid black;*/
+}
