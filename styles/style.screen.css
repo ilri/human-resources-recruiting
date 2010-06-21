@@ -26,8 +26,10 @@ a:hover {
 }
 
 #header {
+	width: 960px;
+	height: 127px;
+	background-image: url('../images/Banner2.png');
 	margin-bottom: 15px;
-	/*clear: both;*/
 	clear: both;	/* we don't want to have stuff floating on the left or right... */
 	overflow: hidden; /* make the stuff after our header */
 	width: 100%;	/* start on a new line */
