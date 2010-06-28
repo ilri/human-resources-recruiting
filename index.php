@@ -16,13 +16,13 @@
 <div id='aboutus'>
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. <a href="#">Testing links</a>.
 </div>
-<div id="player" class='person'><img src="images/mugshots/steve_k.png" /></div>
+<div id="player" class='person'><img src="images/mugshots/2andrew better.png" /></div>
 
 <div class='person'><img src="images/mugshots/steve_k.png" /></div>
 <div class='person'><img src="images/mugshots/steve_k.png" /></div>
-<div class='person' id="player3"><img src="images/mugshots/steve_k.png" /></div>
+<div class='person' id="player3"><img src="images/mugshots/2andrew better.png" /></div>
 <div class='person'><img src="images/mugshots/steve_k.png" /></div>
-<div class='person' id="player2"><img src="images/mugshots/steve_k.png" /></div>
+<div class='person' id="player2"><img src="images/mugshots/2andrew better.png" /></div>
 <div class='person'><img src="images/mugshots/steve_k.png" /></div>
 <script type="text/javascript">
 	flashembed("player","videos/flayr.swf", {
