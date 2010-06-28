@@ -16,16 +16,37 @@
 <div id='aboutus'>
 It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. <a href="#">Testing links</a>.
 </div>
-<div class='person'><a href="videos/andrew.flv" style="display:block;width:260px;height:300px" id="player"><img src="malcolmx.jpg" /></a></div>
-<script>
-	flowplayer("player","flowplayer-3.2.2.swf");
+<div id="player" class='person'><img src="malcolmx.jpg" /></div>
+
+<div class='person'><img src="images/mugshots/steve_k.png" /></div>
+<div class='person'><img src="images/mugshots/steve_k.png" /></div>
+<div class='person' id="player3"><img src="images/mugshots/steve_k.png" /></div>
+<div class='person'><img src="images/mugshots/steve_k.png" /></div>
+<div class='person' id="player2"><img src="images/mugshots/steve_k.png" /></div>
+<div class='person'><img src="images/mugshots/steve_k.png" /></div>
+<script type="text/javascript">
+	flashembed("player","videos/flayr.swf", {
+		movie: 'andrew.flv', //relative to player!
+		autoplay: 'true',
+		controls: 'hide'
+		}
+	);
+
+	flashembed("player2","videos/flayr.swf", {
+		movie: 'andrew.flv', //relative to player!
+		autoplay: 'true',
+		controls: 'hide'
+		}
+	);
+
+	flashembed("player3","videos/flayr.swf", {
+		movie: 'andrew.flv', //relative to player!
+		autoplay: 'true',
+		controls: 'hide'
+		}
+	);
+
 </script>
-<div class='person'><img src="malcolmx.jpg" /></div>
-<div class='person'><img src="malcolmx.jpg" /></div>
-<div class='person'><img src="malcolmx.jpg" /></div>
-<div class='person'><img src="malcolmx.jpg" /></div>
-<div class='person'><img src="malcolmx.jpg" /></div>
-<div class='person'><img src="malcolmx.jpg" /></div>
 </div> <!-- //inner -->
 
 <div id='footer'>

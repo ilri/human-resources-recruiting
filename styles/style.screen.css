@@ -146,10 +146,9 @@ a:hover, a:visited:hover {
 
 div.person {
 	float: left;
-	width: 180px;
-	margin-left: 30px;
-	margin-right: 30px;
-	margin-bottom: 5px;
+	width: 130px;
+	height: 150px;
+	margin: 10px 30px 5px 30px;
 }
 
 div.person img {
