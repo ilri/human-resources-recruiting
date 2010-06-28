@@ -74,6 +74,7 @@ a:hover, a:visited:hover {
 	background: #fff;
 	font-size: 12px;
 	-webkit-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
+	-moz-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
 }
 
 #header {
