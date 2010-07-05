@@ -83,7 +83,7 @@ a:hover, a:visited:hover {
 
 #banner {
 	width: 960px;
-	height: 127px;
+	height: 125px;
 	background-image: url('../images/Banner2.png');
 	clear: both;	/* we don't want to have stuff floating on the left or right... */
 	overflow: hidden; /* make the stuff after our header */
