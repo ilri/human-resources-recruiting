@@ -9,7 +9,7 @@
 	 ?>
 	<script>
 		$(function() {
-			$('#player').flashembed("videos/player_flv_maxi.swf", {
+			$('#player0').flashembed("videos/player_flv_maxi.swf", {
 				flv: 'andrew.flv', //relative to player!
 				showplayer: 'never',
 				showloading: 'never',
@@ -37,37 +37,63 @@ It is a long established fact that a reader will be distracted by the readable c
 	<input type="hidden" name="sortby" value="location" />
 	<input type="submit" name="submit" value="Sort by location" />
 </form>
+<form id="sortRandom" action="<?php echo $pageref; ?>" method="post">
+	<input type="hidden" name="sortby" value="random" />
+	<input type="submit" name="submit" value="Back to random" />
+</form>
+
 </div> <!-- //#peopleLeftMenu -->
 
+
 <?php
-// determine how to sort our people!
-// first see if a "sortby" value exists, otherwise just sort randomly
-if (!empty($_POST['sortby'])) {
-		$sortby = $_POST['sortby'];
-}
-else {
-		$sortby = 'random';
-}
+
 ?>
 
 <ul id="peopleGrid">
 <?php
-	$people_xml_object = loadXMLfile('people.xml');
+	// create a SimpleXMLObject
+	$people_xml_object = simplexml_load_file('people.xml');
+
+	// convert it to an array
+	$people = xmlobj2array($people_xml_object->children());
+
+	// simplexml returns a namespace "person" containing several "people" so
+	// we reset our people array to this subset
+	$people = $people['person'];
+
+	// determine how to sort our people!
+	// first see if a "sortby" value exists, otherwise just sort randomly
+	if (!empty($_POST['sortby'])) {
+		$sortby = $_POST['sortby'];
+
+		// check for a sane sort value, otherwise just use random
+		if($sortby == 'name') $people = sort_subval($people,'name');
+		else if($sortby == 'position') $people = sort_subval($people,'position');
+		else if($sortby == 'location') $people = sort_subval($people,'location');
+		else {
+			$sortby = 'random';
+			shuffle($people);
+		}
+	}
+	else {
+		$sortby = 'random';
+		shuffle($people);
+	}
 
 	$count = 0;
-	if(isset($people_xml_object)) {
-		foreach($people_xml_object->person as $person) {
+	if(isset($people) && !empty($people)) {
+		foreach($people as $person) {
 			echo '<li id="person'.$count.'" class="person">'."\n";
 			echo '	<div id="player'.$count.'" class="img">'."\n";
-			echo '		<img src="'.$person->image.'" alt="'.$person->name.'" />'."\n";
+			echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
 			echo '	</div>'."\n";
-			echo '	<h4>'.$person->name.'</h4>'."\n";
+			echo '	<h4>'.$person['name'].'</h4>'."\n";
 			if($sortby == 'position') {
-				echo '	<h5>'.$person->position.'</h5>'."\n";
+				echo '	<h5>'.$person['position'].'</h5>'."\n";
 				echo '</li>'."\n";
 			}
 			else {
-				echo '	<h5>'.$person->location.'</h5>'."\n";
+				echo '	<h5>'.$person['location'].'</h5>'."\n";
 				echo '</li>'."\n";
 			}
 
@@ -85,31 +111,6 @@ else {
 <div class="person"><img src="images/mugshots/steve_k.png" /></div>
 <div class="person" id="player2"><img src="images/mugshots/2andrew better.png" /></div>
 <div class="person"><img src="images/mugshots/steve_k.png" /></div>-->
-<script type="text/javascript">
-	flashembed("player0","videos/player_flv_maxi.swf", {
-		flv: 'andrew.flv', //relative to player!
-		showplayer: 'never',
-		showloading: 'never',
-		margin: '0',
-		startimage: 'images/mugshots/andrew_play.png'
-		}
-	);
-
-//	flashembed("player2","videos/flayr.swf", {
-//		movie: 'andrew.flv', //relative to player!
-//		autoplay: 'true',
-//		controls: 'hide'
-//		}
-//	);
-//
-//	flashembed("player3","videos/flayr.swf", {
-//		movie: 'andrew.flv', //relative to player!
-//		autoplay: 'true',
-//		controls: 'hide'
-//		}
-//	);
-
-</script>
 </div> <!-- //#inner -->
 
 <div id="footer">
