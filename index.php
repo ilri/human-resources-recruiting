@@ -7,6 +7,16 @@
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
 	 ?>
+	<script>
+		$(function() {
+			$('#player').flashembed("videos/player_flv_maxi.swf", {
+				flv: 'andrew.flv', //relative to player!
+				showplayer: 'never',
+				showloading: 'never',
+				margin: '0',
+				startimage: 'images/mugshots/andrew_play.png'});
+		});
+	</script>
 </head>
 <body>
 
