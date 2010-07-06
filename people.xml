@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<people>
+	<person>
+		<name>Andrew Mude</name>
+		<location>Nairobi, Kenya</location>
+		<position>Economist</position>
+		<image>images/mugshots/2andrew better.png</image>
+		<video>video/andrew.flv</video>
+	</person>
+	<person>
+		<name>Steve Kemp</name>
+		<location>Nairobi, Kenya</location>
+		<position>Cool guy</position>
+		<image>images/mugshots/steve_k.png</image>
+		<video>false</video>
+	</person>
+	<person>
+		<name>Andrew Mude</name>
+		<location>Nairobi, Kenya</location>
+		<position>Economist</position>
+		<image>images/mugshots/2andrew better.png</image>
+		<video>video/andrew.flv</video>
+	</person>
+	<person>
+		<name>Steve Kemp</name>
+		<location>Nairobi, Kenya</location>
+		<position>Cool guy</position>
+		<image>images/mugshots/steve_k.png</image>
+		<video>false</video>
+	</person>
+	<person>
+		<name>Andrew Mude</name>
+		<location>Nairobi, Kenya</location>
+		<position>Economist</position>
+		<image>images/mugshots/2andrew better.png</image>
+		<video>video/andrew.flv</video>
+	</person>
+	<person>
+		<name>Steve Kemp</name>
+		<location>Nairobi, Kenya</location>
+		<position>Cool guy</position>
+		<image>images/mugshots/steve_k.png</image>
+		<video>false</video>
+	</person>
+
+</people>

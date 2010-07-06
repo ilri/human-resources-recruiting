@@ -14,8 +14,10 @@ html, body, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, 
 body {
 	line-height: 1;
 }
-ol, ul {
+ol, ul, li {
 	list-style: none;
+	margin: 0px;
+	padding 0px;
 }
 blockquote, q {
 	quotes: none;
@@ -42,7 +44,7 @@ table {
 
 /* @end */
 
-/* @group */
+/* @group content*/
 
 body {
 	font-family: Verdana, sans-serif;
@@ -93,6 +95,7 @@ a:hover, a:visited:hover {
 	clear: both;	/* we don't want to have stuff floating on the left or right... */
 	overflow: hidden; /* make the stuff after our inner */
 	width: 960px;
+	padding-top: 10px;
 }
 
 #footer {
@@ -118,7 +121,6 @@ a:hover, a:visited:hover {
 {
 	margin: 0;
 	padding: 0;
-	list-style-type: none; /* remove the bullets */
 }
 
 #navlist li {
@@ -145,32 +147,43 @@ a:hover, a:visited:hover {
 
 /*** People ***/
 
-div.person {
+#peopleLeftMenu {
 	float: left;
-	width: 130px;
-	height: 150px;
-	margin: 10px 30px 5px 30px;
+	text-align: right;
+	width: 170px;
+	/*margin-left: 30px;*/
+	margin-right: 70px;
+	min-height: 150px;
+	/*background-color: #DBDBDB;*/
+	/*margin-bottom: 5px;*/
 }
 
-div.person img {
-	border: none;
-	width: 140px;
+#peopleGrid h4 {
+	color: #000000;
+	font-size: 11px;
+	font-weight: bold;
+}
+
+#peopleGrid h5 {
+	color: #9E9D92;
+	font-size: 11px;
+	font-weight: normal;
+}
+
+li.person {
+	float: left;
+	position: relative;
+	width: 130px;
+	height: 172px;
+	/*margin: 10px 30px 5px 0px;*/
+}
+
+li.person img {
+	border: 0px;
+	width: 130px;
 }
 
 div.left {
 	margin-left: 0px;
 }
 
-#aboutus {
-	float: left;
-	text-align: justify;
-	width: 140px;
-	/*padding: 20px;*/
-	margin-left: 30px;
-	margin-right: 80px;
-	min-height: 130px;
-	background-color: #DBDBDB;
-	margin-bottom: 5px;
-	/*margin-right: 20px;*/
-	/*border-right: 1px solid black;*/
-}
