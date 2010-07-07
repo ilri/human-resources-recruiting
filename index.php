@@ -14,7 +14,7 @@
 				showplayer: 'never',
 				showloading: 'never',
 				margin: '0',
-				startimage: 'images/mugshots/andrew_play.png'});
+				startimage: 'images/people/andrew_play.png'});
 		});
 	</script>
 </head>
@@ -102,15 +102,6 @@ It is a long established fact that a reader will be distracted by the readable c
 	}
 ?>
 </ul>
-
-<!--
-<div id="player" class="person"><img src="images/mugshots/2andrew better.png" /></div>
-<div class="person"><img src="images/mugshots/steve_k.png" /></div>
-<div class="person"><img src="images/mugshots/steve_k.png" /></div>
-<div class="person" id="player3"><img src="images/mugshots/2andrew better.png" /></div>
-<div class="person"><img src="images/mugshots/steve_k.png" /></div>
-<div class="person" id="player2"><img src="images/mugshots/2andrew better.png" /></div>
-<div class="person"><img src="images/mugshots/steve_k.png" /></div>-->
 </div> <!-- //#inner -->
 
 <div id="footer">
