@@ -15,17 +15,24 @@
 		<video>false</video>
 	</person>
 	<person>
-		<name>Alan Orth</name>
-		<location>Nairobi, Kenya</location>
-		<position>Linux Administrator</position>
-		<image>images/people/andrew_m.png</image>
-		<video>video/andrew.flv</video>
-	</person>
-	<person>
 		<name>Peter Ballantyne</name>
 		<location>Addis Ababa, Ethiopia</location>
-		<position>Head of Knowledge Management</position>
-		<image>images/people/steve_k.png</image>
+		<position>Knowledge Management</position>
+		<image>images/people/peter_b.png</image>
+		<video>false</video>
+	</person>
+	<person>
+		<name>Purvi Mehta</name>
+		<location>Nairobi, Kenya</location>
+		<position>Capacity Strengthening</position>
+		<image>images/people/purvi_m.png</image>
+		<video>false</video>
+	</person>
+	<person>
+		<name>Delia Grace</name>
+		<location>Nairobi, Kenya</location>
+		<position>Capacity Strengthening</position>
+		<image>images/people/delia_g.png</image>
 		<video>false</video>
 	</person>
 
