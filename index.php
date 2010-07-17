@@ -8,7 +8,7 @@
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
 	 ?>
 	<script>
-		$(function() {
+		$(document).ready(function() {
 			$('#player0').flashembed("videos/player_flv_maxi.swf", {
 				flv: 'andrew.flv', //relative to player!
 				showplayer: 'never',
