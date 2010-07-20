@@ -19,7 +19,8 @@
 					showplayer: 'never', // (hide maxi player "play" button)
 					showloading: 'never', // (hide maxi player loading text)
 					margin: '0', // (hide maxi player margin)
-					startimage: 'images/people/andrew_play.png' // (show a "start" image before playing)
+					startimage: 'images/people/andrew_play.png', // (show a "start" image before playing)
+					wmmode: 'opaque'
 				});
 			});
 		});
@@ -95,7 +96,7 @@ It is a long established fact that a reader will be distracted by the readable c
 
 			//check to see if the current person has a video
 			if($person['video'] != 'false') {
-				echo '	<div id="player'.$count.'" class="vid"></div>'."\n";
+				echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
 			}
 			// show image if there is no video
 			else {
