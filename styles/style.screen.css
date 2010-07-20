@@ -173,17 +173,22 @@ a:hover, a:visited:hover {
 li.person {
 	float: left;
 	position: relative;
-	width: 130px;
-	height: 172px;
+/*	width: 130px;*/
+/*	height: 172px;*/
 	/*margin: 10px 30px 5px 0px;*/
+}
+
+li.person .img, li.person .vid {
+	width: 130px;
+	height: 150px;
 }
 
 li.person img {
 	border: 0px;
 	width: 130px;
+	height: 150px;
 }
 
 div.left {
 	margin-left: 0px;
 }
-
