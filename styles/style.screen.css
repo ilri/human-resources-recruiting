@@ -158,6 +158,10 @@ a:hover, a:visited:hover {
 	/*margin-bottom: 5px;*/
 }
 
+#peopleLeftMenu .sortby {
+	margin-top: 5px;
+}
+
 #peopleGrid h4 {
 	color: #000000;
 	font-size: 11px;

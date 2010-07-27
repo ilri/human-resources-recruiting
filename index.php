@@ -36,18 +36,22 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. <a href="#">Testing links</a>.
-<form id="sortByPosition" action="<?php echo $pageref; ?>" method="post">
+This is a multi-media site
+
+click coloured photos to watch or listen to ILRI people
+
+click black and white photos to find out more about ILRI<a href="#">jobs</a>.
+<form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
-	<input type="submit" name="submit" value="Sort by position" />
+	<input type="image" name="submit" src="images/sort_by_position.jpg" />
 </form>
-<form id="sortByName" action="<?php echo $pageref; ?>" method="post">
+<form id="sortByName" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
-	<input type="submit" name="submit" value="Sort by location" />
+	<input type="image" name="submit" src="images/sort_by_location.jpg" />
 </form>
-<form id="sortRandom" action="<?php echo $pageref; ?>" method="post">
+<form id="sortRandom" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="random" />
-	<input type="submit" name="submit" value="Back to random" />
+	<input type="image" name="submit" src="images/sort_by_random.jpg" />
 </form>
 
 </div> <!-- //#peopleLeftMenu -->
