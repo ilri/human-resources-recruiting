@@ -36,11 +36,6 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
-This is a multi-media site
-
-click coloured photos to watch or listen to ILRI people
-
-click black and white photos to find out more about ILRI<a href="#">jobs</a>.
 <form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
