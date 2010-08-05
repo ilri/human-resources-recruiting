@@ -51,7 +51,7 @@
 
 </div> <!-- //#peopleLeftMenu -->
 
-<div id="ilricrowd">The ILRI Crowd</div>
+<div id="ilricrowd"><h2>The ILRI Crowd<h2></div>
 
 <?php
 

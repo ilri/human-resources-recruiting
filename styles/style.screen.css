@@ -179,7 +179,10 @@ a:hover, a:visited:hover {
 	margin-left: 40px;
 	margin-right: 40px;
 	text-align: center;
-	font-size: 36px;
+}
+
+#ilricrowd h2 {
+	font-size: 40px;
 	font-weight: bold;
 }
 
