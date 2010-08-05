@@ -151,7 +151,6 @@ a:hover, a:visited:hover {
 	text-align: right;
 	width: 240px;
 	margin-top: 55px;
-	background-color: #DBDBDB;
 	/*margin-bottom: 5px;*/
 }
 
@@ -175,7 +174,7 @@ a:hover, a:visited:hover {
 #ilricrowd {
 	width: 400px;
 	float: left;
-	background-color: #DBDBDB;
+	/*background-color: #DBDBDB;*/
 	margin-top: 55px;
 	margin-left: 40px;
 	margin-right: 40px;
@@ -202,6 +201,7 @@ li.person img {
 	width: 130px;
 	height: 150px;
 }
+
 div.left {
 	margin-left: 0px;
 }
