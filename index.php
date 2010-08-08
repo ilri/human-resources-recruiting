@@ -9,12 +9,20 @@
 	 ?>
 	<script>
 		$(document).ready(function() {
-			$('#player0').flashembed("videos/player_flv_maxi.swf", {
-				flv: 'andrew.flv', //relative to player!
-				showplayer: 'never',
-				showloading: 'never',
-				margin: '0',
-				startimage: 'images/people/andrew_play.png'});
+			// select all div tags of class "vid"
+			$('div.vid').each(function() {
+				//var personID = $(this).attr('id');
+				//insertVideo(personID);
+				//alert('omg it is: '+this.id);
+				flashembed(this, "videos/player_flv_maxi.swf", {
+					flv: 'andrew.flv', //relative to player!
+					showplayer: 'never', // (hide maxi player "play" button)
+					showloading: 'never', // (hide maxi player loading text)
+					margin: '0', // (hide maxi player margin)
+					startimage: 'images/people/andrew_play.png', // (show a "start" image before playing)
+					wmmode: 'opaque'
+				});
+			});
 		});
 	</script>
 </head>
@@ -28,22 +36,22 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
-It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using. <a href="#">Testing links</a>.
-<form id="sortByPosition" action="<?php echo $pageref; ?>" method="post">
+<form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
-	<input type="submit" name="submit" value="Sort by position" />
+	<input type="image" name="submit" src="images/sort_by_position.jpg" />
 </form>
-<form id="sortByName" action="<?php echo $pageref; ?>" method="post">
+<form id="sortByName" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
-	<input type="submit" name="submit" value="Sort by location" />
+	<input type="image" name="submit" src="images/sort_by_location.jpg" />
 </form>
-<form id="sortRandom" action="<?php echo $pageref; ?>" method="post">
+<form id="sortRandom" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="random" />
-	<input type="submit" name="submit" value="Back to random" />
+	<input type="image" name="submit" src="images/sort_by_random.jpg" />
 </form>
 
 </div> <!-- //#peopleLeftMenu -->
 
+<div id="ilricrowd"><h2>The ILRI Crowd<h2></div>
 
 <?php
 
@@ -84,8 +92,16 @@ It is a long established fact that a reader will be distracted by the readable c
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
 			echo '<li id="person'.$count.'" class="person">'."\n";
-			echo '	<div id="player'.$count.'" class="img">'."\n";
-			echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
+			echo '	<div class="img">'."\n";
+
+			//check to see if the current person has a video
+			if($person['video'] != 'false') {
+				echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
+			}
+			// show image if there is no video
+			else {
+				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
+			}
 			echo '	</div>'."\n";
 			echo '	<h4>'.$person['name'].'</h4>'."\n";
 			if($sortby == 'position') {
