@@ -103,7 +103,14 @@
 				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
 			}
 			echo '	</div>'."\n";
-			echo '	<h4>'.$person['name'].'</h4>'."\n";
+			// check to see if the current person is a Rep.
+			// if so, give him/her a different class to change the text color
+			if($person['position'] == 'Regional Rep') {
+				echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
+			}
+			else {
+				echo '	<h4>'.$person['name'].'</h4>'."\n";
+			}
 			if($sortby == 'position') {
 				echo '	<h5>'.$person['position'].'</h5>'."\n";
 				echo '</li>'."\n";

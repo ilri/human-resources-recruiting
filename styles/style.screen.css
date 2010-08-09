@@ -165,6 +165,10 @@ a:hover, a:visited:hover {
 	font-weight: bold;
 }
 
+#peopleGrid h4.rep {
+	color: #823747;
+}
+
 #peopleGrid h5 {
 	color: #9E9D92;
 	font-size: 11px;
