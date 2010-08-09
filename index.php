@@ -103,9 +103,9 @@
 				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
 			}
 			echo '	</div>'."\n";
-			// check to see if the current person is a Rep.
+			// check to see if the current person is a Regional Rep.
 			// if so, give him/her a different class to change the text color
-			if($person['position'] == 'Regional Rep') {
+			if($person['position'] == 'Regional Representative') {
 				echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
 			}
 			else {
