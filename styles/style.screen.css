@@ -94,7 +94,9 @@ a:hover, a:visited:hover {
 #inner {
 	clear: both;	/* we don't want to have stuff floating on the left or right... */
 	overflow: hidden; /* make the stuff after our inner */
-	width: 960px;
+	width: 872px;
+	margin-left: 44px;
+	margin-right: 44px;
 }
 
 #footer {
@@ -149,9 +151,9 @@ a:hover, a:visited:hover {
 #peopleLeftMenu {
 	float: left;
 	text-align: right;
-	width: 240px;
+	width: 218px;
 	margin-top: 55px;
-	/*margin-bottom: 5px;*/
+	height: 170px;
 }
 
 #peopleLeftMenu .sortby {
@@ -176,12 +178,12 @@ a:hover, a:visited:hover {
 }
 
 #ilricrowd {
-	width: 400px;
+	width: 380px;
 	float: left;
 	/*background-color: #DBDBDB;*/
 	margin-top: 55px;
-	margin-left: 40px;
-	margin-right: 40px;
+	margin-left: 28px;
+	margin-right: 28px;
 	text-align: center;
 }
 
@@ -194,8 +196,8 @@ li.person {
 	float: left;
 	position: relative;
 	margin-top: 55px;
-	margin-left: 55px;
-	margin-right: 55px;
+	margin-left: 44px;
+	margin-right: 44px;
 }
 
 li.person .img, li.person .vid {
