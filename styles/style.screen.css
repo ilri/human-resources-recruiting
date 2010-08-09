@@ -87,14 +87,11 @@ a:hover, a:visited:hover {
 	width: 960px;
 	height: 125px;
 	background-image: url('../images/Banner2.png');
-	clear: both;	/* we don't want to have stuff floating on the left or right... */
-	overflow: hidden; /* make the stuff after our header */
 }
 
 #inner {
-	clear: both;	/* we don't want to have stuff floating on the left or right... */
-	overflow: hidden; /* make the stuff after our inner */
 	width: 872px;
+	background: #fff;
 	margin-left: 44px;
 	margin-right: 44px;
 }
@@ -118,8 +115,7 @@ a:hover, a:visited:hover {
 	margin: 0;
 }
 
-#navlist ul
-{
+#navlist ul {
 	margin: 0;
 	padding: 0;
 }
@@ -133,8 +129,7 @@ a:hover, a:visited:hover {
 	padding: 0px;
 }
 
-#navlist a
-{
+#navlist a {
 	display: block;
 	color: #CECECE;
 	text-decoration: none;
@@ -150,6 +145,8 @@ a:hover, a:visited:hover {
 
 #peopleLeftMenu {
 	float: left;
+    position: relative;
+    left: -44px;
 	text-align: right;
 	width: 218px;
 	margin-top: 55px;
@@ -157,7 +154,7 @@ a:hover, a:visited:hover {
 }
 
 #peopleLeftMenu .sortby {
-	width: 170px;
+	width: 240px;
 	margin-bottom: 5px;
 }
 
@@ -209,8 +206,4 @@ li.person img {
 	border: 0px;
 	width: 130px;
 	height: 150px;
-}
-
-div.left {
-	margin-left: 0px;
 }

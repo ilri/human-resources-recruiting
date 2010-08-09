@@ -36,6 +36,7 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
+<div id="sortby" style="position: relative; bottom: 0px;">
 <form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
@@ -48,10 +49,11 @@
 	<input type="hidden" name="sortby" value="random" />
 	<input type="image" name="submit" src="images/sort_by_random.jpg" />
 </form>
+</div> <!-- //#sortby -->
 
 </div> <!-- //#peopleLeftMenu -->
 
-<div id="ilricrowd"><h2>The ILRI Crowd<h2></div>
+<div id="ilricrowd"><h2>The ILRI Crowd</h2></div>
 
 <?php
 
@@ -125,6 +127,7 @@
 	}
 ?>
 </ul>
+&nbsp;
 </div> <!-- //#inner -->
 
 <div id="footer">
