@@ -59,7 +59,7 @@
 
 ?>
 
-<ul id="peopleGrid">
+<div id="peopleGrid">
 <?php
 	// create a SimpleXMLObject
 	$people_xml_object = simplexml_load_file('people.xml');
@@ -93,7 +93,7 @@
 	$count = 0;
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
-			echo '<li id="person'.$count.'" class="person">'."\n";
+			echo '<div id="person'.$count.'" class="person">'."\n";
 			echo '	<div class="img">'."\n";
 
 			//check to see if the current person has a video
@@ -115,19 +115,18 @@
 			}
 			if($sortby == 'position') {
 				echo '	<h5>'.$person['position'].'</h5>'."\n";
-				echo '</li>'."\n";
+				echo '</div>'."\n";
 			}
 			else {
 				echo '	<h5>'.$person['location'].'</h5>'."\n";
-				echo '</li>'."\n";
+				echo '</div>'."\n";
 			}
 
 			$count++;
 		}
 	}
 ?>
-</ul>
-&nbsp;
+</div>
 </div> <!-- //#inner -->
 
 <div id="footer">

@@ -100,6 +100,8 @@ a:hover, a:visited:hover {
 	width: 960px;
 	position: relative;
 	bottom: 0px;
+	clear: both; /* clear the floats from the previous div */
+				/* http://www.positioniseverything.net/easyclearing.html */
 }
 
 /*** navigation ***/
@@ -189,20 +191,19 @@ a:hover, a:visited:hover {
 	font-weight: bold;
 }
 
-li.person {
+div.person {
 	float: left;
-	position: relative;
 	margin-top: 55px;
 	margin-left: 44px;
 	margin-right: 44px;
 }
 
-li.person .img, li.person .vid {
+div.person .img, div.person .vid {
 	width: 130px;
 	height: 150px;
 }
 
-li.person img {
+div.person img {
 	border: 0px;
 	width: 130px;
 	height: 150px;
