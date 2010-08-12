@@ -13,12 +13,12 @@
 <div id="outer">
 <div id="header">
 <?php require_once('navigation.php'); ?>
-<div id="banner" style="padding-top: 0px;"></div>
+<div id="banner"></div>
 </div> <!-- //#header -->
 
 <div id="inner">
 <div id="peopleLeftMenu">
-<div id="sortby" style="position: relative; bottom: 0px;">
+<div id="sortby">
 <form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
