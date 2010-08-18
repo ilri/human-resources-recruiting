@@ -117,5 +117,8 @@ Footer
 
 </div> <!-- //#outer -->
 
+<script type="text/javascript" src="scripts/jquery.1.4.2.min.js"></script>
+<script type="text/javascript" src="scripts/flashembed.min.js"></script>
+<script type="text/javascript" src="scripts/people.js"></script>
 </body>
 </html>
