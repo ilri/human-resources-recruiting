@@ -4,9 +4,6 @@ echo '<link rel="stylesheet" href="styles/style.screen.css" type="text/css" medi
 <script type="text/javascript" src="scripts/jquery.1.4.2.min.js"></script>
 <script type="text/javascript" src="scripts/flashembed.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
-<!--[if lt IE 8]>
-<script type="text/javascript" src="scripts/IE8.js"></script>
-<![endif]-->
 ';
 
 ?>
