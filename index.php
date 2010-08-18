@@ -75,33 +75,38 @@
 	$count = 0;
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
-			echo '<div id="person'.$count.'" class="person">'."\n";
-			echo '	<div class="img">'."\n";
+			if($count == 6) {
+				echo '<div id="feature">&nbsp;</div>';
+			}
+			else {
+				echo '<div id="person'.$count.'" class="person">'."\n";
+				echo '	<div class="img">'."\n";
 
-			//check to see if the current person has a video
-			if($person['video'] != 'false') {
-				echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
-			}
-			// show image if there is no video
-			else {
-				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
-			}
-			echo '	</div>'."\n";
-			// check to see if the current person is a Regional Rep.
-			// if so, give him/her a different class to change the text color
-			if($person['position'] == 'Regional Representative') {
-				echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
-			}
-			else {
-				echo '	<h4>'.$person['name'].'</h4>'."\n";
-			}
-			if($sortby == 'position') {
-				echo '	<h5>'.$person['position'].'</h5>'."\n";
-				echo '</div>'."\n";
-			}
-			else {
-				echo '	<h5>'.$person['location'].'</h5>'."\n";
-				echo '</div>'."\n";
+				//check to see if the current person has a video
+				if($person['video'] != 'false') {
+					echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
+				}
+				// show image if there is no video
+				else {
+					echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
+				}
+				echo '	</div>'."\n";
+				// check to see if the current person is a Regional Rep.
+				// if so, give him/her a different class to change the text color
+				if($person['position'] == 'Regional Representative') {
+					echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
+				}
+				else {
+					echo '	<h4>'.$person['name'].'</h4>'."\n";
+				}
+				if($sortby == 'position') {
+					echo '	<h5>'.$person['position'].'</h5>'."\n";
+					echo '</div>'."\n";
+				}
+				else {
+					echo '	<h5>'.$person['location'].'</h5>'."\n";
+					echo '</div>'."\n";
+				}
 			}
 
 			$count++;

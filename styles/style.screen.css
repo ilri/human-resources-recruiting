@@ -208,3 +208,13 @@ div.person img {
 	width: 130px;
 	height: 150px;
 }
+
+div#feature {
+	width: 654px;
+	height: 397px; /* 2 people (150 * 2) + two people name sections ((11 + 10)*2) + 1 top margin (55) */
+	margin-top: 55px;
+	position: relative;
+	right: -44px;
+	float: right;
+	background-color: #E0E0E0;
+}
