@@ -23,7 +23,7 @@
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
 </form>
-<form id="sortByName" class="sortby" action="<?php echo $pageref; ?>" method="post">
+<form id="sortByLocation" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
 	<input type="image" name="submit" src="images/sort_by_location.jpg" />
 </form>
@@ -54,54 +54,55 @@
 	$people = $people['person'];
 
 	// determine how to sort our people!
-	// first see if a "sortby" value exists, otherwise just sort randomly
+	// first see if a "sortby" value exists
 	if (!empty($_POST['sortby'])) {
 		$sortby = $_POST['sortby'];
 
-		// check for a sane sort value, otherwise just use random
+		// check for a sane sort value, otherwise just use the order in the XML file
 		if($sortby == 'name') $people = sort_subval($people,'name');
 		else if($sortby == 'position') $people = sort_subval($people,'position');
 		else if($sortby == 'location') $people = sort_subval($people,'location');
-		else {
-			$sortby = 'random';
-			shuffle($people);
-		}
-	}
-	else {
-		$sortby = 'random';
-		shuffle($people);
+		else if($sortby = 'random') shuffle($people);
 	}
 
 	$count = 0;
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
-			echo '<div id="person'.$count.'" class="person">'."\n";
-			echo '	<div class="img">'."\n";
+			if($count == 6) {
+				echo '<div id="feature">&nbsp;</div>';
+			}
+			else {
+				echo '<div id="person'.$count.'" class="person">'."\n";
+				echo '	<div class="img">'."\n";
 
-			//check to see if the current person has a video
-			if($person['video'] != 'false') {
-				echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
-			}
-			// show image if there is no video
-			else {
-				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
-			}
-			echo '	</div>'."\n";
-			// check to see if the current person is a Regional Rep.
-			// if so, give him/her a different class to change the text color
-			if($person['position'] == 'Regional Representative') {
-				echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
-			}
-			else {
-				echo '	<h4>'.$person['name'].'</h4>'."\n";
-			}
-			if($sortby == 'position') {
-				echo '	<h5>'.$person['position'].'</h5>'."\n";
-				echo '</div>'."\n";
-			}
-			else {
-				echo '	<h5>'.$person['location'].'</h5>'."\n";
-				echo '</div>'."\n";
+				//check to see if the current person has a video
+				if(isset($person['video']) && $person['video'] != 'false') {
+					// we want "andrew_m" from "andrew_m.flv" so we can use it for other things.
+					// store it in the class so we can access it via jQuery later.
+					$name = basename($person['video'], '.flv');
+					echo '		<div id="'.$name.' player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
+				}
+				// show image if there is no video
+				else {
+					echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
+				}
+				echo '	</div>'."\n";
+				// check to see if the current person is a Regional Rep.
+				// if so, give him/her a different class to change the text color
+				if($person['position'] == 'Regional Representative') {
+					echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
+				}
+				else {
+					echo '	<h4>'.$person['name'].'</h4>'."\n";
+				}
+				if($sortby == 'position') {
+					echo '	<h5>'.$person['position'].'</h5>'."\n";
+					echo '</div>'."\n";
+				}
+				else {
+					echo '	<h5>'.$person['location'].'</h5>'."\n";
+					echo '</div>'."\n";
+				}
 			}
 
 			$count++;
@@ -117,5 +118,8 @@ Footer
 
 </div> <!-- //#outer -->
 
+<script type="text/javascript" src="scripts/jquery.1.4.2.min.js"></script>
+<script type="text/javascript" src="scripts/flashembed.min.js"></script>
+<script type="text/javascript" src="scripts/people.js"></script>
 </body>
 </html>
