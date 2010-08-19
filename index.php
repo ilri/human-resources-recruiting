@@ -76,8 +76,11 @@
 				echo '	<div class="img">'."\n";
 
 				//check to see if the current person has a video
-				if($person['video'] != 'false') {
-					echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
+				if(isset($person['video']) && $person['video'] != 'false') {
+					// we want "andrew_m" from "andrew_m.flv" so we can use it for other things.
+					// store it in the class so we can access it via jQuery later.
+					$name = basename($person['video'], '.flv');
+					echo '		<div id="'.$name.' player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
 				}
 				// show image if there is no video
 				else {
