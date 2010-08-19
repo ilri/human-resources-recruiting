@@ -28,9 +28,9 @@
 	<input type="hidden" name="sortby" value="location" />
 	<input type="image" name="submit" src="images/sort_by_location.jpg" />
 </form>
-<form id="sortRandom" class="sortby" action="<?php echo $pageref; ?>" method="post">
-	<input type="hidden" name="sortby" value="random" />
-	<input type="image" name="submit" src="images/sort_by_random.jpg" />
+<form id="audioOnly" class="sortby" action="<?php echo $pageref; ?>" method="post">
+	<input type="hidden" name="media" value="audio" />
+	<input type="image" name="submit" src="images/audio_only.jpg" />
 </form>
 </div> <!-- //#sortby -->
 
