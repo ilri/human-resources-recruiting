@@ -79,7 +79,7 @@
 			echo '	<div class="img">'."\n";
 
 			//check to see if the current person has a video
-			if($person['video'] != 'false') {
+			if(isset($person['video']) && $person['video'] != 'false') {
 				echo '		<div id="player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
 			}
 			// show image if there is no video
