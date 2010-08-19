@@ -136,9 +136,13 @@ a:hover, a:visited:hover {
 
 div.person {
 	float: left;
-	margin-top: 55px;
+	margin-top: 34px;
 	margin-left: 44px;
 	margin-right: 44px;
+}
+
+div.person:first-child {
+	margin-top: 55px; /* the first person in the grid needs to be the same distance from the header as the rest of the stuff */
 }
 
 div.person .img, div.person .vid {
@@ -154,8 +158,9 @@ div.person img {
 
 div#feature {
 	width: 654px;
-	height: 397px; /* 2 people (150 * 2) + two people name sections ((11 + 10)*2) + 1 top margin (55) */
-	margin-top: 55px;
+	height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
+	margin-top: 34px;
+	margin-bottom: 21px;
 	position: relative;
 	right: -44px;
 	float: right;
