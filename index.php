@@ -23,7 +23,7 @@
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
 </form>
-<form id="sortByName" class="sortby" action="<?php echo $pageref; ?>" method="post">
+<form id="sortByLocation" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
 	<input type="image" name="submit" src="images/sort_by_location.jpg" />
 </form>
@@ -54,22 +54,15 @@
 	$people = $people['person'];
 
 	// determine how to sort our people!
-	// first see if a "sortby" value exists, otherwise just sort randomly
+	// first see if a "sortby" value exists
 	if (!empty($_POST['sortby'])) {
 		$sortby = $_POST['sortby'];
 
-		// check for a sane sort value, otherwise just use random
+		// check for a sane sort value, otherwise just use the order in the XML file
 		if($sortby == 'name') $people = sort_subval($people,'name');
 		else if($sortby == 'position') $people = sort_subval($people,'position');
 		else if($sortby == 'location') $people = sort_subval($people,'location');
-		else {
-			$sortby = 'random';
-			shuffle($people);
-		}
-	}
-	else {
-		$sortby = 'random';
-		shuffle($people);
+		else if($sortby = 'random') shuffle($people);
 	}
 
 	$count = 0;
