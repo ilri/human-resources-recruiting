@@ -18,7 +18,8 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
-<div id="sortby">
+<div id="ilricrowdleft"><img src="images/ilricrowd_left.png" /></div>
+<div id="sortby" style="position: relative; bottom: 0px;">
 <form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="position" />
 	<input type="image" name="submit" src="images/sort_by_position.jpg" />
@@ -35,7 +36,7 @@
 
 </div> <!-- //#peopleLeftMenu -->
 
-<div id="ilricrowd"><h2>The ILRI Crowd</h2></div>
+<div id="ilricrowdright"><img src="images/ilricrowd_right.png" /></div>
 
 <?php
 
@@ -69,7 +70,16 @@
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
 			if($count == 6) {
-				echo '<div id="feature">&nbsp;</div>';
+				echo '<div id="feature">';
+				echo '	<div id="featureleft" style="width: 392px; float: left;">Left, video, etc</div>';
+				echo '	<div id="featureright" style="width: 262px; float: left;">';
+				echo '		<div id="buttons" style="position: absolute; bottom: 0px;">';
+				echo '		<img src="images/ilri_jobs.jpg" alt="ILRI Jobs" class="button" />';
+				echo '		<img src="images/ilri_people_facts.jpg" alt="ILRI People Facts" class="button" />';
+				echo '		<img src="images/ilri_specialties.jpg" alt="ILRI Specialties" class="button" />';
+				echo '		</div>';
+				echo '	</div>';
+				echo '</div>';
 			}
 			else {
 				echo '<div id="person'.$count.'" class="person">'."\n";
@@ -113,7 +123,10 @@
 </div> <!-- //#inner -->
 
 <div id="footer">
-Footer
+	<div id="footer-inner">
+	<p><a href="http://www.ilri.org/ContactUs">Contact us</a> | <a href="http://www.ilri.org/CopyRight">Copyright and permissions</a> | <a href="http://www.ilri.org/Search">Search</a> | <a href="http://www.ilri.org/Newsfeeds">Subscribe</a><br>
+	&copy; International Livestock Research Institute (ILRI)</p>
+	</div> <!-- //#footer-inner -->
 </div> <!-- //#footer -->
 
 </div> <!-- //#outer -->
