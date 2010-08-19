@@ -36,7 +36,7 @@
 
 </div> <!-- //#peopleLeftMenu -->
 
-<div id="ilricrowdright"><img src="images/ilricrowd_right.png" /></div>
+<div id="ilricrowdright1"><img src="images/ilricrowd_right1.png" /></div>
 
 <?php
 
@@ -69,6 +69,10 @@
 	$count = 0;
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
+			if($count == 2) {
+				echo '<div id="ilricrowdright2"><img src="images/ilricrowd_right2.png" /></div>';
+			}
+
 			if($count == 6) {
 				echo '<div id="feature">';
 				echo '	<div id="featureleft" style="width: 392px; float: left;">Left, video, etc</div>';

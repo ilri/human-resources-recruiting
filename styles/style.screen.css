@@ -131,13 +131,18 @@ a:hover, a:visited:hover {
 	font-weight: normal;
 }
 
-#ilricrowdright {
+#ilricrowdright1 {
 	float: left;
 	width: 392px;
 	left: -44px;
 	position: relative;
 }
 
+#ilricrowdright2 {
+	float: left;
+	width: 392px;
+	margin-right: 44px;
+}
 div.person {
 	float: left;
 	margin-top: 34px;
