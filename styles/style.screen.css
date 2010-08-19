@@ -108,7 +108,11 @@ a:hover, a:visited:hover {
 
 #peopleLeftMenu .sortby {
 	width: 262px;
-	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+#peopleLeftMenu .sortby:first-child {
+	margin-top: 0px;
 }
 
 #peopleGrid h4 {
@@ -142,7 +146,7 @@ div.person {
 }
 
 div.person:first-child {
-	margin-top: 55px; /* the first person in the grid needs to be the same distance from the header as the rest of the stuff */
+	margin-top: 55px;
 }
 
 div.person .img, div.person .vid {
@@ -169,7 +173,11 @@ div#feature {
 
 div#feature .button {
 	width: 262px;
-	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+div#feature .button:first-child {
+	margin-top: 0px;
 }
 
 #footer {
