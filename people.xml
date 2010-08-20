@@ -4,28 +4,28 @@
 		<name>Abdou Fall</name>
 		<location>West Africa</location>
 		<nationality>Senegal</nationality>
-		<position>Regional Representative</position>
+		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/abdou_f.png</image>
 	</person>
 	<person>
 		<name>Saskia Hendrickx</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Netherlands</nationality>
-		<position>Veterinarian</position>
+		<jobtitle>Veterinarian</jobtitle>
 		<image>images/people/saskia_h.png</image>
 	</person>
 	<person>
 		<name>Andrew Mude</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Kenya</nationality>
-		<position>Economist</position>
+		<jobtitle>Economist</jobtitle>
 		<image>images/people/andrew_m.png</image>
 		<video>andrew_m.flv</video>
 	</person>
 	<person>
 		<name>Peter Ballantyne</name>
 		<location>Addis Ababa, Ethiopia</location>
-		<position>Knowledge Sharer</position>
+		<jobtitle>Knowledge Sharer</jobtitle>
 		<nationality>Scotland</nationality>
 		<image>images/people/peter_b.png</image>
 	</person>
@@ -33,14 +33,14 @@
 		<name>Siboniso Moyo</name>
 		<location>Southern Africa</location>
 		<nationality>Zimbabwe</nationality>
-		<position>Regional Representative</position>
+		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/siboniso_m.png</image>
 	</person>
 	<person>
 		<name>Ranjitha Puskur</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>India</nationality>
-		<position>Social Scientist</position>
+		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/ranjitha_p.png</image>
 
 	</person>
@@ -48,56 +48,56 @@
 		<name>Delia Grace</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Ireland</nationality>
-		<position>Epidemiologist</position>
+		<jobtitle>Epidemiologist</jobtitle>
 		<image>images/people/delia_g.png</image>
 	</person>
 	<person>
 		<name>Martin Norling</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Sweden</nationality>
-		<position>Bioinformatician</position>
+		<jobtitle>Bioinformatician</jobtitle>
 		<image>images/people/martin_n.png</image>
 	</person>
 	<person>
 		<name>Purvi Mehta-Bhatt</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>India</nationality>
-		<position>Capacity Builder</position>
+		<jobtitle>Capacity Builder</jobtitle>
 		<image>images/people/delia_g.png</image>
 	</person>
 	<person>
 		<name>Polly Ericksen</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>USA</nationality>
-		<position>Social Scientist</position>
+		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/polly_e.png</image>
 	</person>
 	<person>
 		<name>Iain Wright</name>
 		<location>Asia</location>
 		<nationality>Scotland</nationality>
-		<position>Regional Representative</position>
+		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/iain_w.png</image>
 	</person>
 	<person>
 		<name>Arindam Samaddar</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>India</nationality>
-		<position>Anthropologist</position>
+		<jobtitle>Anthropologist</jobtitle>
 		<image>images/people/arindam_s.png</image>
 	</person>
 	<person>
 		<name>Jemimah Njuki</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Kenya</nationality>
-		<position>Social Scientist</position>
+		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/jemimah_n.png</image>
 	</person>
 	<person>
 		<name>Alan Orth</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>USA</nationality>
-		<position>Computer Scientist</position>
+		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/alan_o.png</image>
 	</person>
 </people>

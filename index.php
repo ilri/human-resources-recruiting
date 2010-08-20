@@ -20,17 +20,17 @@
 <div id="peopleLeftMenu">
 <div id="ilricrowdleft"><img src="images/ilricrowd_left.png" /></div>
 <div id="sortby" style="position: relative; bottom: 0px;">
-<form id="sortByPosition" class="sortby" action="<?php echo $pageref; ?>" method="post">
-	<input type="hidden" name="sortby" value="position" />
-	<input type="image" name="submit" src="images/sort_by_position.jpg" />
-</form>
 <form id="sortByLocation" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
-	<input type="image" name="submit" src="images/sort_by_location.jpg" />
+	<input type="image" name="submit" src="images/sort_by_location.png" />
+</form>
+<form id="sortByJobTitle" class="sortby" action="<?php echo $pageref; ?>" method="post">
+	<input type="hidden" name="sortby" value="jobtitle" />
+	<input type="image" name="submit" src="images/sort_by_job_title.png" />
 </form>
 <form id="audioOnly" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="media" value="audio" />
-	<input type="image" name="submit" src="images/audio_only.jpg" />
+	<input type="image" name="submit" src="images/audio_only.png" />
 </form>
 </div> <!-- //#sortby -->
 
@@ -60,10 +60,11 @@
 		$sortby = $_POST['sortby'];
 
 		// check for a sane sort value, otherwise just use the order in the XML file
-		if($sortby == 'name') $people = sort_subval($people,'name');
-		else if($sortby == 'position') $people = sort_subval($people,'position');
+		if($sortby == 'jobtitle') $people = sort_subval($people,'jobtitle');
 		else if($sortby == 'location') $people = sort_subval($people,'location');
-		else if($sortby = 'random') shuffle($people);
+		else {
+			unset($_POST['sortby']); //assume the sortby value is not sane and just sort the people using the order they appear in the XML file
+		}
 	}
 
 	$count = 0;
@@ -78,9 +79,9 @@
 				echo '	<div id="featureleft" style="width: 392px; float: left;">Left, video, etc</div>';
 				echo '	<div id="featureright" style="width: 262px; float: left;">';
 				echo '		<div id="buttons" style="position: absolute; bottom: 0px;">';
-				echo '		<img src="images/ilri_jobs.jpg" alt="ILRI Jobs" class="button" />';
-				echo '		<img src="images/ilri_people_facts.jpg" alt="ILRI People Facts" class="button" />';
-				echo '		<img src="images/ilri_specialties.jpg" alt="ILRI Specialties" class="button" />';
+				echo '		<img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button" />';
+				echo '		<img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" />';
+				echo '		<img src="images/ilri_specialties.png" alt="ILRI Specialties" class="button" />';
 				echo '		</div>';
 				echo '	</div>';
 				echo '</div>';
@@ -103,14 +104,14 @@
 				echo '	</div>'."\n";
 				// check to see if the current person is a Regional Rep.
 				// if so, give him/her a different class to change the text color
-				if($person['position'] == 'Regional Representative') {
+				if($person['jobtitle'] == 'Regional Representative') {
 					echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
 				}
 				else {
 					echo '	<h4>'.$person['name'].'</h4>'."\n";
 				}
-				if($sortby == 'position') {
-					echo '	<h5>'.$person['position'].'</h5>'."\n";
+				if($sortby == 'jobtitle') {
+					echo '	<h5>'.$person['jobtitle'].'</h5>'."\n";
 					echo '</div>'."\n";
 				}
 				else {
