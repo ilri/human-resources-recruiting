@@ -1,109 +1,103 @@
 <?xml version="1.0"?>
 <people>
 	<person>
+		<name>Abdou Fall</name>
+		<location>West Africa</location>
+		<nationality>Senegal</nationality>
+		<position>Regional Representative</position>
+		<image>images/people/abdou_f.png</image>
+	</person>
+	<person>
+		<name>Saskia Hendrickx</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Netherlands</nationality>
+		<position>Veterinarian</position>
+		<image>images/people/saskia_h.png</image>
+	</person>
+	<person>
 		<name>Andrew Mude</name>
 		<location>Nairobi, Kenya</location>
+		<nationality>Kenya</nationality>
 		<position>Economist</position>
 		<image>images/people/andrew_m.png</image>
 		<video>andrew_m.flv</video>
 	</person>
 	<person>
-		<name>Steve Kemp</name>
-		<location>Nairobi, Kenya</location>
-		<position>Cool guy</position>
-		<image>images/people/steve_k.png</image>
-	</person>
-	<person>
 		<name>Peter Ballantyne</name>
 		<location>Addis Ababa, Ethiopia</location>
-		<position>Knowledge Management</position>
+		<position>Knowledge Sharer</position>
+		<nationality>Scotland</nationality>
 		<image>images/people/peter_b.png</image>
 	</person>
 	<person>
-		<name>Purvi Mehta</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/purvi_m.png</image>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>East Africa</location>
+		<name>Siboniso Moyo</name>
+		<location>Southern Africa</location>
+		<nationality>Zimbabwe</nationality>
 		<position>Regional Representative</position>
-		<image>images/people/delia_g.png</image>
+		<image>images/people/siboniso_m.png</image>
 	</person>
 	<person>
-		<name>Delia Grace</name>
+		<name>Ranjitha Puskur</name>
 		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-	</person>
-	<person>
-		<name>Purvi Mehta</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/purvi_m.png</image>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Purvi Mehta</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/purvi_m.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<position>Capacity Strengthening</position>
-		<image>images/people/delia_g.png</image>
-		<video>false</video>
-	</person>
+		<nationality>India</nationality>
+		<position>Social Scientist</position>
+		<image>images/people/ranjitha_p.png</image>
 
-
+	</person>
+	<person>
+		<name>Delia Grace</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Ireland</nationality>
+		<position>Epidemiologist</position>
+		<image>images/people/delia_g.png</image>
+	</person>
+	<person>
+		<name>Martin Norling</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Sweden</nationality>
+		<position>Bioinformatician</position>
+		<image>images/people/martin_n.png</image>
+	</person>
+	<person>
+		<name>Purvi Mehta-Bhatt</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>India</nationality>
+		<position>Capacity Builder</position>
+		<image>images/people/delia_g.png</image>
+	</person>
+	<person>
+		<name>Polly Ericksen</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>USA</nationality>
+		<position>Social Scientist</position>
+		<image>images/people/polly_e.png</image>
+	</person>
+	<person>
+		<name>Iain Wright</name>
+		<location>Asia</location>
+		<nationality>Scotland</nationality>
+		<position>Regional Representative</position>
+		<image>images/people/iain_w.png</image>
+	</person>
+	<person>
+		<name>Arindam Samaddar</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>India</nationality>
+		<position>Anthropologist</position>
+		<image>images/people/arindam_s.png</image>
+	</person>
+	<person>
+		<name>Jemimah Njuki</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Kenya</nationality>
+		<position>Social Scientist</position>
+		<image>images/people/jemimah_n.png</image>
+	</person>
+	<person>
+		<name>Alan Orth</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>USA</nationality>
+		<position>Computer Scientist</position>
+		<image>images/people/alan_o.png</image>
+	</person>
 </people>
