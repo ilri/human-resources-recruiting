@@ -141,7 +141,10 @@ a:hover, a:visited:hover {
 #ilricrowdright2 {
 	float: left;
 	width: 392px;
+	position: relative;
+	top: -20px;
 	margin-right: 44px;
+	margin-bottom: 20px;
 }
 div.person {
 	float: left;
