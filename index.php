@@ -7,6 +7,9 @@
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
 	 ?>
+<!--[if IE]>
+<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
+<![endif]-->
 </head>
 <body>
 
@@ -18,9 +21,8 @@
 
 <div id="inner">
 <div id="peopleLeftMenu">
-<div id="ilricrowdleft"><img src="images/ilricrowd_left.png" /></div>
-<div id="sortby" style="position: relative; bottom: 0px;">
-<form id="sortByLocation" class="sortby" action="<?php echo $pageref; ?>" method="post">
+<img src="images/ilricrowd_left.png" />
+<form id="sortByLocation" class="sortby first" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
 	<input type="image" name="submit" src="images/sort_by_location.png" />
 </form>
@@ -32,11 +34,9 @@
 	<input type="hidden" name="media" value="audio" />
 	<input type="image" name="submit" src="images/audio_only.png" />
 </form>
-</div> <!-- //#sortby -->
-
 </div> <!-- //#peopleLeftMenu -->
 
-<div id="ilricrowdright1"><img src="images/ilricrowd_right1.png" /></div>
+<img src="images/ilricrowd_right1.png" id="ilricrowdright1" />
 
 <?php
 
@@ -71,7 +71,7 @@
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
 			if($count == 2) {
-				echo '<div id="ilricrowdright2"><img src="images/ilricrowd_right2.png" /></div>';
+				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
 			}
 
 			if($count == 6) {

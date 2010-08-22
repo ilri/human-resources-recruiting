@@ -5,6 +5,11 @@ body {
 	text-align: center; /*for IE to center the divs*/
 }
 
+/* say "no" to padding below imgs */
+img {
+	display: block;
+}
+
 a, a:visited {
 	text-decoration: none;
 	color: #660000;
@@ -42,8 +47,7 @@ a:hover, a:visited:hover {
 #inner {
 	width: 872px;
 	background: #fff;
-	margin-left: 44px;
-	margin-right: 44px;
+	margin-left: 88px;
 }
 
 #footer {
@@ -98,25 +102,27 @@ a:hover, a:visited:hover {
 
 #peopleLeftMenu {
 	float: left;
-    position: relative;
-    left: -44px;
-	text-align: right;
+	position: relative;
+	left: -88px;
 	width: 262px; /* now 262px because 88 + 130 + 44 */
-	min-height: 171px; /* the same as 1 person + their name + job */
 }
 
-#peopleLeftMenu .sortby {
-	width: 262px;
+#peopleLeftMenu form.sortby {
 	margin-top: 5px;
 }
 
-#peopleLeftMenu .sortby:first-child {
+#peopleLeftMenu form.first {
 	margin-top: 0px;
+}
+
+/* XHTML strict adds a 1px bottom padding to images set to display: block to fix */
+#peopleLeftMenu .sortby input[type="image"] {
+	display: block;
 }
 
 #peopleGrid h4 {
 	color: #000000;
-	font-size: 11px;
+	font-size: 10px;
 	font-weight: bold;
 }
 
@@ -125,6 +131,7 @@ a:hover, a:visited:hover {
 }
 
 #peopleGrid h5 {
+	background-color: #cecece;
 	color: #9E9D92;
 	font-size: 10px;
 	font-weight: normal;
@@ -132,24 +139,23 @@ a:hover, a:visited:hover {
 
 #ilricrowdright1 {
 	float: left;
-	width: 392px;
-	left: -44px;
+	left: -88px;
 	position: relative;
 }
 
 #ilricrowdright2 {
 	float: left;
-	width: 392px;
 	position: relative;
 	top: -20px;
 	margin-right: 44px;
 	margin-bottom: 20px;
 }
+
 div.person {
 	float: left;
-	margin-top: 34px;
-	margin-left: 44px;
-	margin-right: 44px;
+	height: 205px;
+	margin-left: 0px;
+	margin-right: 88px;
 }
 
 div.person:first-child {
@@ -161,19 +167,11 @@ div.person .img, div.person .vid {
 	height: 150px;
 }
 
-div.person img {
-	border: 0px;
-	width: 130px;
-	height: 150px;
-}
-
 div#feature {
 	width: 654px;
 	height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
-	margin-top: 34px;
-	margin-bottom: 21px;
+	margin-bottom: 55px;
 	position: relative;
-	right: -44px;
 	float: right;
 	background-color: #E0E0E0;
 }
