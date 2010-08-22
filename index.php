@@ -105,17 +105,17 @@
 				// check to see if the current person is a Regional Rep.
 				// if so, give him/her a different class to change the text color
 				if($person['jobtitle'] == 'Regional Representative') {
-					echo '	<h4 class="rep">'.$person['name'].'</h4>'."\n";
+					echo '	<span class="name rep">'.$person['name'].'</span>'."\n";
 				}
 				else {
-					echo '	<h4>'.$person['name'].'</h4>'."\n";
+					echo '	<span class="name">'.$person['name'].'</span>'."\n";
 				}
 				if($sortby == 'jobtitle') {
-					echo '	<h5>'.$person['jobtitle'].'</h5>'."\n";
+					echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
 					echo '</div>'."\n";
 				}
 				else {
-					echo '	<h5>'.$person['location'].'</h5>'."\n";
+					echo '	<span class="location">'.$person['location'].'</span>'."\n";
 					echo '</div>'."\n";
 				}
 			}
