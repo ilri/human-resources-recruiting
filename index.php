@@ -63,7 +63,8 @@
 		if($sortby == 'jobtitle') $people = sort_subval($people,'jobtitle');
 		else if($sortby == 'location') $people = sort_subval($people,'location');
 		else {
-			unset($_POST['sortby']); //assume the sortby value is not sane and just sort the people using the order they appear in the XML file
+			$_POST['sortby'] = ''; // unset 'sortby' and assume the sortby value is not sane.
+								   // sort the people using the order they appear in the XML file
 		}
 	}
 
