@@ -1,0 +1,4 @@
+/* ie6 doesn't support multiple class selectors */
+div#featureButtons img.first {
+	margin-top: 0px;
+}

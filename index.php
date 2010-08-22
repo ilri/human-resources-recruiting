@@ -73,19 +73,23 @@
 		foreach($people as $person) {
 			if($count == 2) {
 				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
+				$count++;
+				continue;	// skip to the next iteration of the loop
 			}
 
-			if($count == 6) {
+			if($count == 4) {
 				echo '<div id="feature">';
-				echo '	<div id="featureleft" style="width: 392px; float: left;">Left, video, etc</div>';
-				echo '	<div id="featureright" style="width: 262px; float: left;">';
-				echo '		<div id="buttons" style="position: absolute; bottom: 0px;">';
-				echo '		<img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button" />';
-				echo '		<img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" />';
-				echo '		<img src="images/ilri_specialties.png" alt="ILRI Specialties" class="button" />';
+				echo '	<div id="featureLeft">Left, video, etc</div>';
+				echo '	<div id="featureRight">';
+				echo '		<div id="featureButtons">';
+				echo '		<a href="#" title="ILRI Jobs"><img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button first" /></a>';
+				echo '		<a href="#" title="ILRI People Facts"><img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" /></a>';
+				echo '		<a href="#" title="ILRI Specialties"><img src="images/ilri_specialties.png" alt="ILRI Specialties" class="button" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '</div>';
+				$count++;
+				continue;	// skip to the next iteration of the loop
 			}
 			else {
 				echo '<div id="person'.$count.'" class="person">'."\n";

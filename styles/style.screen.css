@@ -174,17 +174,31 @@ div#feature {
 	width: 654px;
 	height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
 	margin-bottom: 55px;
-	position: relative;
+	position: relative; /* so we can absolutely position stuff inside */
 	float: right;
 	background-color: #E0E0E0;
 }
 
-div#feature .button {
+div#featureLeft {
+	width: 392px;
+	float: left;
+}
+
+div#featureRight {
 	width: 262px;
+	float: left;
+}
+
+div#featureButtons {
+	position: absolute;
+	bottom: 0px;
+}
+
+div#featureButtons img.button {
 	margin-top: 5px;
 }
 
-div#feature .button:first-child {
+div#featureButtons img.button.first {
 	margin-top: 0px;
 }
 
