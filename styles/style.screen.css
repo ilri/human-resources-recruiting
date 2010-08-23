@@ -184,9 +184,31 @@ div#featureLeft {
 	float: left;
 }
 
+div#featureLeftTop {
+	width: 392px;
+	height: 148px;
+}
+
+div#featureLeftBottom {
+	width: 392px;
+	height: 207px;
+}
+
+div#featureLeftBottom #video {
+	width: 368px; /* our video is 16:9, so 368x207 works */
+	height: 207px; 
+	position: absolute;
+	bottom: 0;
+	left: 24px;	/* 368 + 24 = 329px... we want some space on the left of the video */
+}
+
 div#featureRight {
 	width: 262px;
 	float: left;
+}
+
+div#featureRightTop {
+	height: 150px;
 }
 
 div#featureButtons {

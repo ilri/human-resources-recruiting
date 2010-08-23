@@ -79,8 +79,18 @@
 
 			if($count == 4) {
 				echo '<div id="feature">';
-				echo '	<div id="featureLeft">Left, video, etc</div>';
+				echo '	<div id="featureLeft">';
+				echo '		<div id="featureLeftTop">';
+				echo '			space on top for the description';
+				echo '		</div>';
+				echo '		<div id="featureLeftBottom">';
+				echo '			<div id="video"></div>';
+				echo '		</div>';
+				echo '	</div>';
 				echo '	<div id="featureRight">';
+				echo '		<div id="featureRightTop">';
+				echo '			150px vertically for featured person\'s picture';
+				echo '		</div>';
 				echo '		<div id="featureButtons">';
 				echo '		<a href="#" title="ILRI Jobs"><img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button first" /></a>';
 				echo '		<a href="#" title="ILRI People Facts"><img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" /></a>';

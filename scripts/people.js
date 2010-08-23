@@ -1,5 +1,14 @@
 $(document).ready(function() {
 
+	$('div#video').flashembed("videos/player_flv_maxi.swf", {
+		flv: 'true_blood.flv', //relative to player!
+		showplayer: 'never', // (hide maxi player "play" button)
+		showloading: 'never', // (hide maxi player loading text)
+		margin: '0', // (hide maxi player margin)
+		wmmode: 'opaque'
+	});
+
+
 	// select all div tags of class "vid"
 	$('div.vid').each(function() {
 
