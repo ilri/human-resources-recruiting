@@ -2,7 +2,8 @@
 <people>
 	<person>
 		<name>Abdou Fall</name>
-		<location>West Africa</location>
+		<region>West Africa</region>
+		<location>The moon</location>
 		<nationality>Senegal</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/abdou_f.png</image>
@@ -31,7 +32,8 @@
 	</person>
 	<person>
 		<name>Siboniso Moyo</name>
-		<location>Southern Africa</location>
+		<region>Southern Africa</region>
+		<location>The moon</location>
 		<nationality>Zimbabwe</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/siboniso_m.png</image>
@@ -42,7 +44,6 @@
 		<nationality>India</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/ranjitha_p.png</image>
-
 	</person>
 	<person>
 		<name>Delia Grace</name>
@@ -75,6 +76,7 @@
 	<person>
 		<name>Iain Wright</name>
 		<location>New Delhi, India</location>
+		<region>Asia</region>
 		<nationality>Scotland</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/iain_w.png</image>

@@ -19,6 +19,7 @@ $(document).ready(function() {
 	});
 
 	// for all the "person" interviews
+	// all people with a 'vid' class
 	$('.person .vid').each(function() {
 		var startImage = $(this).find("img").attr("src").replace(".png","_play.png");
 		var video = $(this).attr("href");
@@ -32,4 +33,17 @@ $(document).ready(function() {
 			wmmode: 'opaque'
 		});
 	});
+
+	// show the Regional Representative's region
+	$('span.rep').hover(
+		function() {
+			var region = $(this).parent().find('span.region');
+			region.fadeIn(100);
+		},
+
+		function() {
+			var region = $(this).parent().find('span.region');
+			region.fadeOut(100);
+		}
+	);
 });

@@ -136,8 +136,12 @@ a:hover, a:visited:hover {
 	color: #823747;
 }
 
-#peopleGrid span.jobtitle, #peopleGrid span.location {
+#peopleGrid span.jobtitle, #peopleGrid span.location, #peopleGrid span.nationality, #peopleGrid span.region {
 	color: #9E9D92;
+}
+
+#peopleGrid span.region {
+	display: none;
 }
 
 #ilricrowdright1 {

@@ -118,12 +118,18 @@
 			else {
 				echo '	<span class="name">'.$person['name'].'</span>'."\n";
 			}
+
 			if($sortby == 'jobtitle') {
 				echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
+				if($person['jobtitle'] == 'Regional Representative') {
+					echo '	<span class="region">'.$person['region'].'</span>'."\n";
+				}
+				echo '	<span class="nationality">'.$person['nationality'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 			else {
 				echo '	<span class="location">'.$person['location'].'</span>'."\n";
+				echo '	<span class="nationality">'.$person['nationality'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 
