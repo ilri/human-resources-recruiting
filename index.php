@@ -7,9 +7,6 @@
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
 	 ?>
-<!--[if IE]>
-<script type="text/javascript" src="https://getfirebug.com/firebug-lite.js"></script>
-<![endif]-->
 </head>
 <body>
 
@@ -149,7 +146,7 @@
 
 </div> <!-- //#outer -->
 
-<script type="text/javascript" src="scripts/jquery.1.4.2.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/flashembed.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
 </body>
