@@ -20,9 +20,8 @@ $(document).ready(function() {
 
 	// for all the "person" interviews
 	$('.person .vid').each(function() {
-		var name = $(this).attr('id').split(/\s+/)[0];
+		var startImage = $(this).find("img").attr("src").replace(".png","_play.png");
 		var video = $(this).attr("href");
-		var startImage = 'images/people/'+name+'_play.png';
 		
 		flashembed(this, "player_flv_maxi.swf", {
 			flv: video, //relative to player!
