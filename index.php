@@ -73,8 +73,6 @@
 		foreach($people as $person) {
 			if($count == 2) {
 				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
-				$count++;
-				continue;	// skip to the next iteration of the loop
 			}
 
 			if($count == 4) {
@@ -98,41 +96,38 @@
 				echo '		</div>';
 				echo '	</div>';
 				echo '</div>';
-				$count++;
-				continue;	// skip to the next iteration of the loop
+			}
+			
+			echo '<div id="person'.$count.'" class="person">'."\n";
+			echo '	<div class="img">'."\n";
+
+			//check to see if the current person has a video
+			if(isset($person['video']) && $person['video'] != 'false') {
+				// we want "andrew_m" from "andrew_m.flv" so we can use it for other things.
+				// store it in the class so we can access it via jQuery later.
+				$name = basename($person['video'], '.flv');
+				echo '		<a id="'.$name.' player'.$count.'" class="vid" href="videos/'.$person['video'].'"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></a>'."\n";
+			}
+			// show image if there is no video
+			else {
+				echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
+			}
+			echo '	</div>'."\n";
+			// check to see if the current person is a Regional Rep.
+			// if so, give him/her a different class to change the text color
+			if($person['jobtitle'] == 'Regional Representative') {
+				echo '	<span class="name rep">'.$person['name'].'</span>'."\n";
 			}
 			else {
-				echo '<div id="person'.$count.'" class="person">'."\n";
-				echo '	<div class="img">'."\n";
-
-				//check to see if the current person has a video
-				if(isset($person['video']) && $person['video'] != 'false') {
-					// we want "andrew_m" from "andrew_m.flv" so we can use it for other things.
-					// store it in the class so we can access it via jQuery later.
-					$name = basename($person['video'], '.flv');
-					echo '		<a id="'.$name.' player'.$count.'" class="vid" href="videos/'.$person['video'].'"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></a>'."\n";
-				}
-				// show image if there is no video
-				else {
-					echo '		<img src="'.$person['image'].'" alt="'.$person['name'].'" />'."\n";
-				}
-				echo '	</div>'."\n";
-				// check to see if the current person is a Regional Rep.
-				// if so, give him/her a different class to change the text color
-				if($person['jobtitle'] == 'Regional Representative') {
-					echo '	<span class="name rep">'.$person['name'].'</span>'."\n";
-				}
-				else {
-					echo '	<span class="name">'.$person['name'].'</span>'."\n";
-				}
-				if($sortby == 'jobtitle') {
-					echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
-					echo '</div>'."\n";
-				}
-				else {
-					echo '	<span class="location">'.$person['location'].'</span>'."\n";
-					echo '</div>'."\n";
-				}
+				echo '	<span class="name">'.$person['name'].'</span>'."\n";
+			}
+			if($sortby == 'jobtitle') {
+				echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
+				echo '</div>'."\n";
+			}
+			else {
+				echo '	<span class="location">'.$person['location'].'</span>'."\n";
+				echo '</div>'."\n";
 			}
 
 			$count++;
