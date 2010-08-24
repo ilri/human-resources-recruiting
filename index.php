@@ -84,7 +84,7 @@
 				echo '			space on top for the description';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<div id="video"></div>';
+				echo '			<a id="featured" href="videos/true_blood.flv"></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -110,7 +110,7 @@
 					// we want "andrew_m" from "andrew_m.flv" so we can use it for other things.
 					// store it in the class so we can access it via jQuery later.
 					$name = basename($person['video'], '.flv');
-					echo '		<div id="'.$name.' player'.$count.'" class="vid"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></div>'."\n";
+					echo '		<a id="'.$name.' player'.$count.'" class="vid" href="videos/'.$person['video'].'"><img src="'.$person['image'].'" alt="'.$person['name'].'" /></a>'."\n";
 				}
 				// show image if there is no video
 				else {

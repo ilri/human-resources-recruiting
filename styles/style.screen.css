@@ -194,9 +194,10 @@ div#featureLeftBottom {
 	height: 207px;
 }
 
-div#featureLeftBottom #video {
+div#featureLeftBottom #featured {
 	width: 368px; /* our video is 16:9, so 368x207 works */
 	height: 207px; 
+	display: block;
 	position: absolute;
 	bottom: 0;
 	left: 24px;	/* 368 + 24 = 329px... we want some space on the left of the video */
