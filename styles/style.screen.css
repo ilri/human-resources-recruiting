@@ -170,8 +170,15 @@ div.person:first-child {
 }
 
 div.person .img, div.person .vid {
+	display: block;
 	width: 130px;
 	height: 150px;
+}
+
+div.person img.play {
+	filter:alpha(opacity=40); /* for IE */
+	opacity:0.4;
+	border: 0px;
 }
 
 div#feature {

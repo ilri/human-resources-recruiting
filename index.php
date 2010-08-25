@@ -126,7 +126,7 @@
 
 			//check to see if the current person has a video
 			if(isset($person['video']) && $person['video'] != 'false') {
-				echo '		<a class="vid" href="videos/'.$person['video'].'"><img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
+				echo '		<a class="vid" style="background-image: url('.$person['image'].');" href="videos/'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
 			}
 			// show image if there is no video
 			else {
