@@ -233,19 +233,24 @@ div#otherFeatures {
 	position: relative;
 }
 
+div#otherFeatures #features {
+	position: absolute;
+	bottom: 5px;
+}
+
 /* other features are 58px wide (174/3) */
 div#otherFeatures .person {
 	float: left;
 	display: block;
 }
 
-div#otherFeatures span.person {
+div#features span.person {
 	color: gray;
 	margin-left: 5px;
 	width: 53px;
 }
 
-div#otherFeatures img.person {
+div#features img.person {
 	margin-left: 8px;
 	width: 50px;
 }

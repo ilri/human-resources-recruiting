@@ -104,11 +104,13 @@
 						echo '			</div>';
 					}
 				echo '			<div id="otherFeatures">';
+				echo '				<div id="features">';
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
 					for($x = 1; $x <= 2; $x++) {
 						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
 					}
+				echo 	'			</div>';
 				echo '			</div>';
 				}
 
