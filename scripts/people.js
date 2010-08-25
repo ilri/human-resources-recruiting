@@ -1,12 +1,12 @@
 $(document).ready(function() {
 
-	// prevent the click from downloading the video
-//	$('div#video a#featured').click(function(event) {
-//		event.preventDefault();
-//	});
-
 	// for the "featured" videos section
 	$('a#featured').each(function() {
+		// stop safari from downloading the a's href
+		$(this).click(function(event) {
+		  event.preventDefault();
+		});
+
 		var video = $(this).attr("href");
 
 		flashembed(this, "player_flv_maxi.swf", {
@@ -19,8 +19,12 @@ $(document).ready(function() {
 	});
 
 	// for all the "person" interviews
-	// all people with a 'vid' class
 	$('.person .vid').each(function() {
+		// stop safari from downloading the a's href
+		$(this).click(function(event) {
+		  event.preventDefault();
+		});
+
 		var startImage = $(this).find("img").attr("src").replace(".png","_play.png");
 		var video = $(this).attr("href");
 		
