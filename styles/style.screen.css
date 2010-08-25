@@ -212,11 +212,40 @@ div#featureRight {
 	float: left;
 }
 
-div#featureRightTop {
+div#mainFeature {
 	height: 150px;
+	width: 130px;
+	margin-left: 44px;
+}
+
+div#otherFeatures {
+	float: left;
+	margin-right: 88px;
+	width: 174px;
+	height: 105px;
+	position: relative;
+}
+
+/* other features are 58px wide (174/3) */
+div#otherFeatures .person {
+	float: left;
+	display: block;
+}
+
+div#otherFeatures span.person {
+	color: gray;
+	margin-left: 5px;
+	width: 53px;
+}
+
+div#otherFeatures img.person {
+	margin-left: 8px;
+	width: 50px;
 }
 
 div#featureButtons {
+	width: 262px;
+	height: 100px;
 	position: absolute;
 	bottom: 0px;
 }

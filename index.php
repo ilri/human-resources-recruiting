@@ -51,6 +51,19 @@
 	// we reset our people array to this subset
 	$people = $people['person'];
 
+	// remove "featured" people
+	$featured = array(); // initialize empty array
+	$elementnum = 0; // a counter
+	// loop through our people and search for persons who are "featured"
+	// when you find one, stick it in the $featured array and remove them from people
+	foreach($people as $person) {
+		if(array_key_exists('featured',$person)) {
+			array_push($featured, $people[$elementnum]);
+			unset($people[$elementnum]);
+		}
+		$elementnum++;
+	}
+
 	// determine how to sort our people!
 	// first see if a "sortby" value exists
 	if (!empty($_POST['sortby'])) {
@@ -83,9 +96,22 @@
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
-				echo '		<div id="featureRightTop">';
-				echo '			150px vertically for featured person\'s picture';
-				echo '		</div>';
+				if(isset($featured) && !empty($featured)) {
+					// show 1 of our "featured" people big
+					for($x = 0; $x < 1; $x++) {
+						echo '			<div id="mainFeature">';
+						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '			</div>';
+					}
+				echo '			<div id="otherFeatures">';
+				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
+					// show the other 2 small
+					for($x = 1; $x <= 2; $x++) {
+						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+					}
+				echo '			</div>';
+				}
+
 				echo '		<div id="featureButtons">';
 				echo '		<a href="#" title="ILRI Jobs"><img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button first" /></a>';
 				echo '		<a href="#" title="ILRI People Facts"><img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" /></a>';

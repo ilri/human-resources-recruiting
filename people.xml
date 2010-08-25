@@ -94,6 +94,7 @@
 		<nationality>Kenya</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/jemimah_n.png</image>
+		<featured>true</featured>
 	</person>
 	<person>
 		<name>Alan Orth</name>
@@ -101,5 +102,14 @@
 		<nationality>USA</nationality>
 		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/alan_o.png</image>
+		<featured>true</featured>
+	</person>
+	<person>
+		<name>Alan Orth</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>USA</nationality>
+		<jobtitle>Computer Scientist</jobtitle>
+		<image>images/people/alan_o.png</image>
+		<featured>true</featured>
 	</person>
 </people>
