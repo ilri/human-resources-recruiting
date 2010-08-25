@@ -7,6 +7,7 @@
 		<nationality>Senegal</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/abdou_f.png</image>
+		<video>abdou_f.flv</video>
 	</person>
 	<person>
 		<name>Saskia Hendrickx</name>
@@ -14,6 +15,7 @@
 		<nationality>Netherlands</nationality>
 		<jobtitle>Veterinarian</jobtitle>
 		<image>images/people/saskia_h.png</image>
+		<video>saskia_h.flv</video>
 	</person>
 	<person>
 		<name>Andrew Mude</name>
@@ -29,6 +31,7 @@
 		<jobtitle>Knowledge Sharer</jobtitle>
 		<nationality>Scotland</nationality>
 		<image>images/people/peter_b.png</image>
+		<video>peter_b.flv</video>
 	</person>
 	<person>
 		<name>Siboniso Moyo</name>
@@ -37,6 +40,7 @@
 		<nationality>Zimbabwe</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/siboniso_m.png</image>
+		<video>siboniso_m.flv</video>
 	</person>
 	<person>
 		<name>Ranjitha Puskur</name>
@@ -44,6 +48,7 @@
 		<nationality>India</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/ranjitha_p.png</image>
+		<video>ranjitha_p.flv</video>
 	</person>
 	<person>
 		<name>Delia Grace</name>
@@ -51,6 +56,7 @@
 		<nationality>Ireland</nationality>
 		<jobtitle>Epidemiologist</jobtitle>
 		<image>images/people/delia_g.png</image>
+		<video>delia_g.flv</video>
 	</person>
 	<person>
 		<name>Martin Norling</name>
@@ -58,6 +64,7 @@
 		<nationality>Sweden</nationality>
 		<jobtitle>Bioinformatician</jobtitle>
 		<image>images/people/martin_n.png</image>
+		<video>martin_n.flv</video>
 	</person>
 	<person>
 		<name>Purvi Mehta-Bhatt</name>
@@ -65,6 +72,7 @@
 		<nationality>India</nationality>
 		<jobtitle>Capacity Builder</jobtitle>
 		<image>images/people/purvi_m.png</image>
+		<video>purvi_m.flv</video>
 	</person>
 	<person>
 		<name>Polly Ericksen</name>
@@ -72,6 +80,7 @@
 		<nationality>USA</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/polly_e.png</image>
+		<video>polly_e.flv</video>
 	</person>
 	<person>
 		<name>Iain Wright</name>
@@ -80,6 +89,7 @@
 		<nationality>Scotland</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/iain_w.png</image>
+		<video>iain_w.flv</video>
 	</person>
 	<person>
 		<name>Arindam Samaddar</name>
@@ -87,6 +97,7 @@
 		<nationality>India</nationality>
 		<jobtitle>Anthropologist</jobtitle>
 		<image>images/people/arindam_s.png</image>
+		<video>arindam_s.flv</video>
 	</person>
 	<person>
 		<name>Jemimah Njuki</name>
@@ -94,6 +105,7 @@
 		<nationality>Kenya</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/jemimah_n.png</image>
+		<video>jemimah_n.flv</video>
 		<featured>true</featured>
 	</person>
 	<person>
@@ -103,6 +115,7 @@
 		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/alan_o.png</image>
 		<featured>true</featured>
+		<video>alan_o.flv</video>
 	</person>
 	<person>
 		<name>Alan Orth</name>
@@ -111,5 +124,6 @@
 		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/alan_o.png</image>
 		<featured>true</featured>
+		<video>alan_o.flv</video>
 	</person>
 </people>
