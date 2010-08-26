@@ -3,19 +3,11 @@
 	<person>
 		<name>Abdou Fall</name>
 		<region>West Africa</region>
-		<location>The moon</location>
+		<location>Bamako, Mali</location>
 		<nationality>Senegal</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/abdou_f.png</image>
 		<video>abdou_f.flv</video>
-	</person>
-	<person>
-		<name>Saskia Hendrickx</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Netherlands</nationality>
-		<jobtitle>Veterinarian</jobtitle>
-		<image>images/people/saskia_h.png</image>
-		<video>saskia_h.flv</video>
 	</person>
 	<person>
 		<name>Andrew Mude</name>
@@ -26,17 +18,25 @@
 		<video>andrew_m.flv</video>
 	</person>
 	<person>
-		<name>Peter Ballantyne</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<jobtitle>Knowledge Sharer</jobtitle>
-		<nationality>Scotland</nationality>
-		<image>images/people/peter_b.png</image>
-		<video>peter_b.flv</video>
+		<name>Purvi Mehta-Bhatt</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>India</nationality>
+		<jobtitle>Capacity Builder</jobtitle>
+		<image>images/people/purvi_m.png</image>
+		<video>purvi_m.flv</video>
+	</person>
+	<person>
+		<name>Delia Grace</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Ireland</nationality>
+		<jobtitle>Epidemiologist</jobtitle>
+		<image>images/people/delia_g.png</image>
+		<video>delia_g.flv</video>
 	</person>
 	<person>
 		<name>Siboniso Moyo</name>
 		<region>Southern Africa</region>
-		<location>The moon</location>
+		<location>Maputo, Mozambique</location>
 		<nationality>Zimbabwe</nationality>
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/siboniso_m.png</image>
@@ -51,38 +51,6 @@
 		<video>ranjitha_p.flv</video>
 	</person>
 	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Ireland</nationality>
-		<jobtitle>Epidemiologist</jobtitle>
-		<image>images/people/delia_g.png</image>
-		<video>delia_g.flv</video>
-	</person>
-	<person>
-		<name>Martin Norling</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Sweden</nationality>
-		<jobtitle>Bioinformatician</jobtitle>
-		<image>images/people/martin_n.png</image>
-		<video>martin_n.flv</video>
-	</person>
-	<person>
-		<name>Purvi Mehta-Bhatt</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>India</nationality>
-		<jobtitle>Capacity Builder</jobtitle>
-		<image>images/people/purvi_m.png</image>
-		<video>purvi_m.flv</video>
-	</person>
-	<person>
-		<name>Polly Ericksen</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>USA</nationality>
-		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/polly_e.png</image>
-		<video>polly_e.flv</video>
-	</person>
-	<person>
 		<name>Iain Wright</name>
 		<location>New Delhi, India</location>
 		<region>Asia</region>
@@ -93,11 +61,43 @@
 	</person>
 	<person>
 		<name>Arindam Samaddar</name>
-		<location>Nairobi, Kenya</location>
+		<location>New Delhi, India</location>
 		<nationality>India</nationality>
 		<jobtitle>Anthropologist</jobtitle>
 		<image>images/people/arindam_s.png</image>
 		<video>arindam_s.flv</video>
+	</person>
+	<person>
+		<name>Saskia Hendrickx</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Netherlands</nationality>
+		<jobtitle>Veterinarian</jobtitle>
+		<image>images/people/saskia_h.png</image>
+		<video>saskia_h.flv</video>
+	</person>
+	<person>
+		<name>Peter Ballantyne</name>
+		<location>Addis Ababa, Ethiopia</location>
+		<jobtitle>Knowledge Sharer</jobtitle>
+		<nationality>Scotland</nationality>
+		<image>images/people/peter_b.png</image>
+		<video>peter_b.flv</video>
+	</person>
+	<person>
+		<name>Martin Norling</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Sweden</nationality>
+		<jobtitle>Bioinformatician</jobtitle>
+		<image>images/people/martin_n.png</image>
+		<video>martin_n.flv</video>
+	</person>
+	<person>
+		<name>Polly Ericksen</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>USA</nationality>
+		<jobtitle>Social Scientist</jobtitle>
+		<image>images/people/polly_e.png</image>
+		<video>polly_e.flv</video>
 	</person>
 	<person>
 		<name>Jemimah Njuki</name>
