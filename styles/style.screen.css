@@ -258,6 +258,7 @@ div#features span.person {
 	color: gray;
 	margin-left: 5px;
 	width: 53px;
+	text-align: right;
 }
 
 div#features img.person {
