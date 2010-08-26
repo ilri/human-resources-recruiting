@@ -2,39 +2,32 @@ $(document).ready(function() {
 
 	// for the "featured" videos section
 	$('a#featured').each(function() {
-		// stop safari from downloading the a's href
-		$(this).click(function(event) {
-		  event.preventDefault();
-		});
 
-		var video = $(this).attr("href");
-
-		flashembed(this, "player_flv_maxi.swf", {
-			flv: video, //relative to player!
-			showplayer: 'autohide', // (autohide maxi player "play" button)
-			showloading: 'never', // (hide maxi player loading text)
-			margin: '0', // (hide maxi player margin)
-			wmmode: 'opaque'
+		flowplayer(this, "videos/flowplayer-3.2.3.swf", {
+			clip: {
+				autoPlay: true,
+				onFinish: function() {
+					this.unload();
+				}
+			}
 		});
 	});
 
 	// for all the "person" interviews
 	$('.person .vid').each(function() {
-		// stop safari from downloading the a's href
-		$(this).click(function(event) {
-			event.preventDefault();
+		
+			flowplayer(this, "videos/flowplayer-3.2.3.swf", {
+				plugins: {
+					controls: null
+				},
 
-			var video = $(this).attr("href");
-			
-			flashembed(this, "player_flv_maxi.swf", {
-				flv: video, //relative to player!
-				autoplay: 1, //automatically play the video
-				showplayer: 'never', // (hide maxi player "play" button)
-				showloading: 'never', // (hide maxi player loading text)
-				margin: '0', // (hide maxi player margin)
-				wmmode: 'opaque'
+				clip: {
+					autoPlay: true,
+					onFinish: function() {
+						this.unload();
+					}
+				}
 			});
-		});
 	});
 
 	// show the Regional Representative's region

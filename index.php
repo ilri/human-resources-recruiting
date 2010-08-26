@@ -92,7 +92,7 @@
 				echo '			space on top for the description';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="videos/true_blood.flv"></a>';
+				echo '			<a id="featured" href="videos/alan_o.flv" style="background-image: url(videos/alan_o.png);"><img src="images/play.png" class="play" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -128,7 +128,7 @@
 
 			//check to see if the current person has a video
 			if(isset($person['video']) && $person['video'] != 'false') {
-				echo '		<a class="vid" style="background-image: url('.$person['image'].');" href="videos/'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
+				echo '		<a class="vid" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
 			}
 			// show image if there is no video
 			else {
@@ -175,7 +175,7 @@
 </div> <!-- //#outer -->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/flashembed.min.js"></script>
+<script type="text/javascript" src="scripts/flowplayer-3.2.3.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
 </body>
 </html>
