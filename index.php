@@ -89,7 +89,9 @@
 				echo '<div id="feature">';
 				echo '	<div id="featureLeft">';
 				echo '		<div id="featureLeftTop">';
-				echo '			space on top for the description';
+				echo '			<div id="crowdMember" style="font-size: 14px; color: #6d6d6d; margin-top: 20px; margin-left: 15px; height: 64px; width: 210px; float: left;">featured ilri crowd member:</div>';
+				echo '			<div id="crowdMemberName" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[0]['name']).'</div>';
+				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
 				echo '			<a id="featured" href="videos/alan_o.flv" style="background-image: url(videos/alan_o.png);"><img src="images/play.png" class="play" /></a>';
