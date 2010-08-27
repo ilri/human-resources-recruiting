@@ -81,6 +81,11 @@
 	$count = 0;
 	if(isset($people) && !empty($people)) {
 		foreach($people as $person) {
+
+			// if this person is a rep, take note
+			if($person['jobtitle'] == 'Regional Representative') $rep = true;
+			else $rep = false;
+
 			if($count == 2) {
 				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
 			}
@@ -125,7 +130,10 @@
 				echo '</div>';
 			}
 			
-			echo '<div class="person">'."\n";
+			if($rep) $class = "person rep";
+			else $class = "person";
+
+			echo '<div class="'.$class.'">'."\n";
 			echo '	<div class="img">'."\n";
 
 			//check to see if the current person has a video
@@ -137,20 +145,16 @@
 				echo '		<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
 			}
 			echo '	</div>'."\n";
-			// check to see if the current person is a Regional Rep.
-			// if so, give him/her a different class to change the text color
-			if($person['jobtitle'] == 'Regional Representative') {
-				echo '	<span class="name rep">'.$person['name'].'</span>'."\n";
-			}
-			else {
-				echo '	<span class="name">'.$person['name'].'</span>'."\n";
-			}
+
+			if($rep) $class = "name rep";
+			else $class = "name";
+
+			echo '	<span class="'.$class.'">'.$person['name'].'</span>'."\n";
 
 			if($sortby == 'jobtitle') {
 				echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
-				if($person['jobtitle'] == 'Regional Representative') {
+				if($rep)
 					echo '	<span class="region">'.$person['region'].'</span>'."\n";
-				}
 				echo '	<span class="nationality">'.$person['nationality'].'</span>'."\n";
 				echo '</div>'."\n";
 			}

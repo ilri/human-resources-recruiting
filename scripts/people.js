@@ -31,15 +31,17 @@ $(document).ready(function() {
 	});
 
 	// show the Regional Representative's region
-	$('span.rep').hover(
-		function() {
-			var region = $(this).parent().find('span.region');
-			region.fadeIn(100);
-		},
+	$('div.rep').each( function() {
+		$(this).hover(
+			function() {
+				var region = $(this).find('span.region');
+				region.css('display','block');
+			},
 
-		function() {
-			var region = $(this).parent().find('span.region');
-			region.fadeOut(100);
-		}
-	);
+			function() {
+				var region = $(this).find('span.region');
+				region.hide();
+			}
+		);
+	});
 });
