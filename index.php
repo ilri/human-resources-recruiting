@@ -155,12 +155,12 @@
 				echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
 				if($rep)
 					echo '	<span class="region">'.$person['region'].'</span>'."\n";
-				echo '	<span class="nationality">'.$person['nationality'].'</span>'."\n";
+				echo '	<span class="nationality"><img title="Country of origin" alt="Home icon" src="images/flag.png" />'.$person['nationality'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 			else {
-				echo '	<span class="location">'.$person['location'].'</span>'."\n";
-				echo '	<span class="nationality">'.$person['nationality'].'</span>'."\n";
+				echo '	<span class="location"><img title="ILRI campus" alt="Flag icon" src="images/home.png" />'.$person['location'].'</span>'."\n";
+				echo '	<span class="nationality"><img title="Country of origin" alt="Home icon" src="images/flag.png" />'.$person['nationality'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 

@@ -144,6 +144,12 @@ a:hover, a:visited:hover {
 	display: none;
 }
 
+span.nationality img, span.location img {
+	display: inline; 
+	width: 11px;
+	padding-right: 5px;
+}
+
 #ilricrowdright1 {
 	float: left;
 	left: -88px;
