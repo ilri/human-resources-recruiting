@@ -149,7 +149,7 @@
 			if($rep) $class = "name rep";
 			else $class = "name";
 
-			echo '	<span class="'.$class.'">'.$person['name'].'</span>'."\n";
+			echo '	<span class="'.$class.'">'.$person['name']; if($rep && $sortby == 'jobtitle' ) echo '&nbsp;&nbsp;<span style="font-size: 9px; color: #823747; display: inline;">(more...)</span>'; echo '</span>'."\n";
 
 			if($sortby == 'jobtitle') {
 				echo '	<span class="jobtitle">'.$person['jobtitle'].'</span>'."\n";
