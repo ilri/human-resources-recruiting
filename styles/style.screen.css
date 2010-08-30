@@ -140,10 +140,6 @@ a:hover, a:visited:hover {
 	color: #9E9D92;
 }
 
-#peopleGrid span.region {
-	display: none;
-}
-
 span.nationality img, span.location img {
 	display: inline; 
 	width: 11px;

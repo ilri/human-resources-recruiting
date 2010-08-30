@@ -29,19 +29,4 @@ $(document).ready(function() {
 				}
 			});
 	});
-
-	// show the Regional Representative's region
-	$('div.rep').each( function() {
-		$(this).hover(
-			function() {
-				var region = $(this).find('span.region');
-				region.css('display','block');
-			},
-
-			function() {
-				var region = $(this).find('span.region');
-				region.hide();
-			}
-		);
-	});
 });
