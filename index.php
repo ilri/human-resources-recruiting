@@ -142,7 +142,14 @@
 			}
 			// show image if there is no video
 			else {
-				echo '		<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+				if(isset($person['link'])) {
+					echo '		<a href="'.$person['link'].'" title="Azizi Biobank on Facebook">'."\n";
+					echo '			<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '		</a>'."\n";
+				}
+				else {
+					echo '		<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+				}
 			}
 			echo '	</div>'."\n";
 
