@@ -90,16 +90,18 @@
 				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
 			}
 
+			// draw the "featured" section
 			if($count == 4) {
 				echo '<div id="feature">';
 				echo '	<div id="featureLeft">';
 				echo '		<div id="featureLeftTop">';
 				echo '			<div id="crowdMember" style="font-size: 14px; color: #6d6d6d; margin-top: 20px; margin-left: 15px; height: 64px; width: 210px; float: left;">featured ilri crowd member:</div>';
-				echo '			<div id="crowdMemberName" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[0]['name']).'</div>';
+				echo '			<div id="crowdMemberName" class="feature0" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[0]['name']).'</div>';
+				//echo '			<div id="crowdMemberName" class="feature1" style="display: none; font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[1]['name']).'</div>';
 				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="videos/alan_o.flv" style="background-image: url(videos/alan_o.png);"><img src="images/play.png" class="play" /></a>';
+				echo '			<a id="featured" href="'.$featured[0]['video'].'" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -115,7 +117,7 @@
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
 					for($x = 1; $x <= 2; $x++) {
-						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
 					}
 				echo 	'			</div>';
 				echo '			</div>';
@@ -192,5 +194,19 @@
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/flowplayer-3.2.3.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
+<script type="text/javascript">
+<? 
+	// print out our featured people's information so we can swap it in javascript
+	echo 'var featured = new Array();'."\n";
+	for($x = 0; $x <3; $x++) {
+		echo "featured[$x] = new Array();\n";
+		echo "featured[$x]['image'] = \"".$featured[$x]['image']."\";\n";
+		echo "featured[$x]['name'] = \"".$featured[$x]['name']."\";\n";
+		echo "featured[$x]['startimage'] = \"".$featured[$x]['startimage']."\";\n";
+		echo "featured[$x]['description'] = \"".$featured[$x]['description']."\";\n";
+		echo "featured[$x]['video'] = \"".$featured[$x]['video']."\";\n";
+	}
+?>
+</script>
 </body>
 </html>
