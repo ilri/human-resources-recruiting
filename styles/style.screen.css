@@ -199,7 +199,8 @@ div#feature {
 	margin-bottom: 55px;
 	position: relative; /* so we can absolutely position stuff inside */
 	float: right;
-	background-color: #E0E0E0;
+	background-image: url(../images/feature_bg.png);
+	/*background-color: #E0E0E0;*/
 }
 
 div#featureLeft {
