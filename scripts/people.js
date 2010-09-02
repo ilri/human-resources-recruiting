@@ -1,9 +1,24 @@
 $(document).ready(function() {
 
-	// for the "featured" videos section
-	$('a#featured').each(function() {
+	var featuredPlayer = flowplayer("featured","videos/flowplayer-3.2.4.swf", {
+		clip: {
+			onFinish: function() {
+				this.unload();
+			},
+			onUpdate: function() {
+				this.unload();
+			}
+		}
+	});
 
-		flowplayer(this, "videos/flowplayer-3.2.3.swf", {
+	// for all the "person" interviews
+	$('.person .vid').each(function() {
+		
+		flowplayer(this, "videos/flowplayer-3.2.4.swf", {
+			plugins: {
+				controls: null
+			},
+
 			clip: {
 				autoPlay: true,
 				onFinish: function() {
@@ -13,33 +28,21 @@ $(document).ready(function() {
 		});
 	});
 
-	// for all the "person" interviews
-	$('.person .vid').each(function() {
-		
-			flowplayer(this, "videos/flowplayer-3.2.3.swf", {
-				plugins: {
-					controls: null
-				},
-
-				clip: {
-					autoPlay: true,
-					onFinish: function() {
-						this.unload();
-					}
-				}
-			});
-	});
-
 	// swap featured people
 	$('#features img.person1').click(function () {
-		$f().unload();
-
 		// store the old values
 		var name = featured[0]['name'];
 		var description = featured[0]['description'];
 		var startimage = featured[0]['startimage'];
 		var video = featured[0]['video'];
 		var image = featured[0]['image'];
+
+		if(featuredPlayer.isLoaded()) {
+			featuredPlayer.getClip().update({url: featured[1]['video']});
+		}
+		else {
+			featuredPlayer.getClip(0).update({url: featured[1]['video']});
+		}
 
 		// replace the values in the DOM
 		$('#crowdMemberName').html(featured[1]['name'].toLowerCase());
@@ -63,18 +66,27 @@ $(document).ready(function() {
 		featured[1]['startimage'] = startimage;
 		featured[1]['video'] = video;
 		featured[1]['image'] = image;
+
+		// disable normal link behaviour
+		return false;
+
 	});
 
 	// swap featured people
 	$('#features img.person2').click(function () {
-		$f().unload();
-	
 		// store the old values
 		var name = featured[0]['name'];
 		var description = featured[0]['description'];
 		var startimage = featured[0]['startimage'];
 		var video = featured[0]['video'];
 		var image = featured[0]['image'];
+
+		if(featuredPlayer.isLoaded()) {
+			featuredPlayer.getClip().update({url: featured[2]['video']});
+		}
+		else {
+			featuredPlayer.getClip(0).update({url: featured[2]['video']});
+		}
 
 		// replace the values in the DOM
 		$('#crowdMemberName').html(featured[2]['name'].toLowerCase());
@@ -98,5 +110,8 @@ $(document).ready(function() {
 		featured[2]['startimage'] = startimage;
 		featured[2]['video'] = video;
 		featured[2]['image'] = image;
+
+		// disable normal link behaviour
+		return false;
 	});
 });
