@@ -136,6 +136,13 @@
 		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
 	</person>
 	<person>
+		<name>Jane Poole</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>UK</nationality>
+		<jobtitle>Applied Statistician</jobtitle>
+		<image>images/people/jane_p.png</image>
+	</person>
+	<person>
 		<name>Mario Herrero</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Costa Rica</nationality>
@@ -148,6 +155,13 @@
 		<nationality>Ethiopia</nationality>
 		<jobtitle>Economist</jobtitle>
 		<image>images/people/ayele_g.png</image>
+	</person>
+	<person>
+		<name>Fred Unger</name>
+		<location>Bangkok, Thailand</location>
+		<nationality>Germany</nationality>
+		<jobtitle>Veterinary epidemiologist</jobtitle>
+		<image>images/people/fred_u.png</image>
 	</person>
 	<person>
 		<name>Acho Okike</name>
