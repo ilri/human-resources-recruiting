@@ -43,12 +43,26 @@
 		<video>videos/siboniso_m.flv</video>
 	</person>
 	<person>
+		<name>Bruno Gerard</name>
+		<location>Addis Ababa, Ethiopia</location>
+		<nationality>Belgium</nationality>
+		<jobtitle>Systems Agronomist</jobtitle>
+		<image>images/people/bruno_g.png</image>
+	</person>
+	<person>
 		<name>Ranjitha Puskur</name>
 		<location>Addis Ababa, Ethiopia</location>
 		<nationality>India</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/ranjitha_p.png</image>
 		<video>videos/ranjitha_p.flv</video>
+	</person>
+	<person>
+		<name>Lucy Lapar</name>
+		<location>Manila, Philipines</location>
+		<nationality>Philipines</nationality>
+		<jobtitle>Agricultural Economist</jobtitle>
+		<image>images/people/lucy_l.png</image>
 	</person>
 	<person>
 		<name>Iain Wright</name>
@@ -68,6 +82,13 @@
 		<video>videos/arindam_s.flv</video>
 	</person>
 	<person>
+		<name>Appolinaire Djikeng</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Cameroon</nationality>
+		<jobtitle>Genomicist</jobtitle>
+		<image>images/people/appolinaire_d.png</image>
+	</person>
+	<person>
 		<name>Saskia Hendrickx</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Netherlands</nationality>
@@ -82,6 +103,13 @@
 		<nationality>Scotland</nationality>
 		<image>images/people/peter_b.png</image>
 		<video>videos/peter_b.flv</video>
+	</person>
+	<person>
+		<name>Karen Marshall</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Australia</nationality>
+		<jobtitle>Geneticist</jobtitle>
+		<image>images/people/karen_m.png</image>
 	</person>
 	<person>
 		<name>Martin Norling</name>
@@ -100,39 +128,12 @@
 		<video>videos/polly_e.flv</video>
 	</person>
 	<person>
-		<name>Appolinaire Djikeng</name>
+		<name>Azizi Biobank</name>
 		<location>Nairobi, Kenya</location>
-		<nationality>Cameroon</nationality>
-		<jobtitle>Genomicist</jobtitle>
-		<image>images/people/appolinaire_d.png</image>
-	</person>
-	<person>
-		<name>Bruno Gerard</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<nationality>Belgium</nationality>
-		<jobtitle>Systems Agronomist</jobtitle>
-		<image>images/people/bruno_g.png</image>
-	</person>
-	<person>
-		<name>Ayele Gelan</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Ethiopia</nationality>
-		<jobtitle>Economist</jobtitle>
-		<image>images/people/ayele_g.png</image>
-	</person>
-	<person>
-		<name>Lucy Lapar</name>
-		<location>Manila, Philipines</location>
-		<nationality>Philipines</nationality>
-		<jobtitle>Agricultural Economist</jobtitle>
-		<image>images/people/lucy_l.png</image>
-	</person>
-	<person>
-		<name>Karen Marshall</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Australia</nationality>
-		<jobtitle>Geneticist</jobtitle>
-		<image>images/people/karen_m.png</image>
+		<nationality>North Pole</nationality>
+		<jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
+		<image>images/people/azizi.png</image>
+		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
 	</person>
 	<person>
 		<name>Mario Herrero</name>
@@ -142,12 +143,25 @@
 		<image>images/people/mario_h.png</image>
 	</person>
 	<person>
-		<name>Azizi Biobank</name>
+		<name>Ayele Gelan</name>
 		<location>Nairobi, Kenya</location>
-		<nationality>North Pole</nationality>
-		<jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
-		<image>images/people/azizi.png</image>
-		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
+		<nationality>Ethiopia</nationality>
+		<jobtitle>Economist</jobtitle>
+		<image>images/people/ayele_g.png</image>
+	</person>
+	<person>
+		<name>Acho Okike</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Nigeria</nationality>
+		<jobtitle>Economist + Epidemiologist</jobtitle>
+		<image>images/people/acho_o.png</image>
+	</person>
+	<person>
+		<name>Jeff Gilbert</name>
+		<location>Nairobi, Kenya</location>
+		<nationality>Ireland</nationality>
+		<jobtitle>Medical Doctor + Veterinarian</jobtitle>
+		<image>images/people/jeff_g.png</image>
 	</person>
 	<person>
 		<name>Mohammed Said</name>
@@ -162,20 +176,6 @@
 		<nationality>Denmark</nationality>
 		<jobtitle>Immunologist</jobtitle>
 		<image>images/people/lucilla_s.png</image>
-	</person>
-	<person>
-		<name>Jeff Gilbert</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Ireland</nationality>
-		<jobtitle>Medical Doctor + Veterinarian</jobtitle>
-		<image>images/people/jeff_g.png</image>
-	</person>
-	<person>
-		<name>Acho Okike</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Nigeria</nationality>
-		<jobtitle>Economist + Epidemiologist</jobtitle>
-		<image>images/people/acho_o.png</image>
 	</person>
 	<person>
 		<name>Jemimah Njuki</name>
