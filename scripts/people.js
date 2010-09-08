@@ -114,4 +114,30 @@ $(document).ready(function() {
 		// disable normal link behaviour
 		return false;
 	});
+
+	// select the black and white photos, make them ready for flipping
+	$('div.person div.img').click(function () {
+		var elem = $(this);
+
+		// check if the element is already "flipped"
+		if(elem.data('flipped'))
+		{
+			elem.revertFlip(); // call the built-in revertFlip function
+			elem.data('flipped',false)
+		}
+		else
+		{
+			elem.flip({
+				direction:'lr',
+				speed: 100,
+				color: '#9f9f9f',
+				onBefore: function(){
+					elem.html(elem.siblings('.currently').html());
+				}
+			});
+
+			elem.data('flipped',true);
+		}
+	});
+
 });

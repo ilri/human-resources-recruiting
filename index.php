@@ -150,10 +150,11 @@
 					echo '		</a>'."\n";
 				}
 				else {
-					echo '		<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '		<img class="person" src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
 				}
 			}
 			echo '	</div>'."\n";
+			echo '	<div class="currently">'.$person['currently']."</div>\n";
 
 			if($rep) $class = "name rep";
 			else $class = "name";
@@ -192,6 +193,8 @@
 </div> <!-- //#outer -->
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.flip.min.js"></script>
 <script type="text/javascript" src="scripts/flowplayer-3.2.4.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
 <script type="text/javascript">

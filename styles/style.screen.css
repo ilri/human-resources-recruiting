@@ -177,6 +177,11 @@ div.person .img, div.person .vid {
 	height: 150px;
 }
 
+div.currently {
+	display: none;
+/*width: 130px; height: 150px;*/
+}
+
 .play {
 	filter:alpha(opacity=40); /* for IE */
 	opacity:0.4;
