@@ -1,4 +1,4 @@
-$(document).ready(function() {
+$(window).load(function() {
 
 	var featuredPlayer = flowplayer("featured","videos/flowplayer-3.2.4.swf", {
 		clip: {
