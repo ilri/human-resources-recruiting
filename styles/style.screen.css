@@ -198,14 +198,17 @@ div.currently {
 	width: 25px;
 }
 
-div#feature {
+div#feature, div#jobs {
 	width: 654px;
 	height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
 	margin-bottom: 55px;
 	position: relative; /* so we can absolutely position stuff inside */
 	float: right;
-	background-image: url(../images/feature_bg.png);
-	/*background-color: #E0E0E0;*/
+	background-color: #E0E0E0;
+}
+
+div#jobs {
+	display: none;
 }
 
 div#featureLeft {
@@ -283,6 +286,7 @@ div#featureButtons {
 
 div#featureButtons img.button {
 	margin-top: 5px;
+	cursor: pointer;
 }
 
 div#featureButtons img.button.first {

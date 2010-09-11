@@ -68,7 +68,7 @@ $(window).load(function() {
 	}
 
 	// swap featured people
-	$('#features img.person1').click(function () {
+	$('#features img.person1').live('click', function () {
 		swapPeople(1);
 
 		// disable normal link behaviour
@@ -76,7 +76,7 @@ $(window).load(function() {
 	});
 
 	// swap featured people
-	$('#features img.person2').click(function () {
+	$('#features img.person2').live('click', function () {
 		swapPeople(2);
 
 		// disable normal link behaviour
@@ -106,6 +106,30 @@ $(window).load(function() {
 
 			elem.data('flipped',true);
 		}
+	});
+
+	// shika a few divs so we don't have to match them every time
+	var $feature = $('#feature');
+	var $jobs = $('#jobs');
+
+	// a simple function to replace one div with another
+	function replaceDiv($div1, $div2) {
+		$div1.fadeOut(1, function () {
+			$div1 = $div1.replaceWith($div2);
+			$div2.fadeIn(200);
+		});
+	}
+
+	$('#ilrijobs').live('click', function () {
+		featuredPlayer.unload();
+		replaceDiv($feature,$jobs);
+	});
+
+	$('a.close').live('click', function () {
+		replaceDiv($(this).parent(),$feature);
+
+		// disable normal link behavior
+		return false;
 	});
 
 });

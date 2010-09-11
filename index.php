@@ -124,9 +124,9 @@
 				}
 
 				echo '		<div id="featureButtons">';
-				echo '		<a href="#" title="ILRI Jobs"><img src="images/ilri_jobs.png" alt="ILRI Jobs" class="button first" /></a>';
-				echo '		<a href="#" title="ILRI People Facts"><img src="images/ilri_people_facts.png" alt="ILRI People Facts" class="button" /></a>';
-				echo '		<a href="#" title="ILRI Specialties"><img src="images/ilri_specialties.png" alt="ILRI Specialties" class="button" /></a>';
+				echo '		<img id="ilrijobs" src="images/ilri_jobs.png" title="ILRI jobs" alt="ILRI jobs" class="button first" />';
+				echo '		<img src="images/ilri_people_facts.png" title="ILRI people facts" alt="ILRI people facts" class="button" />';
+				echo '		<img src="images/ilri_specialties.png" title="ILRI specialties" alt="ILRI specialties" class="button" />';
 				echo '		</div>';
 				echo '	</div>';
 				echo '</div>';
@@ -181,6 +181,16 @@
 	}
 ?>
 </div>
+<div id="jobs">
+<a href="#" class="close" style="position: absolute; top: 0px; right: 0px; display: block;">X</a>
+	<ul>
+		<li>Computer Science</li>
+		<li>Economist</li>
+		<li>Applied Statistics</li>
+		<li>Genetics</li>
+		<li>Bioinformatics</li>
+	</ul>
+</div> <!-- //#jobs -->
 </div> <!-- //#inner -->
 
 <div id="footer">
