@@ -179,7 +179,6 @@ div.person .img, div.person .vid {
 
 div.currently {
 	display: none;
-/*width: 130px; height: 150px;*/
 }
 
 .play {
@@ -275,6 +274,7 @@ div#features span.person {
 div#features img.person {
 	margin-left: 8px;
 	width: 50px;
+	cursor: pointer;
 }
 
 div#featureButtons {
