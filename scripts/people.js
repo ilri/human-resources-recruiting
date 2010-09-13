@@ -84,7 +84,7 @@ $(window).load(function() {
 	});
 
 	// select the black and white photos, make them ready for flipping
-	$('div.person div.img').click(function () {
+	$('div.person div.img:not(:has(a))').click(function () {
 		var $elem = $(this);
 
 		// check if the element is already "flipped"
