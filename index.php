@@ -184,11 +184,30 @@
 <div id="jobs">
 <a href="#" class="close" style="position: absolute; top: 0px; right: 0px; display: block;">X</a>
 	<ul>
-		<li>Computer Science</li>
+		<li>Agronomist</li>
+		<li>Anthropologist</li>
+		<li>Bioinformatician</li>
+		<li>Capacity Builder</li>
+		<li>Science Communicators</li>
+		<li>Computer Scientist</li>
+		<li>Disease Modeler</li>
+		<li>Ecologist</li>
 		<li>Economist</li>
-		<li>Applied Statistics</li>
-		<li>Genetics</li>
-		<li>Bioinformatics</li>
+		<li>Epidemiologist</li>
+		<li>Geneticist</li>
+		<li>Geographer</li>
+		<li>GIS Expert</li>
+		<li>Human Geographer</li>
+		<li>Immunologist</li>
+		<li>Knowledge Sharer</li>
+		<li>Livestock Systems Scientist</li>
+		<li>Statisticians</li>
+		<li>Systems Analyst</li>
+		<li>Medical Doctor</li>
+		<li>Parasitologist</li>
+		<li>Social Scientist</li>
+		<li>Veterinarian</li>
+		<li>Virologist</li>
 	</ul>
 </div> <!-- //#jobs -->
 </div> <!-- //#inner -->
