@@ -30,6 +30,7 @@ a:hover, a:visited:hover {
 	min-height: 100%;
 	margin: 0 auto -4em;
 	background: #fff;
+	margin-bottom: 20px;
 	-webkit-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
 }
@@ -51,7 +52,7 @@ a:hover, a:visited:hover {
 }
 
 #footer {
-	width: 960px;
+/*	width: 960px;
 	position: relative;
 	bottom: 0px;
 	clear: both; /* clear the floats from the previous div */
@@ -294,7 +295,6 @@ div#featureButtons img.button.first {
 }
 
 #footer {
-	clear: both;
 	padding: 10px;
 	width: 940px;
 }

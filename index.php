@@ -181,6 +181,32 @@
 	}
 ?>
 </div>
+<div id="newWays" style="width: 960px; clear: both; position: relative; left: -88px; top: -20px; background-color: #ddd;">
+<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
+<div class="heading" style="background-color: #fff; font-size: 16px; font-weight: 600; color: rgb(138,115,115); text-align: left; height: 40px; padding-left: 15px;">
+new ways of working - what suits you?
+</div>
+<img class="person" src="images/people/petr_h.png" style="margin-right:88px; padding-left: 0px; float: right;" />
+<div style="float: left; margin-left: 88px; width: 640px; height: 60px; padding-top: 15px; font-size: 14px;">
+An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
+</div>
+<div style="margin-left: 88px; padding-left:540px; float: left; width: 100px; height: 75px; text-align: right; font-size: 12px;">
+more about new ways of working at ILRI
+</div>
+
+</div>
+
+<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
+<div class="heading" style="height: 40px;">
+</div>
+	<img class="person" src="images/people/solenne.png" style="margin-left: 88px; float: left" />
+	<img class="person" src="images/people/steve_k.png" style="margin-left: 88px; float: left" />
+	<img class="person" src="images/people/kohei.png" style="margin-left: 88px; float: left" />
+	<img class="person" src="images/people/jenny.png" style="margin-left: 88px; float: left" />
+</div>
+</div>
+
+</div>
 <div id="jobs">
 <a href="#" class="close" style="position: absolute; top: 0px; right: 0px; display: block;">X</a>
 	<ul>
@@ -210,14 +236,13 @@
 		<li>Virologist</li>
 	</ul>
 </div> <!-- //#jobs -->
-</div> <!-- //#inner -->
-
 <div id="footer">
 	<div id="footer-inner">
 	<p><a href="http://www.ilri.org/ContactUs">Contact us</a> | <a href="http://www.ilri.org/CopyRight">Copyright and permissions</a> | <a href="http://www.ilri.org/Search">Search</a> | <a href="http://www.ilri.org/Newsfeeds">Subscribe</a><br>
 	&copy; International Livestock Research Institute (ILRI)</p>
-	</div> <!-- //#footer-inner -->
-</div> <!-- //#footer -->
+	</div>
+</div>
+</div> <!-- //#inner -->
 
 </div> <!-- //#outer -->
 
