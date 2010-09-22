@@ -68,19 +68,19 @@ $(window).load(function() {
 	}
 
 	// swap featured people
-	$('#features img.person1').live('click', function () {
-		swapPeople(1);
-
+	$('#features img.person1').live('click', function (event) {
 		// disable normal link behaviour
-		return false;
+		event.preventDefault();
+
+		swapPeople(1);
 	});
 
 	// swap featured people
-	$('#features img.person2').live('click', function () {
-		swapPeople(2);
-
+	$('#features img.person2').live('click', function (event) {
 		// disable normal link behaviour
-		return false;
+		event.preventDefault();
+
+		swapPeople(2);
 	});
 
 	// select the black and white photos, make them ready for flipping
@@ -125,11 +125,11 @@ $(window).load(function() {
 		replaceDiv($feature,$jobs);
 	});
 
-	$('a.close').live('click', function () {
-		replaceDiv($(this).parent(),$feature);
+	$('a.close').live('click', function (event) {
+		// disable normal link behaviour
+		event.preventDefault();
 
-		// disable normal link behavior
-		return false;
+		replaceDiv($(this).parent(),$feature);
 	});
 
 });
