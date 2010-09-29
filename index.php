@@ -181,29 +181,26 @@
 	}
 ?>
 </div>
-<div id="newWays" style="width: 960px; clear: both; position: relative; left: -88px; top: -20px; background-color: #ddd;">
-<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
-<div class="heading" style="background-color: #fff; font-size: 16px; font-weight: 600; color: rgb(138,115,115); text-align: left; height: 40px; padding-left: 15px;">
-new ways of working - what suits you?
-</div>
-<img class="person" src="images/people/petr_h.png" style="margin-right:88px; padding-left: 0px; float: right;" />
-<div style="float: left; margin-left: 88px; width: 640px; height: 60px; padding-top: 15px; font-size: 14px;">
-An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
-</div>
-<div style="margin-left: 88px; padding-left:540px; float: left; width: 100px; height: 75px; text-align: right; font-size: 12px;">
-more about new ways of working at ILRI
-</div>
-
-</div>
-
-<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
-<div class="heading" style="height: 40px;">
-</div>
-	<img class="person" src="images/people/solenne.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/steve_k.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/kohei.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/jenny.png" style="margin-left: 88px; float: left" />
-</div>
+<div id="newWays">
+	<div class="row">
+		<div class="heading">
+			new ways of working - what suits you?
+		</div>
+		<img class="featuredPerson" src="images/people/petr_h.png" />
+		<div class="scientists">
+			An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
+		</div>
+		<div class="moreWays">
+			more about new ways of working at ILRI
+		</div>
+	</div>
+	<div class="row">
+		<div class="heading"></div>
+		<img class="person" src="images/people/solenne.png" />
+		<img class="person" src="images/people/steve_k.png" />
+		<img class="person" src="images/people/kohei.png" />
+		<img class="person" src="images/people/jenny.png" />
+	</div>
 </div>
 
 </div>

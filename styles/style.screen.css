@@ -308,6 +308,65 @@ div#featureButtons img.button.first {
 	margin-top: 0px;
 }
 
+#newWays {
+	width: 960px;
+	clear: both;
+	position: relative;
+	left: -88px;
+	top: -20px;
+	background-color: #ddd;
+}
+
+#newWays .row {
+	background-image: url(../images/purple_1px.png);
+	background-position:
+	bottom left;
+	background-repeat: repeat-x;
+	height: 190px;
+}
+
+#newWays .heading {
+	background-color: #fff;
+	font-size: 26px;
+	font-family: Arial, sans-serif;
+	font-weight: 700;
+	color: rgb(138,115,115);
+	text-align: left;
+	padding-left: 15px;
+	height: 40px;
+}
+
+#newWays img.featuredPerson {
+	margin-right:88px;
+	padding-left: 0px;
+	float: right;
+}
+
+#newWays img.person {
+	margin-left: 88px;
+	float: left
+}
+
+#newWays .scientists {
+	float: left;
+	margin-left: 88px;
+	width: 640px;
+	height: 66px;
+	padding-top: 9px;
+	font-size: 18px;
+	color: #888;
+}
+
+#newWays .moreWays {
+	margin-left: 88px;
+	padding-left:540px;
+	float: left;
+	width: 100px;
+	height: 75px;
+	text-align: right;
+	font-size: 12px;
+}
+
 #footer {
 	padding: 10px;
 	width: 940px;
