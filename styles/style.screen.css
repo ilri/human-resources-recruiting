@@ -176,6 +176,7 @@ div.person .img, div.person .vid {
 	display: block;
 	width: 130px;
 	height: 150px;
+	cursor: pointer;
 }
 
 div.currently {
