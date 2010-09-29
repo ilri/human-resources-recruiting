@@ -179,6 +179,19 @@ div.person .img, div.person .vid {
 	cursor: pointer;
 }
 
+div.person .text {
+	width: 110px;
+	height: 130px;
+	padding: 10px;
+	font-family: Arial, sans-serif;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+div.person .text p {
+	color: #fff;
+}
+
 div.currently {
 	display: none;
 }

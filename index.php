@@ -154,7 +154,7 @@
 				}
 			}
 			echo '	</div>'."\n";
-			echo '	<div class="currently">'.$person['currently']."</div>\n";
+			echo '	<div class="currently"><p>Currently...</p><br />'.$person['currently']."</div>\n";
 
 			if($rep) $class = "name rep";
 			else $class = "name";

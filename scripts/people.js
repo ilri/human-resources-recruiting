@@ -91,6 +91,7 @@ $(window).load(function() {
 		if($elem.data('flipped'))
 		{
 			$elem.revertFlip(); // call the built-in revertFlip function
+			$elem.removeClass('text');
 			$elem.data('flipped',false)
 		}
 		else
@@ -100,6 +101,7 @@ $(window).load(function() {
 				speed: 100,
 				color: '#9f9f9f',
 				onBefore: function(){
+					$elem.addClass('text');
 					$elem.html($elem.siblings('.currently').html());
 				}
 			});
