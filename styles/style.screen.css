@@ -99,6 +99,11 @@ a:hover, a:visited:hover {
 	color: #660000;
 }
 
+#no-js {
+	height: 205px;
+	width: 960px;
+}
+
 /*** People ***/
 
 #peopleLeftMenu {

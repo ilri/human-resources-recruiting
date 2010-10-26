@@ -17,6 +17,11 @@
 </div> <!-- //#header -->
 
 <div id="inner">
+<noscript>
+<div id="no-js">
+	This website is so much more fun if you have JavaScript enabled!
+</div>
+</noscript>
 <div id="peopleLeftMenu">
 <img src="images/ilricrowd_left.png" />
 <form id="sortByLocation" class="sortby first" action="<?php echo $pageref; ?>" method="post">
