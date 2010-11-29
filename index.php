@@ -3,7 +3,7 @@
 <head>
 	<title>ILRI - International Livestock Research Institutute</title>
 	<?php
-		require_once('head_includes.php');
+		require_once('includes/head.php');
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
 	 ?>
