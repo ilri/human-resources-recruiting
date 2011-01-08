@@ -6,14 +6,14 @@
 		require_once('includes/head.php');
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
-	 ?>
+	?>
 </head>
 <body>
 
 <div id="outer">
 <div id="header">
 <?php require_once('navigation.php'); ?>
-<div id="banner"></div>
+<div id="banner"><a href="/" title="International Livestock Research Institute"><img src="http://ilri.org/sites/default/files/sky_logo.jpg" alt="International Livestock Research Institute" /></a></div>
 </div> <!-- //#header -->
 
 <div id="inner">
