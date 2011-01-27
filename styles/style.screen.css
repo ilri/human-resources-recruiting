@@ -1,5 +1,6 @@
 body {
-	font-family: Verdana, sans-serif;
+	/*font-family: Verdana, sans-serif;*/
+	font-family: "Lucida Grande","Lucida Sans","Lucida Sans Unicode","DejaVu Sans",Arial,sans-serif;
 	color: black;
 	background-color: #CECECE;
 	text-align: center; /*for IE to center the divs*/
@@ -33,6 +34,7 @@ a:hover, a:visited:hover {
 	margin-bottom: 20px;
 	-webkit-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
 	-moz-box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
+	box-shadow: 1em 1em 1em rgba(0, 0, 0, 0.5);
 }
 
 #header {
@@ -177,7 +179,7 @@ div.person:first-child {
 	margin-top: 55px;
 }
 
-div.person .img, div.person .vid {
+div.person .img, div.person .video, div.person .audio {
 	display: block;
 	width: 130px;
 	height: 150px;
@@ -188,7 +190,6 @@ div.person .text {
 	width: 110px;
 	height: 130px;
 	padding: 10px;
-	font-family: Arial, sans-serif;
 	font-weight: 600;
 	font-size: 13px;
 }
@@ -212,22 +213,125 @@ div.currently {
 	width: 55px;
 }
 
-.vid img.play {
+.video img.play, .audio img.play {
 	height: 25px;
 	width: 25px;
 }
 
-div#feature, div#jobs {
+/*** For the scrolling "features" ***/
+.scrollable {
+	position: relative;
+	float: right;
 	width: 654px;
 	height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
 	margin-bottom: 55px;
-	position: relative; /* so we can absolutely position stuff inside */
-	float: right;
+	overflow: hidden;
+}
+
+#featuredItems {
+	width: 10000em;
+	position: absolute;
+}
+
+#featuredItems div {
+	float: left;
+}
+
+div#feature {
+/*	width: 654px;*/
+	/*height: 355px; /* 2 people (150 * 2) + 1 top margin (34) + 1 person name + location (21px) */
+	/*margin-bottom: 55px;*/
+	/*position: relative; /* so we can absolutely position stuff inside */
+	/*float: right;*/
 	background-color: #E0E0E0;
 }
 
-div#jobs {
-	display: none;
+#peopleFacts, #jobs {
+	width: 654px;
+	height: 355px;
+	background-color: #fff;
+	color:#000;
+	text-align: center;
+}
+
+h2.title {
+	width: 632px; /* 654 - 10x2 - 1x2; adjust the width according to various padding, border, etc */
+	height: 19px; /* 30 - 5x2 - 1; */
+	text-align: center;
+	-moz-border-radius-topleft:0.333em;
+	-moz-border-radius-topright:0.333em;
+	-webkit-border-top-left-radius:0.333em;
+	-webkit-border-top-right-radius:0.333em;
+	border-top-left-radius: 0.333em;
+	border-top-right-radius: 0.333em;
+	background:url(../images/bg-shade-light222.png) repeat-x scroll left bottom #FFFFFF;
+	border-color: #ddd;
+	outline-color: currentColor; /* http://www.w3.org/TR/css3-color/#currentcolor */
+	border-style: solid solid none solid;
+	border-width: 1px 1px 0 1px;
+	color: #555;
+	display: block;
+	font-size: 18px;
+	font-weight: 700;
+	letter-spacing: normal;
+	margin: 0;
+	padding: 5px 10px;
+	text-align: center;
+	text-shadow: 1px 1px 1px #fff;
+}
+
+div.content {
+	width: 100%;
+	height: 323px;
+	border: 1px solid #ddd;
+}
+
+#peopleFactsButtons {
+	float: left;
+	display: block;
+	height: 195px;
+	margin-top: 100px;
+}
+
+#peopleFactsButtons li {
+	height: 55px;
+	width: 200px;
+	text-align: right;
+}
+
+#peopleFactsButtons li > a {
+	height: 30px;
+	width: 200px;
+	padding-top: 20px;
+	display: block;
+}
+
+#peopleFactsButtons li > a.current {
+	font-weight: 700;
+}
+
+#peopleFactsContent {
+	height: 295px;
+	width: 400px;
+	float: left;
+}
+
+/* do we need divs... try to style just the anchors */
+#peopleFacts .button a {
+	display: block;
+	height: 30px;
+	width: 200px;
+	padding-top: 20px;
+}
+
+#peopleFacts-1 ul, #peopleFacts-2 ul, #peopleFacts-3 ul {
+	float: left;
+}
+
+#peopleFacts-1 li, #peopleFacts-2 li, #peopleFacts-3 li {
+	float: left;
+	text-align: left;
+	padding: 5px;
 }
 
 div#featureLeft {
@@ -313,12 +417,43 @@ div#featureButtons img.button.first {
 	margin-top: 0px;
 }
 
+#jobs .content {
+	/*padding-left: 5px;
+	padding-top: 5px;
+	height: 318px;*/
+}
+
+#jobs .content ul {
+	list-style-type: none; /* no style, use css ":before" to draw "content" */
+	text-align: left;
+	overflow: hidden;
+	line-height: 1.6;
+	height: 285px;
+	margin: 10px 0 0 5px;
+}
+
+#jobs .content ul li {
+	font-size: 13px;
+	margin: 0;
+	padding: 0;
+}
+
+#jobs .content ul li:before {
+	content: "\00BB \0020";
+}
+
+#featuredItems .content .nav {
+	font-size: 11px;
+	float: left;
+	height: 30px;
+	width: 649px;
+}
+
 #newWays {
 	width: 960px;
 	clear: both;
 	position: relative;
 	left: -88px;
-	top: -20px;
 	background-color: #ddd;
 }
 
@@ -330,15 +465,23 @@ div#featureButtons img.button.first {
 	height: 190px;
 }
 
+#newWays .row1 {
+	height: 140px;
+}
+
 #newWays .heading {
-	background-color: #fff;
-	font-size: 26px;
-	font-family: Arial, sans-serif;
-	font-weight: 700;
-	color: rgb(138,115,115);
 	text-align: left;
 	padding-left: 15px;
 	height: 40px;
+}
+
+#newWays .heading h2, #newWays h2 > a, #newWays h2 > a:hover {
+	font-size: 26px;
+	/*font-family: "Lucida Grande","Lucida Sans","Lucida Sans Unicode","DejaVu Sans",Arial,sans-serif;*/
+	font-weight: 700;
+	color: rgb(138,115,115);
+	top: 10px;
+	position: relative;
 }
 
 #newWays img.featuredPerson {
@@ -347,19 +490,21 @@ div#featureButtons img.button.first {
 	float: right;
 }
 
-#newWays img.person {
+#newWays img.person, #newWays div.person {
 	margin-left: 88px;
-	float: left
+	margin-right: 0;
+	float: left;
 }
 
 #newWays .scientists {
 	float: left;
-	margin-left: 88px;
-	width: 640px;
+	width: 678px;
 	height: 66px;
 	padding-top: 9px;
+	padding-left: 20px;
+	margin-top: 25px;
 	font-size: 18px;
-	color: #888;
+	color: #777;
 }
 
 #newWays .moreWays {
@@ -375,6 +520,7 @@ div#featureButtons img.button.first {
 #footer {
 	padding: 10px;
 	width: 940px;
+	clear: both;
 }
 
 #footer-inner {

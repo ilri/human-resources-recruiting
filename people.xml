@@ -8,6 +8,7 @@
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/abdou_f.png</image>
 		<video>videos/abdou_f.flv</video>
+		<audio>audio/abdou_f.mp3</audio>
 	</person>
 	<person>
 		<name>Andrew Mude</name>
@@ -16,6 +17,7 @@
 		<jobtitle>Economist</jobtitle>
 		<image>images/people/andrew_m.png</image>
 		<video>videos/andrew_m.flv</video>
+		<audio>audio/andrew_m.mp3</audio>
 	</person>
 	<person>
 		<name>Purvi Mehta-Bhatt</name>
@@ -24,6 +26,7 @@
 		<jobtitle>Capacity Builder</jobtitle>
 		<image>images/people/purvi_m.png</image>
 		<video>videos/purvi_m.flv</video>
+		<audio>audio/purvi_m.mp3</audio>
 	</person>
 	<person>
 		<name>Delia Grace</name>
@@ -32,6 +35,7 @@
 		<jobtitle>Epidemiologist</jobtitle>
 		<image>images/people/delia_g.png</image>
 		<video>videos/delia_g.flv</video>
+		<audio>audio/delia_g.mp3</audio>
 	</person>
 	<person>
 		<name>Siboniso Moyo</name>
@@ -41,6 +45,7 @@
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/siboniso_m.png</image>
 		<video>videos/siboniso_m.flv</video>
+		<audio>audio/siboniso_m.mp3</audio>
 	</person>
 	<person>
 		<name>Bruno Gerard</name>
@@ -57,6 +62,7 @@
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/ranjitha_p.png</image>
 		<video>videos/ranjitha_p.flv</video>
+		<audio>audio/ranjitha_p.mp3</audio>
 	</person>
 	<person>
 		<name>Lucy Lapar</name>
@@ -74,6 +80,7 @@
 		<jobtitle>Regional Representative</jobtitle>
 		<image>images/people/iain_w.png</image>
 		<video>videos/iain_w.flv</video>
+		<audio>audio/iain_w.mp3</audio>
 	</person>
 	<person>
 		<name>Arindam Samaddar</name>
@@ -82,6 +89,7 @@
 		<jobtitle>Anthropologist</jobtitle>
 		<image>images/people/arindam_s.png</image>
 		<video>videos/arindam_s.flv</video>
+		<audio>audio/arindam_s.mp3</audio>
 	</person>
 	<person>
 		<name>Appolinaire Djikeng</name>
@@ -98,6 +106,7 @@
 		<jobtitle>Veterinarian</jobtitle>
 		<image>images/people/saskia_h.png</image>
 		<video>videos/saskia_h.flv</video>
+		<audio>audio/saskia_h.mp3</audio>
 	</person>
 	<person>
 		<name>Peter Ballantyne</name>
@@ -106,6 +115,7 @@
 		<nationality>Scotland</nationality>
 		<image>images/people/peter_b.png</image>
 		<video>videos/peter_b.flv</video>
+		<audio>audio/peter_b.mp3</audio>
 	</person>
 	<person>
 		<name>Karen Marshall</name>
@@ -122,6 +132,7 @@
 		<jobtitle>Bioinformatician</jobtitle>
 		<image>images/people/martin_n.png</image>
 		<video>videos/martin_n.flv</video>
+		<audio>audio/martin_n.mp3</audio>
 	</person>
 	<person>
 		<name>Polly Ericksen</name>
@@ -130,6 +141,7 @@
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/polly_e.png</image>
 		<video>videos/polly_e.flv</video>
+		<audio>audio/polly_e.mp3</audio>
 	</person>
 	<person>
 		<name>Azizi Biobank</name>
@@ -211,6 +223,7 @@
 		<image>images/people/jemimah_n.png</image>
 		<startimage>videos/jemimah_n.png</startimage>
 		<video>videos/jemimah_n.flv</video>
+		<audio>audio/jemimah_n.mp3</audio>
 		<featured>true</featured>
 		<description>watch a video about why her work with ilri matters to her</description>
 	</person>
@@ -224,6 +237,7 @@
 		<description>watch a video about why they love working with ilri</description>
 		<featured>true</featured>
 		<video>videos/andy_and_phil.flv</video>
+		<audio>audio/andy_and_phil.mp3</audio>
 	</person>
 	<person>
 		<name>Alan Orth</name>
@@ -235,5 +249,6 @@
 		<featured>true</featured>
 		<description>watch a video about why he likes being a computer systems specialist in a livestock institute</description>
 		<video>videos/alan_o.flv</video>
+		<audio>audio/alan_o.mp3</audio>
 	</person>
 </people>

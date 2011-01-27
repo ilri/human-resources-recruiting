@@ -2,3 +2,6 @@
 div#featureButtons img.first {
 	margin-top: 0px;
 }
+
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
