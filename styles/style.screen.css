@@ -47,6 +47,10 @@ a:hover, a:visited:hover {
 	background-image: url('../images/Beca_Banner.jpg');
 }
 
+#banner img {
+	display: inline;
+}
+
 #inner {
 	width: 872px;
 	background: #fff;
