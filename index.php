@@ -360,26 +360,26 @@
 	</div>
 	<div class="row">
 		<div class="heading"></div>
-		<img class="person" src="images/people/solenne.png" />
-		<img class="person" src="images/people/steve_k.png" />
-		<img class="person" src="images/people/kohei.png" />
-		<img class="person" src="images/people/jenny.png" />
+		<img class="person" src="images/people/solenne.jpg" />
+		<img class="person" src="images/people/steve_k.jpg" />
+		<img class="person" src="images/people/kohei.jpg" />
+		<img class="person" src="images/people/jenny.jpg" />
 	</div>
 	<div class="row">
 		<div class="heading"></div>
-		<img class="person" src="images/people/karl_r.png" />
+		<img class="person" src="images/people/karl_r.jpg" />
 		<div class="person">
 		<?php
 			if( $media == 'video' ) {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.png);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
 			}
 			else {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.png);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
 			}
 		?>
 		</div>
-		<a href="http://www.ilri.org/Jobs" title="visit the ILRI job page"><img class="person" src="images/people/jobs.png" /></a>
-		<img class="person" src="images/people/petr_h.png" />
+		<a href="http://www.ilri.org/Jobs" title="visit the ILRI job page"><img class="person" src="images/people/jobs.jpg" /></a>
+		<img class="person" src="images/people/petr_h.jpg" />
 	</div>
 </div>
 <br style="clear: both;"/>
