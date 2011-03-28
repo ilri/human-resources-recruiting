@@ -188,7 +188,6 @@
 	<h2 class="title">people@ilri</h2>
 	<div class="content">
 		<div id="peopleFactsButtons">
-			<!--<img src="images/under_construction.png" style="height: 100px; margin: auto auto;" />-->
 			<ul>
 				<li><a href="#peopleFacts-1" class="current">Specialities</a></li>
 				<li><a href="#peopleFacts-2">Countries</a></li>
