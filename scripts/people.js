@@ -2,7 +2,7 @@ $(window).load(function() {
 
 	var $featuredPlayer = flowplayer("featured","videos/flowplayer-3.2.4.swf", {
 		clip: {
-			coverImage: { url: 'videos/jemimah_n.png', scaling: 'orig' },
+			coverImage: { url: 'videos/jemimah_n.jpg', scaling: 'orig' },
 			onFinish: function() {
 				this.unload();
 			},
@@ -33,11 +33,11 @@ $(window).load(function() {
 	$('.person .audio').each(function() {
 		
 		// grab the thumbnail path from the CSS background-image
-		// returns something like url("http://example.com/file.png")
-		// or url(http://example.com/file.png) if in a Webkit-based browser
+		// returns something like url("http://example.com/file.jpg")
+		// or url(http://example.com/file.jpg) if in a Webkit-based browser
 		var thumbnail = $(this).css('background-image');
 		// cheap regex to extract the thumbnail's URL
-		thumbnail = thumbnail.match(/http.*png/i);
+		thumbnail = thumbnail.match(/http.*jpg/i);
 
 		flowplayer(this, "videos/flowplayer-3.2.4.swf", {
 			plugins: {
