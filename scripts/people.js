@@ -1,6 +1,6 @@
 $(window).load(function() {
 
-	var $featuredPlayer = flowplayer("featured","videos/flowplayer-3.2.7.swf", {
+	var $featuredPlayer = flowplayer("featured","videos/flowplayer-3.2.4.swf", {
 		clip: {
 			coverImage: { url: 'videos/jemimah_n.png', scaling: 'orig' },
 			onFinish: function() {
@@ -15,7 +15,7 @@ $(window).load(function() {
 	// for all the video interviews
 	$('.person .video').each(function() {
 		
-		flowplayer(this, "videos/flowplayer-3.2.7.swf", {
+		flowplayer(this, "videos/flowplayer-3.2.4.swf", {
 			plugins: {
 				controls: null
 			},
@@ -39,7 +39,7 @@ $(window).load(function() {
 		// cheap regex to extract the thumbnail's URL
 		thumbnail = thumbnail.match(/http.*png/i);
 
-		flowplayer(this, "videos/flowplayer-3.2.7.swf", {
+		flowplayer(this, "videos/flowplayer-3.2.4.swf", {
 			plugins: {
 				controls: {
 					all: false,
