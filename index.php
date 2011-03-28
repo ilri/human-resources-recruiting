@@ -426,7 +426,7 @@
 <script type="text/javascript" src="scripts/jquery.min.js"></script>
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.flip.min.js"></script>
-<script type="text/javascript" src="scripts/flowplayer-3.2.4.min.js"></script>
+<script type="text/javascript" src="scripts/flowplayer-3.2.6.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.tools.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
 <script type="text/javascript">
