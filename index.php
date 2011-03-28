@@ -359,14 +359,34 @@
 	</div>
 	<div class="row">
 		<div class="heading"></div>
-		<img class="person" src="images/people/solenne.jpg" />
-		<img class="person" src="images/people/steve_k.jpg" />
-		<img class="person" src="images/people/kohei.jpg" />
-		<img class="person" src="images/people/jenny.jpg" />
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/solenne.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/steve_k.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/kohei.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/jenny.jpg" />
+			</div>
+		</div>
 	</div>
 	<div class="row">
 		<div class="heading"></div>
-		<img class="person" src="images/people/karl_r.jpg" />
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/karl_r.jpg" />
+			</div>
+		</div>
 		<div class="person">
 		<?php
 			if( $media == 'video' ) {
@@ -377,8 +397,16 @@
 			}
 		?>
 		</div>
-		<a href="http://www.ilri.org/Jobs" title="visit the ILRI job page"><img class="person" src="images/people/jobs.jpg" /></a>
-		<img class="person" src="images/people/petr_h.jpg" />
+		<div class="person">
+			<div class="img">
+				<a href="http://www.ilri.org/Jobs" title="visit the ILRI job page"><img class="person" src="images/people/jobs.jpg" /></a>
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/petr_h.jpg" />
+			</div>
+		</div>
 	</div>
 </div>
 <br style="clear: both;"/>

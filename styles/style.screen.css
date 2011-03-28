@@ -172,25 +172,25 @@ span.nationality img, span.location img {
 	margin-right: 44px;
 }
 
-div.person {
+#peopleGrid div.person {
 	float: left;
 	height: 205px;
 	margin-left: 0px;
 	margin-right: 88px;
 }
 
-div.person:first-child {
+#peopleGrid div.person:first-child {
 	margin-top: 55px;
 }
 
-div.person .img, div.person .video, div.person .audio {
+#peopleGrid div.person .img, #peopleGrid div.person .video, #peopleGrid div.person .audio {
 	display: block;
 	width: 130px;
 	height: 150px;
 	cursor: pointer;
 }
 
-div.person .text {
+#peopleGrid div.person .text {
 	width: 110px;
 	height: 130px;
 	padding: 10px;
@@ -198,7 +198,7 @@ div.person .text {
 	font-size: 13px;
 }
 
-div.person .text p {
+#peopleGrid div.person .text p {
 	color: #fff;
 }
 
@@ -488,16 +488,33 @@ div#featureButtons img.button.first {
 	position: relative;
 }
 
-#newWays img.featuredPerson {
-	margin-right:88px;
-	padding-left: 0px;
-	float: right;
+#newWays div.person {
+	float: left;
+	height: 150px;
+	margin-left: 88px;
+}
+
+#newWays div.person .img, #newWays div.person .video, #newWays div.person .audio {
+	display: block;
+	width: 130px;
+	height: 150px;
+	cursor: pointer;
 }
 
 #newWays img.person, #newWays div.person {
-	margin-left: 88px;
-	margin-right: 0;
 	float: left;
+}
+
+#newWays div.person .text {
+	width: 110px;
+	height: 130px;
+	padding: 10px;
+	font-weight: 600;
+	font-size: 13px;
+}
+
+#newWays div.person .text p {
+	color: #fff;
 }
 
 #newWays .scientists {
