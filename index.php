@@ -154,7 +154,7 @@
 				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured[0]['audio'] : $featured[0]['video'];echo '" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" /></a>';
+				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured[0]['audio'] : $featured[0]['video'];echo '" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -162,7 +162,7 @@
 					// show 1 of our "featured" people big
 					for($x = 0; $x < 1; $x++) {
 						echo '			<div id="mainFeature">';
-						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="150" width="130" />'."\n";
 						echo '			</div>';
 					}
 				echo '			<div id="otherFeatures">';
@@ -170,7 +170,7 @@
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
 					for($x = 1; $x <= 2; $x++) {
-						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="57" width="50" />'."\n";
 					}
 				echo 	'			</div>';
 				echo '			</div>';
@@ -302,19 +302,19 @@
 
 			// insert a person with a link to their interview (audio or video)
 			if( $media == 'video' && isset($person['video']) ) {
-				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
 			}
 			else if( $media == 'audio' && isset($person['audio']) ) {
-				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['audio'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['audio'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
 			}
 			else {
 				if(isset($person['link'])) {
 					echo '		<a href="'.$person['link'].'" title="Azizi Biobank on Facebook">'."\n";
-					echo '			<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '			<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" height="150" width="130" />'."\n";
 					echo '		</a>'."\n";
 				}
 				else {
-					echo '		<img class="person" src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '		<img class="person" src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" height="150" width="130" />'."\n";
 				}
 			}
 			echo '	</div>'."\n";
@@ -390,10 +390,10 @@
 		<div class="person">
 		<?php
 			if( $media == 'video' ) {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
 			}
 			else {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" /></a>'."\n";
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
 			}
 		?>
 		</div>
