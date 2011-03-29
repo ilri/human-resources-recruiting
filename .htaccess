@@ -3,9 +3,11 @@
 ###		sudo a2enmod deflate
 ###		sudo apache2ctl graceful
 ### See: http://httpd.apache.org/docs/2.2/mod/mod_deflate.html
-<FilesMatch "\\.(js|css|html|htm|php|xml)$">
-SetOutputFilter DEFLATE
-</FilesMatch>
+<IfModule mod_deflate.c>
+	<FilesMatch "\.(js|css|html|htm|php|xml)$">
+		SetOutputFilter DEFLATE
+	</FilesMatch>
+</IfModule>
 ### END: mod_deflate gzip compression settings ###
 
 ### BEGIN: cache settings ###
@@ -15,22 +17,26 @@ SetOutputFilter DEFLATE
 ### See: http://httpd.apache.org/docs/2.2/mod/mod_expires.html
 ### See: http://httpd.apache.org/docs/2.2/mod/mod_headers.html
 # Turn on Expires and set default to 0
-FileETag MTime
-ExpiresActive On
-ExpiresDefault A0
-# Set up caching on media files for 1 month
-<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
-ExpiresDefault A2629743
-Header append Cache-Control "public"
-</FilesMatch>
-# Set up caching on media files for 1 week
-<FilesMatch "\.(gif|jpg|jpeg|png|swf)$">
-ExpiresDefault A604800
-Header append Cache-Control "public"
-</FilesMatch>
-# Set up 2 Hour caching on commonly updated files
-<FilesMatch "\.(xml|txt|html|js|css)$">
-ExpiresDefault A3600
-Header append Cache-Control "proxy-revalidate"
-</FilesMatch>
+<IfModule mod_expires.c>
+<IfModule mod_headers.c>
+	FileETag MTime
+	ExpiresActive On
+	ExpiresDefault A0
+	# Set up caching on media files for 1 year
+	<FilesMatch "\.(flv|ico|pdf|avi|mov|ppt|doc|mp3|wmv|wav)$">
+		ExpiresDefault A31556926
+		Header append Cache-Control "public"
+	</FilesMatch>
+	# Set up caching on media files for 1 year
+	<FilesMatch "\.(gif|jpg|jpeg|png|swf)$">
+		ExpiresDefault A31556926
+		Header append Cache-Control "public"
+	</FilesMatch>
+	# Set up caching on text-based files for 1 year
+	<FilesMatch "\.(xml|txt|html|js|css)$">
+		ExpiresDefault A31556926
+		Header append Cache-Control "proxy-revalidate"
+	</FilesMatch>
+</IfModule>
+</IfModule>
 ### END: cache settings ###
