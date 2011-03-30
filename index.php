@@ -361,7 +361,7 @@
 		<div class="heading"></div>
 		<div class="person">
 			<div class="img">
-				<img class="person" src="images/people/solenne.jpg" />
+				<img class="person" src="images/people/florence_l.jpg" />
 			</div>
 		</div>
 		<div class="person">
@@ -399,7 +399,7 @@
 		</div>
 		<div class="person">
 			<div class="img">
-				<a href="http://www.ilri.org/Jobs" title="visit the ILRI job page"><img class="person" src="images/people/jobs.jpg" /></a>
+				<img class="person" src="images/people/tilahun_a.jpg" />
 			</div>
 		</div>
 		<div class="person">
