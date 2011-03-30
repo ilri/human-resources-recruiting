@@ -113,66 +113,35 @@ $(window).load(function() {
 		swapPeople(2);
 	});
 
-	// select the black and white photos, make them ready for flipping
+	// select the black and white photos, and flip them on click
 	$('div.person div.img:not(:has(a))').click(function () {
-		var $elem = $(this);
+		var $person = $(this);
+		flip_person($person);
+	});
 
-		// check if the element is already "flipped"
-		if($elem.data('flipped'))
+	function flip_person($person) {
+		// check if the personent is already "flipped"
+		if($person.data('flipped'))
 		{
-			$elem.revertFlip(); // call the built-in revertFlip function
-			$elem.removeClass('text');
-			$elem.data('flipped',false)
+			$person.revertFlip(); // call the built-in revertFlip function
+			$person.removeClass('text');
+			$person.data('flipped',false)
 		}
 		else
 		{
-			$elem.flip({
+			$person.flip({
 				direction:'lr',
 				speed: 100,
 				color: '#9f9f9f',
 				onBefore: function(){
-					$elem.addClass('text');
-					$elem.html($elem.siblings('.currently').html());
+					$person.addClass('text');
+					$person.html($person.siblings('.currently').html());
 				}
 			});
 
-			$elem.data('flipped',true);
+			$person.data('flipped',true);
 		}
-	});
-
-//	function flip_person($person) {
-//		var $elem = $(this);
-//
-//		// check if the element is already "flipped"
-//		if($elem.data('flipped'))
-//		{
-//			$elem.revertFlip(); // call the built-in revertFlip function
-//			$elem.removeClass('text');
-//			$elem.data('flipped',false)
-//		}
-//		else
-//		{
-//			$elem.flip({
-//				direction:'lr',
-//				speed: 100,
-//				color: '#9f9f9f',
-//				onBefore: function(){
-//					$elem.addClass('text');
-//					$elem.html($elem.siblings('.currently').html());
-//				}
-//			});
-//
-//			$elem.data('flipped',true);
-//		}
-//	});
-
-	// a simple function to replace one div with another
-//	function replaceDiv($div1, $div2) {
-//		$div1.fadeOut(1, function () {
-//			$div1 = $div1.replaceWith($div2);
-//			$div2.fadeIn(200);
-//		});
-//	}
+	};
 
 	$(".scrollable").scrollable({
 		keyboard: false, //disable keyboard navigation
