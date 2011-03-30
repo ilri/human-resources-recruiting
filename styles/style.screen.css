@@ -412,12 +412,12 @@ div#featureButtons {
 	bottom: 0px;
 }
 
-div#featureButtons img.button {
+img.button {
 	margin-top: 5px;
 	cursor: pointer;
 }
 
-div#featureButtons img.button.first {
+img.button.first {
 	margin-top: 0px;
 }
 

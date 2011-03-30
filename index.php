@@ -23,7 +23,7 @@
 </div>
 </noscript>
 <div style="width: 960px; height: 16px; background-color: lightgrey; margin-left: -88px; padding-top: 4px; font-size: 12px;">
-<a href="#feature" style="margin-left: 50px; padding-top: 8px; color: #333;">Click here for current ILRI jobs</a>
+<a href="#feature" style="margin-left: 50px; padding-top: 8px; color: #333;">Click here to see some current ILRI jobs</a>
 </div>
 <div id="peopleLeftMenu">
 <img src="images/ilricrowd_left.png" />
@@ -177,9 +177,9 @@
 				}
 
 				echo '		<div id="featureButtons">';
-				echo '		<img src="images/ilri_people_facts.png" title="ILRI people facts" alt="ILRI people facts" class="button first" id="peopleFactsButton" />';
-				echo '		<a href="#newways" title="new ways of working at ILRI"><img src="images/new_ways.png" title="new ways of working at ILRI" alt="new ways of working at ILRI" class="button" /></a>';
-				echo '		<img src="images/ilri_jobs.png" title="ILRI jobs" alt="ILRI jobs" class="button" id="ilriJobsButton" />'."\n";
+				echo '		<img src="images/ilri_people_facts.png" title="ILRI people facts" alt="ILRI people facts" class="button first" id="peopleFactsButton" height="30" width="262" />';
+				echo '		<a href="#newways" title="new ways of working at ILRI"><img src="images/new_ways.png" title="new ways of working at ILRI" alt="new ways of working at ILRI" class="button" height="30" width="262" /></a>';
+				echo '		<img src="images/ilri_jobs_lalign.png" title="ILRI jobs" alt="See some current ILRI jobs" class="button" id="ilriJobsButton" height="30" width="262" />'."\n";
 				echo '		</div>';
 				echo '	</div>';
 				echo '</div>'; //end of #featured
@@ -411,7 +411,8 @@
 </div>
 <br style="clear: both;"/>
 </div>
-<a href="#"><img src="images/back_to_top.png" /></a>
+<a href="http://ilri.org/jobs" title="Jobs page on ilri.org"><img src="images/ilri_jobs_ralign.png" height="30" width="262" alt="Check out jobs on ilri.org" class="button first" /></a>
+<a href="#"><img src="images/back_to_top.png" class="button" /></a>
 
 <div id="footer">
 	<div id="footer-inner">
