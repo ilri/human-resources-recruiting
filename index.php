@@ -50,30 +50,6 @@
 	<input type="hidden" name="media" value="<?php echo ($media == 'audio') ? 'audio' : 'video';?>" />
 	<input type="image" name="submit" src="images/sort_by_job_title.png" />
 </form>
-<?php
-//	// Check if we're in "audio-only" mode.
-//	// if so we have to change the behavior of some things on the page
-//	if(!empty($_POST['media']) && $_POST['media'] == 'audio') {
-//		// set the media to audio
-//		$media = 'audio';
-//	}
-//	else {
-//		// set the media to video
-//		$media ='video';
-//
-//		if(!empty($_POST['sortby'])) {
-//			$sortby = $_POST['sortby'];
-//
-//			// check for a sane sort value, otherwise just use the order in the XML file
-//			if($sortby == 'jobtitle') $people = sort_subval($people,'jobtitle');
-//			else if($sortby == 'location') $people = sort_subval($people,'location');
-//			else {
-//				unset($sortby);	// unset 'sortby' and assume the sortby value is not sane.
-//								// sort the people using the order they appear in the XML file
-//			}
-//		}
-//	}
-?>
 <form id="mediaType" class="sortby" action="<?php echo $pageref; ?>" method="post">
 <?php
 	if($media == 'audio') {
@@ -150,7 +126,6 @@
 				echo '		<div id="featureLeftTop">';
 				echo '			<div id="crowdMember" style="font-size: 14px; color: #6d6d6d; margin-top: 20px; margin-left: 15px; height: 64px; width: 210px; float: left;">featured ilri crowd member:</div>';
 				echo '			<div id="crowdMemberName" class="feature0" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[0]['name']).'</div>';
-				//echo '			<div id="crowdMemberName" class="feature1" style="display: none; font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[1]['name']).'</div>';
 				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
