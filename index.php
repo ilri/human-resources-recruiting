@@ -3,41 +3,92 @@
 <head>
 	<title>ILRI - International Livestock Research Institutute</title>
 	<?php
-		require_once('head_includes.php');
+		require_once('includes/head.php');
 		require_once('includes/functions.php');
 		$pageref = $_SERVER['PHP_SELF']; // are we index.php?
-	 ?>
+	?>
 </head>
 <body>
 
 <div id="outer">
 <div id="header">
 <?php require_once('navigation.php'); ?>
-<div id="banner"></div>
+<div id="banner"><a href="/" title="International Livestock Research Institute"><img src="http://ilri.org/sites/default/files/sky_logo.jpg" alt="International Livestock Research Institute" /></a></div>
 </div> <!-- //#header -->
 
 <div id="inner">
+<noscript>
+<div id="no-js">
+	This website is so much more fun if you have JavaScript enabled!
+</div>
+</noscript>
+<div style="width: 960px; height: 16px; background-color: lightgrey; margin-left: -88px; padding-top: 4px; font-size: 12px;">
+<a href="#feature" style="margin-left: 50px; padding-top: 8px; color: #333;">Click here for current ILRI jobs</a>
+</div>
 <div id="peopleLeftMenu">
 <img src="images/ilricrowd_left.png" />
+<?php
+	// Check if we're in "audio-only" mode and change the page behavior accordingly
+	if(!empty($_POST['media']) && $_POST['media'] == 'audio') {
+		// set the media type to audio
+		$media = 'audio';
+	}
+	else if(!empty($_POST['media']) && $_POST['media'] == 'video') {
+		// set the media type to video
+		$media = 'video';
+	}
+	else $media = 'video'; // otherwise just default to 'video' mode
+?>
 <form id="sortByLocation" class="sortby first" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
+	<?php // if we're in audio mode, set the media type of the button to audio so we maintain media mode when switching sort criteria ?>
+	<input type="hidden" name="media" value="<?php echo ($media == 'audio') ? 'audio' : 'video';?>" />
 	<input type="image" name="submit" src="images/sort_by_location.png" />
 </form>
 <form id="sortByJobTitle" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="jobtitle" />
+	<input type="hidden" name="media" value="<?php echo ($media == 'audio') ? 'audio' : 'video';?>" />
 	<input type="image" name="submit" src="images/sort_by_job_title.png" />
 </form>
-<form id="audioOnly" class="sortby" action="<?php echo $pageref; ?>" method="post">
-	<input type="hidden" name="media" value="audio" />
-	<input type="image" name="submit" src="images/audio_only.png" />
+<?php
+//	// Check if we're in "audio-only" mode.
+//	// if so we have to change the behavior of some things on the page
+//	if(!empty($_POST['media']) && $_POST['media'] == 'audio') {
+//		// set the media to audio
+//		$media = 'audio';
+//	}
+//	else {
+//		// set the media to video
+//		$media ='video';
+//
+//		if(!empty($_POST['sortby'])) {
+//			$sortby = $_POST['sortby'];
+//
+//			// check for a sane sort value, otherwise just use the order in the XML file
+//			if($sortby == 'jobtitle') $people = sort_subval($people,'jobtitle');
+//			else if($sortby == 'location') $people = sort_subval($people,'location');
+//			else {
+//				unset($sortby);	// unset 'sortby' and assume the sortby value is not sane.
+//								// sort the people using the order they appear in the XML file
+//			}
+//		}
+//	}
+?>
+<form id="mediaType" class="sortby" action="<?php echo $pageref; ?>" method="post">
+<?php
+	if($media == 'audio') {
+		echo '	<input type="hidden" name="media" value="video" />'."\n";
+		echo '	<input type="image" name="submit" src="images/video_only.png" />'."\n";
+	}
+	else {
+		echo '	<input type="hidden" name="media" value="audio" />'."\n";
+		echo '	<input type="image" name="submit" src="images/audio_only.png" />'."\n";
+	}
+?>
 </form>
 </div> <!-- //#peopleLeftMenu -->
 
 <img src="images/ilricrowd_right1.png" id="ilricrowdright1" />
-
-<?php
-
-?>
 
 <div id="peopleGrid">
 <?php
@@ -66,15 +117,15 @@
 
 	// determine how to sort our people!
 	// first see if a "sortby" value exists
-	if (!empty($_POST['sortby'])) {
+	if(!empty($_POST['sortby'])) {
 		$sortby = $_POST['sortby'];
 
 		// check for a sane sort value, otherwise just use the order in the XML file
 		if($sortby == 'jobtitle') $people = sort_subval($people,'jobtitle');
 		else if($sortby == 'location') $people = sort_subval($people,'location');
 		else {
-			$_POST['sortby'] = ''; // unset 'sortby' and assume the sortby value is not sane.
-								   // sort the people using the order they appear in the XML file
+			unset($sortby);	// unset 'sortby' and assume the sortby value is not sane.
+							// sort the people using the order they appear in the XML file
 		}
 	}
 
@@ -87,11 +138,13 @@
 			else $rep = false;
 
 			if($count == 2) {
-				echo '<img src="images/ilricrowd_right2.png" id="ilricrowdright2" />';
+				echo '<img src="images/ilricrowd_text.png" id="ilricrowdright2" />';
 			}
 
 			// draw the "featured" section
 			if($count == 4) {
+				echo '<div class="scrollable">';
+				echo '<div id="featuredItems">';
 				echo '<div id="feature">';
 				echo '	<div id="featureLeft">';
 				echo '		<div id="featureLeftTop">';
@@ -101,7 +154,7 @@
 				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="'.$featured[0]['video'].'" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" /></a>';
+				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured[0]['audio'] : $featured[0]['video'];echo '" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -109,7 +162,7 @@
 					// show 1 of our "featured" people big
 					for($x = 0; $x < 1; $x++) {
 						echo '			<div id="mainFeature">';
-						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="150" width="130" />'."\n";
 						echo '			</div>';
 					}
 				echo '			<div id="otherFeatures">';
@@ -117,19 +170,128 @@
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
 					for($x = 1; $x <= 2; $x++) {
-						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" />'."\n";
+						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="57" width="50" />'."\n";
 					}
 				echo 	'			</div>';
 				echo '			</div>';
 				}
 
 				echo '		<div id="featureButtons">';
-				echo '		<img id="ilrijobs" src="images/ilri_jobs.png" title="ILRI jobs" alt="ILRI jobs" class="button first" />';
-				echo '		<img src="images/ilri_people_facts.png" title="ILRI people facts" alt="ILRI people facts" class="button" />';
-				echo '		<img src="images/ilri_specialties.png" title="ILRI specialties" alt="ILRI specialties" class="button" />';
+				echo '		<img src="images/ilri_people_facts.png" title="ILRI people facts" alt="ILRI people facts" class="button first" id="peopleFactsButton" />';
+				echo '		<a href="#newways" title="new ways of working at ILRI"><img src="images/new_ways.png" title="new ways of working at ILRI" alt="new ways of working at ILRI" class="button" /></a>';
+				echo '		<img src="images/ilri_jobs.png" title="ILRI jobs" alt="ILRI jobs" class="button" id="ilriJobsButton" />'."\n";
 				echo '		</div>';
 				echo '	</div>';
-				echo '</div>';
+				echo '</div>'; //end of #featured
+?>
+<div id="peopleFacts">
+	<h2 class="title">people@ilri</h2>
+	<div class="content">
+		<div id="peopleFactsButtons">
+			<ul>
+				<li><a href="#peopleFacts-1" class="current">Specialities</a></li>
+				<li><a href="#peopleFacts-2">Countries</a></li>
+				<li><a href="#peopleFacts-3">More About Staff</a></li>
+			</ul>
+		</div>
+		<div id="peopleFactsContent">
+			<div id="peopleFacts-1">
+				<p style="text-align: left; margin: 10px 0 0 10px;">Current ILRI staff specialities include...</p>
+				<ul style="margin: 75px 5px 5px 10px; font-size: 13px;">
+					<li>Agronomist</li>
+					<li>Anthropologist</li>
+					<li>Bioinformatician</li>
+					<li>Capacity Builder</li>
+					<li>Science Communicators</li>
+					<li>Computer Scientist</li>
+					<li>Disease Modeler</li>
+					<li>Ecologist</li>
+					<li>Economist</li>
+					<li>Epidemiologist</li>
+					<li>Geneticist</li>
+					<li>Geographer</li>
+					<li>GIS Expert</li>
+					<li>Human Geographer</li>
+					<li>Immunologist</li>
+					<li>Knowledge Sharer</li>
+					<li>Livestock Systems Scientist</li>
+					<li>Statisticians</li>
+					<li>Systems Analyst</li>
+					<li>Medical Doctor</li>
+					<li>Parasitologist</li>
+					<li>Social Scientist</li>
+					<li>Veterinarian</li>
+					<li>Virologist</li>
+				</ul>
+			</div>
+			<div id="peopleFacts-2">
+				<p style="text-align: left; margin: 10px 0 0 10px;">Our staff come from 35 countries...</p>
+				<ul style="margin: 75px 5px 5px 10px; font-size: 13px;">
+					<li>Australia</li>
+					<li>Barbados</li>
+					<li>Belgium</li>
+					<li>Benin</li>
+					<li>Cameroon</li>
+					<li>Canada</li>
+					<li>China</li>
+					<li>Colombia</li>
+					<li>Costa Rica</li>
+					<li>Denmark</li>
+					<li>Ethiopia</li>
+					<li>France</li>
+					<li>Germany</li>
+					<li>Ghana</li>
+					<li>Haiti</li>
+					<li>India</li>
+					<li>Ireland</li>
+					<li>Japan</li>
+					<li>Kenya</li>
+					<li>Mozambique</li>
+					<li>Netherlands</li>
+					<li>New Zealand</li>
+					<li>Nigeria</li>
+					<li>Philippines</li>
+					<li>Senegal</li>
+					<li>South Africa</li>
+					<li>Sri Lanka</li>
+					<li>Sweden</li>
+					<li>Taiwan</li>
+					<li>Tanzania</li>
+					<li>Tunisia</li>
+					<li>Uganda</li>
+					<li>United Kingdom</li>
+					<li>United States of America</li>
+					<li>Uruguay</li>
+					<li>Zimbabwe</li>
+				</ul>
+			</div>
+			<div id="peopleFacts-3">
+				<p style="text-align: left; margin: 140px 0px 0px 10px;">Almost 60% of our international staff are from developing nations.</p>
+				<p style="text-align: left; margin: 20px 0px 0px 10px;">35% of our staff are female.</p>
+			</div>
+		</div>
+		<div class="nav">
+			<div style="height: 30px; font-size: 10px;"><a href="#" class="back"><img src="images/arrow_left.jpg" style="display: inline; vertical-align: middle;" /> Back to the featured videos</a></div>
+		</div> <!-- //div.nav -->
+	</div> <!-- //div.content -->
+</div> <!-- //div#peopleFacts -->
+<?php
+				echo '<div id="jobs">'."\n";
+				echo '	<h2 class="title">jobs@ilri</h2>'."\n";
+				echo '	<div class="content">'."\n";
+				print_current_jobs();
+				echo '		<div class="nav">
+			<span style="width: 50%; float: left; text-align: left;">
+				<a href="#" class="back"><img src="images/arrow_left.jpg" style="display: inline; vertical-align: middle;" /> Back to the featured videos</a>
+			</span>
+			<span style="width: 50%; float: right; text-align: right;">
+				<a href="http://ilri.org/aggregator/sources/7" title="More jobs">More <img src="images/arrow_right.jpg" style="display: inline; vertical-align: middle;" /></a>
+			</span>
+		</div> <!-- //div.nav -->';
+				echo '	</div>'."\n";
+				echo '</div>'; //end of #jobs
+				echo '</div>'; //end of .items
+				echo '</div>'; //end of .scrollable
 			}
 			
 			if($rep) $class = "person rep";
@@ -138,23 +300,25 @@
 			echo '<div class="'.$class.'">'."\n";
 			echo '	<div class="img">'."\n";
 
-			//check to see if the current person has a video
-			if(isset($person['video']) && $person['video'] != 'false') {
-				echo '		<a class="vid" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" /></a>'."\n";
+			// insert a person with a link to their interview (audio or video)
+			if( $media == 'video' && isset($person['video']) ) {
+				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
 			}
-			// show image if there is no video
+			else if( $media == 'audio' && isset($person['audio']) ) {
+				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['audio'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
+			}
 			else {
 				if(isset($person['link'])) {
 					echo '		<a href="'.$person['link'].'" title="Azizi Biobank on Facebook">'."\n";
-					echo '			<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '			<img src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" height="150" width="130" />'."\n";
 					echo '		</a>'."\n";
 				}
 				else {
-					echo '		<img class="person" src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+					echo '		<img class="person" src="'.$person['image'].'" title="'.$person['name'].'" alt="'.$person['name'].'" height="150" width="130" />'."\n";
 				}
 			}
 			echo '	</div>'."\n";
-			echo '	<div class="currently">'.$person['currently']."</div>\n";
+			echo '	<div class="currently"><p>Currently...</p><br />'.$person['currently']."</div>\n";
 
 			if($rep) $class = "name rep";
 			else $class = "name";
@@ -181,78 +345,89 @@
 	}
 ?>
 </div>
-<div id="newWays" style="width: 960px; clear: both; position: relative; left: -88px; top: -20px; background-color: #ddd;">
-<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
-<div class="heading" style="background-color: #fff; font-size: 16px; font-weight: 600; color: rgb(138,115,115); text-align: left; height: 40px; padding-left: 15px;">
-new ways of working - what suits you?
+<div id="newWays">
+	<div class="row row1">
+		<div class="heading">
+			<h2><a name="newways">new ways of working - what suits you?</a></h2>
+		</div>
+		<div id="newerWays" style="float: left; margin-top: 25px; height: 75px;">
+			<div style="width: 262px; height: 75px;"><a href="http://ilri.org/HumanResources" title="ILRI human resources"><img src="images/more_info.png" /></a></div>
+		</div>
+		<div class="scientists">
+			An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
+		</div>
+	</div>
+	<div class="row">
+		<div class="heading"></div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/florence_l.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/steve_k.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/kohei.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/jenny.jpg" />
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="heading"></div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/karl_r.jpg" />
+			</div>
+		</div>
+		<div class="person">
+		<?php
+			if( $media == 'video' ) {
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
+			}
+			else {
+				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
+			}
+		?>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/tilahun_a.jpg" />
+			</div>
+		</div>
+		<div class="person">
+			<div class="img">
+				<img class="person" src="images/people/petr_h.jpg" />
+			</div>
+		</div>
+	</div>
 </div>
-<img class="person" src="images/people/petr_h.png" style="margin-right:88px; padding-left: 0px; float: right;" />
-<div style="float: left; margin-left: 88px; width: 640px; height: 60px; padding-top: 15px; font-size: 14px;">
-An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
+<br style="clear: both;"/>
 </div>
-<div style="margin-left: 88px; padding-left:540px; float: left; width: 100px; height: 75px; text-align: right; font-size: 12px;">
-more about new ways of working at ILRI
-</div>
+<a href="#"><img src="images/back_to_top.png" /></a>
 
-</div>
-
-<div class="row" style="background-image: url(images/purple_1px.png); background-position: bottom left; background-repeat: repeat-x; height: 190px;">
-<div class="heading" style="height: 40px;">
-</div>
-	<img class="person" src="images/people/solenne.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/steve_k.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/kohei.png" style="margin-left: 88px; float: left" />
-	<img class="person" src="images/people/jenny.png" style="margin-left: 88px; float: left" />
-</div>
-</div>
-
-</div>
-<div id="jobs">
-<a href="#" class="close" style="position: absolute; top: 0px; right: 0px; display: block;">X</a>
-	<ul>
-		<li>Agronomist</li>
-		<li>Anthropologist</li>
-		<li>Bioinformatician</li>
-		<li>Capacity Builder</li>
-		<li>Science Communicators</li>
-		<li>Computer Scientist</li>
-		<li>Disease Modeler</li>
-		<li>Ecologist</li>
-		<li>Economist</li>
-		<li>Epidemiologist</li>
-		<li>Geneticist</li>
-		<li>Geographer</li>
-		<li>GIS Expert</li>
-		<li>Human Geographer</li>
-		<li>Immunologist</li>
-		<li>Knowledge Sharer</li>
-		<li>Livestock Systems Scientist</li>
-		<li>Statisticians</li>
-		<li>Systems Analyst</li>
-		<li>Medical Doctor</li>
-		<li>Parasitologist</li>
-		<li>Social Scientist</li>
-		<li>Veterinarian</li>
-		<li>Virologist</li>
-	</ul>
-</div> <!-- //#jobs -->
 <div id="footer">
 	<div id="footer-inner">
-	<p><a href="http://www.ilri.org/ContactUs">Contact us</a> | <a href="http://www.ilri.org/CopyRight">Copyright and permissions</a> | <a href="http://www.ilri.org/Search">Search</a> | <a href="http://www.ilri.org/Newsfeeds">Subscribe</a><br>
-	&copy; International Livestock Research Institute (ILRI)</p>
+		<p><a href="http://www.ilri.org/ContactUs">Contact us</a> | <a href="http://www.ilri.org/CopyRight">Copyright and permissions</a> | <a href="http://www.ilri.org/Search">Search</a> | <a href="http://www.ilri.org/Newsfeeds">Subscribe</a><br>
+		&copy; International Livestock Research Institute (ILRI)</p>
 	</div>
 </div>
 </div> <!-- //#inner -->
 
 </div> <!-- //#outer -->
 
-<!--<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js"></script>
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8.4/jquery-ui.min.js"></script>
--->
-<script type="text/javascript" src="scripts/jquery.min.js"></script>
-<script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-ui-1.8.11.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.flip.min.js"></script>
-<script type="text/javascript" src="scripts/flowplayer-3.2.4.min.js"></script>
+<script type="text/javascript" src="scripts/flowplayer-3.2.6.min.js"></script>
+<script type="text/javascript" src="scripts/jquery.tools.min.js"></script>
 <script type="text/javascript" src="scripts/people.js"></script>
 <script type="text/javascript">
 <? 
@@ -264,7 +439,9 @@ more about new ways of working at ILRI
 		echo "featured[$x]['name'] = \"".$featured[$x]['name']."\";\n";
 		echo "featured[$x]['startimage'] = \"".$featured[$x]['startimage']."\";\n";
 		echo "featured[$x]['description'] = \"".$featured[$x]['description']."\";\n";
-		echo "featured[$x]['video'] = \"".$featured[$x]['video']."\";\n";
+		// use keyword 'media' on client side so that we don't have to do anything special
+		// when swapping our featured people in javascript (just swap "media", whether it's audio or video)
+		echo "featured[$x]['media'] = \"";echo ($media == 'audio') ? $featured[$x]['audio'] : $featured[$x]['video'];echo "\";\n";
 	}
 ?>
 </script>

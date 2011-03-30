@@ -6,32 +6,36 @@
 		<location>Bamako, Mali</location>
 		<nationality>Senegal</nationality>
 		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/abdou_f.png</image>
+		<image>images/people/abdou_f.jpg</image>
 		<video>videos/abdou_f.flv</video>
+		<audio>audio/abdou_f.mp3</audio>
 	</person>
 	<person>
 		<name>Andrew Mude</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Kenya</nationality>
 		<jobtitle>Economist</jobtitle>
-		<image>images/people/andrew_m.png</image>
+		<image>images/people/andrew_m.jpg</image>
 		<video>videos/andrew_m.flv</video>
+		<audio>audio/andrew_m.mp3</audio>
 	</person>
 	<person>
 		<name>Purvi Mehta-Bhatt</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>India</nationality>
 		<jobtitle>Capacity Builder</jobtitle>
-		<image>images/people/purvi_m.png</image>
+		<image>images/people/purvi_m.jpg</image>
 		<video>videos/purvi_m.flv</video>
+		<audio>audio/purvi_m.mp3</audio>
 	</person>
 	<person>
 		<name>Delia Grace</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Ireland</nationality>
 		<jobtitle>Epidemiologist</jobtitle>
-		<image>images/people/delia_g.png</image>
+		<image>images/people/delia_g.jpg</image>
 		<video>videos/delia_g.flv</video>
+		<audio>audio/delia_g.mp3</audio>
 	</person>
 	<person>
 		<name>Siboniso Moyo</name>
@@ -39,32 +43,34 @@
 		<location>Maputo, Mozambique</location>
 		<nationality>Zimbabwe</nationality>
 		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/siboniso_m.png</image>
+		<image>images/people/siboniso_m.jpg</image>
 		<video>videos/siboniso_m.flv</video>
+		<audio>audio/siboniso_m.mp3</audio>
 	</person>
 	<person>
 		<name>Bruno Gerard</name>
 		<location>Addis Ababa, Ethiopia</location>
 		<nationality>Belgium</nationality>
 		<jobtitle>Systems Agronomist</jobtitle>
-		<image>images/people/bruno_g.png</image>
-		<currently>Currently analysing crop residue uses and land use/land cover dynamics</currently>
+		<image>images/people/bruno_g.jpg</image>
+		<currently>... analysing crop residue uses and land use/land cover dynamics.</currently>
 	</person>
 	<person>
 		<name>Ranjitha Puskur</name>
 		<location>Addis Ababa, Ethiopia</location>
 		<nationality>India</nationality>
 		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/ranjitha_p.png</image>
+		<image>images/people/ranjitha_p.jpg</image>
 		<video>videos/ranjitha_p.flv</video>
+		<audio>audio/ranjitha_p.mp3</audio>
 	</person>
 	<person>
 		<name>Lucy Lapar</name>
 		<location>Manila, Philipines</location>
 		<nationality>Philipines</nationality>
 		<jobtitle>Agricultural Economist</jobtitle>
-		<image>images/people/lucy_l.png</image>
-		<currently>Currently researching pigs in Southeast Asia</currently>
+		<image>images/people/lucy_l.jpg</image>
+		<currently>... researching pigs in Southeast Asia.</currently>
 	</person>
 	<person>
 		<name>Iain Wright</name>
@@ -72,71 +78,77 @@
 		<region>Asia</region>
 		<nationality>Scotland</nationality>
 		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/iain_w.png</image>
+		<image>images/people/iain_w.jpg</image>
 		<video>videos/iain_w.flv</video>
+		<audio>audio/iain_w.mp3</audio>
 	</person>
 	<person>
 		<name>Arindam Samaddar</name>
 		<location>New Delhi, India</location>
 		<nationality>India</nationality>
 		<jobtitle>Anthropologist</jobtitle>
-		<image>images/people/arindam_s.png</image>
+		<image>images/people/arindam_s.jpg</image>
 		<video>videos/arindam_s.flv</video>
+		<audio>audio/arindam_s.mp3</audio>
 	</person>
 	<person>
 		<name>Appolinaire Djikeng</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Cameroon</nationality>
 		<jobtitle>Genomicist</jobtitle>
-		<image>images/people/appolinaire_d.png</image>
-		<currently>Currently working with cutting edge genetic technology</currently>
+		<image>images/people/appolinaire_d.jpg</image>
+		<currently>... working with cutting edge genetic technology.</currently>
 	</person>
 	<person>
 		<name>Saskia Hendrickx</name>
-		<location>Nairobi, Kenya</location>
+		<location>Maputo, Mozambique</location>
 		<nationality>Netherlands</nationality>
 		<jobtitle>Veterinarian</jobtitle>
-		<image>images/people/saskia_h.png</image>
+		<image>images/people/saskia_h.jpg</image>
 		<video>videos/saskia_h.flv</video>
+		<audio>audio/saskia_h.mp3</audio>
 	</person>
 	<person>
 		<name>Peter Ballantyne</name>
 		<location>Addis Ababa, Ethiopia</location>
 		<jobtitle>Knowledge Sharer</jobtitle>
 		<nationality>Scotland</nationality>
-		<image>images/people/peter_b.png</image>
+		<image>images/people/peter_b.jpg</image>
 		<video>videos/peter_b.flv</video>
+		<audio>audio/peter_b.mp3</audio>
 	</person>
 	<person>
 		<name>Karen Marshall</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Australia</nationality>
 		<jobtitle>Geneticist</jobtitle>
-		<image>images/people/karen_m.png</image>
-		<currently>Currently juggling a new baby and a project in West Africa</currently>
+		<image>images/people/karen_m.jpg</image>
+		<currently>... juggling a new baby and a project in West Africa.</currently>
 	</person>
 	<person>
 		<name>Martin Norling</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Sweden</nationality>
 		<jobtitle>Bioinformatician</jobtitle>
-		<image>images/people/martin_n.png</image>
+		<image>images/people/martin_n.jpg</image>
 		<video>videos/martin_n.flv</video>
+		<audio>audio/martin_n.mp3</audio>
 	</person>
 	<person>
 		<name>Polly Ericksen</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>USA</nationality>
 		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/polly_e.png</image>
+		<image>images/people/polly_e.jpg</image>
 		<video>videos/polly_e.flv</video>
+		<audio>audio/polly_e.mp3</audio>
 	</person>
 	<person>
 		<name>Azizi Biobank</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>North Pole</nationality>
 		<jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
-		<image>images/people/azizi.png</image>
+		<image>images/people/azizi.jpg</image>
 		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
 	</person>
 	<person>
@@ -144,73 +156,74 @@
 		<location>Nairobi, Kenya</location>
 		<nationality>UK</nationality>
 		<jobtitle>Applied Statistician</jobtitle>
-		<image>images/people/jane_p.png</image>
-		<currently>Currently finding new ways to analyze data</currently>
+		<image>images/people/jane_p.jpg</image>
+		<currently>... finding new ways to analyze data.</currently>
 	</person>
 	<person>
 		<name>Mario Herrero</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Costa Rica</nationality>
 		<jobtitle>Livestock Systems Scientist</jobtitle>
-		<image>images/people/mario_h.png</image>
-		<currently>Currently writing papers for Science</currently>
+		<image>images/people/mario_h.jpg</image>
+		<currently>... writing papers for &lt;em&gt;Science&lt;/em&gt;.</currently>
 	</person>
 	<person>
 		<name>Ayele Gelan</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Ethiopia</nationality>
 		<jobtitle>Economist</jobtitle>
-		<image>images/people/ayele_g.png</image>
-		<currently>Currently supporting an East African dairy project</currently>
+		<image>images/people/ayele_g.jpg</image>
+		<currently>... supporting an East African dairy project.</currently>
 	</person>
 	<person>
 		<name>Fred Unger</name>
 		<location>Bangkok, Thailand</location>
 		<nationality>Germany</nationality>
 		<jobtitle>Veterinary epidemiologist</jobtitle>
-		<image>images/people/fred_u.png</image>
-		<currently>Currently researching bird flu in Asia</currently>
+		<image>images/people/fred_u.jpg</image>
+		<currently>... researching bird flu in Asia.</currently>
 	</person>
 	<person>
 		<name>Acho Okike</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Nigeria</nationality>
 		<jobtitle>Economist + Epidemiologist</jobtitle>
-		<image>images/people/acho_o.png</image>
-		<currently>Currently working on food safety and animal diseases in West Africa</currently>
+		<image>images/people/acho_o.jpg</image>
+		<currently>... working on food safety and animal diseases in West Africa.</currently>
 	</person>
 	<person>
 		<name>Jeff Gilbert</name>
 		<location>Vientiane, Laos</location>
 		<nationality>Ireland</nationality>
 		<jobtitle>Medical Doctor + Veterinarian</jobtitle>
-		<image>images/people/jeff_g.png</image>
-		<currently>Currently coordinating an eco-health project in Southeast Asia</currently>
+		<image>images/people/jeff_g.jpg</image>
+		<currently>... coordinating an eco-health project in Southeast Asia.</currently>
 	</person>
 	<person>
 		<name>Mohammed Said</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Kenya</nationality>
 		<jobtitle>Livestock Ecologist</jobtitle>
-		<image>images/people/mohammed_s.png</image>
-		<currently>Currently working on human, wildlife and livestock interactions</currently>
+		<image>images/people/mohammed_s.jpg</image>
+		<currently>... working on human, wildlife and livestock interactions.</currently>
 	</person>
 	<person>
 		<name>Lucilla Steinaa</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Denmark</nationality>
 		<jobtitle>Immunologist</jobtitle>
-		<image>images/people/lucilla_s.png</image>
-		<currently>Currently working on livestock vaccines</currently>
+		<image>images/people/lucilla_s.jpg</image>
+		<currently>... working on livestock vaccines.</currently>
 	</person>
 	<person>
 		<name>Jemimah Njuki</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>Kenya</nationality>
 		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/jemimah_n.png</image>
-		<startimage>videos/jemimah_n.png</startimage>
+		<image>images/people/jemimah_n.jpg</image>
+		<startimage>videos/jemimah_n.jpg</startimage>
 		<video>videos/jemimah_n.flv</video>
+		<audio>audio/jemimah_n.mp3</audio>
 		<featured>true</featured>
 		<description>watch a video about why her work with ilri matters to her</description>
 	</person>
@@ -219,21 +232,23 @@
 		<location>Nairobi, Kenya</location>
 		<nationality>UK</nationality>
 		<jobtitle>Computer Scientist</jobtitle>
-		<image>images/people/andy_and_phil.png</image>
-		<startimage>videos/andy_and_phil.png</startimage>
+		<image>images/people/andy_and_phil.jpg</image>
+		<startimage>videos/andy_and_phil.jpg</startimage>
 		<description>watch a video about why they love working with ilri</description>
 		<featured>true</featured>
 		<video>videos/andy_and_phil.flv</video>
+		<audio>audio/andy_and_phil.mp3</audio>
 	</person>
 	<person>
 		<name>Alan Orth</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>USA</nationality>
 		<jobtitle>Computer Scientist</jobtitle>
-		<image>images/people/alan_o.png</image>
-		<startimage>videos/alan_o.png</startimage>
+		<image>images/people/alan_o.jpg</image>
+		<startimage>videos/alan_o.jpg</startimage>
 		<featured>true</featured>
 		<description>watch a video about why he likes being a computer systems specialist in a livestock institute</description>
 		<video>videos/alan_o.flv</video>
+		<audio>audio/alan_o.mp3</audio>
 	</person>
 </people>
