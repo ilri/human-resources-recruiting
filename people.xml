@@ -251,4 +251,70 @@
 		<video>videos/alan_o.flv</video>
 		<audio>audio/alan_o.mp3</audio>
 	</person>
+	<person>
+		<name>Florence Landsburg</name>
+		<image>images/people/florence_l.jpg</image>
+		<nationality>?</nationality>
+		<organization>World Resources Institute</organization>
+		<specialty>GIS Expert</specialty>
+		<newways>true</newways>
+	</person>
+    <person>
+		<name>Steve Kemp</name>
+		<image>images/people/steve_k.jpg</image>
+		<nationality>UK</nationality>
+		<organization>University of Liverpool</organization>
+		<specialty>Geneticist</specialty>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Kohei Makita</name>
+		<image>images/people/kohei_m.jpg</image>
+		<organization>Rakuno Gakuen University</organization>
+		<nationality>Japan</nationality>
+		<specialty>Veterinary Epidemiologist</specialty>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Jenny Olson</name>
+		<image>images/people/jenny_o.jpg</image>
+		<organization>Michigan State University</organization>
+		<nationality>USA</nationality>
+		<specialty>Human Geographer</specialty>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Karl Rich</name>
+		<image>images/people/karl_r.jpg</image>
+		<nationality>USA</nationality>
+		<organization>Norweigian Institute of International Affairs</organization>
+		<specialty>Economist</specialty>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Eric Fèvre</name>
+		<image>images/people/eric_f.jpg</image>
+		<nationality>French</nationality>
+		<specialty>Epidedimiologist</specialty>
+		<organization>Institute of Immunology and Infection Research, University of Edinburgh</organization>
+		<video>videos/eric_f.flv</video>
+		<audio>audio/eric_f.mp3</audio>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Tilahun Amede</name>
+		<image>images/people/tilahun_a.jpg</image>
+		<organization>International Water Management Institute</organization>
+		<nationality>Ethiopia</nationality>
+		<specialty>Agronomist - Water Management</specialty>
+		<newways>true</newways>
+	</person>
+	<person>
+		<name>Petr Halvik</name>
+		<image>images/people/petr_h.jpg</image>
+		<organization>International Institute for Applied Systems Analysis</organization>
+		<nationality>Czech Republic</nationality>
+		<specialty>Livestock Futures Scientist</specialty>
+		<newways>true</newways>
+	</person>
 </people>

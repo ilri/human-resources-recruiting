@@ -78,17 +78,26 @@
 	// we reset our people array to this subset
 	$people = $people['person'];
 
-	// remove "featured" people
-	$featured = array(); // initialize empty array
-	$elementnum = 0; // a counter
+	// put "featured" people in their own array
+	// there should only be three of them, as we've got three slots in the layout.
+	$featured_people = array(); // initialize empty array
 	// loop through our people and search for persons who are "featured"
-	// when you find one, stick it in the $featured array and remove them from people
-	foreach($people as $person) {
+	// when you find one, stick it in the $featured_people array and remove them from people
+	foreach($people as $elementnum => $person) {
 		if(array_key_exists('featured',$person)) {
-			array_push($featured, $people[$elementnum]);
+			array_push($featured_people, $people[$elementnum]);
 			unset($people[$elementnum]);
 		}
-		$elementnum++;
+	}
+
+	// put "New Ways of Working" people in their own array
+	// there should only be eight of them, as we've got eight slots in the layout.
+	$newways_people = array(); // initialize empty array
+	foreach($people as $elementnum => $person) {
+		if(array_key_exists('newways',$person)) {
+			array_push($newways_people, $people[$elementnum]);
+			unset($people[$elementnum]);
+		}
 	}
 
 	// determine how to sort our people!
@@ -125,19 +134,19 @@
 				echo '	<div id="featureLeft">';
 				echo '		<div id="featureLeftTop">';
 				echo '			<div id="crowdMember" style="font-size: 14px; color: #6d6d6d; margin-top: 20px; margin-left: 15px; height: 64px; width: 210px; float: left;">featured ilri crowd member:</div>';
-				echo '			<div id="crowdMemberName" class="feature0" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured[0]['name']).'</div>';
-				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured[0]['description']).'</div>';
+				echo '			<div id="crowdMemberName" class="feature0" style="font-size: 20px; font-weight: 500; color: #6d6d6d; margin-top: 15px; height: 69px; width: 167px; float: left; text-align: right;">'.strtolower($featured_people[0]['name']).'</div>';
+				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured_people[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured[0]['audio'] : $featured[0]['video'];echo '" style="background-image: url('.$featured[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
+				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured_people[0]['audio'] : $featured_people[0]['video'];echo '" style="background-image: url('.$featured_people[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
-				if(isset($featured) && !empty($featured)) {
+				if(isset($featured_people) && !empty($featured_people)) {
 					// show 1 of our "featured" people big
 					for($x = 0; $x < 1; $x++) {
 						echo '			<div id="mainFeature">';
-						echo '				<img class="person" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="150" width="130" />'."\n";
+						echo '				<img class="person" src="'.$featured_people[$x]['image'].'" title="'.$featured_people[$x]['name'].'" alt="'.$featured_people[$x]['name'].'" height="150" width="130" />'."\n";
 						echo '			</div>';
 					}
 				echo '			<div id="otherFeatures">';
@@ -145,7 +154,7 @@
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
 					for($x = 1; $x <= 2; $x++) {
-						echo '				<img class="person person'.$x.'" src="'.$featured[$x]['image'].'" title="'.$featured[$x]['name'].'" alt="'.$featured[$x]['name'].'" height="57" width="50" />'."\n";
+						echo '				<img class="person person'.$x.'" src="'.$featured_people[$x]['image'].'" title="'.$featured_people[$x]['name'].'" alt="'.$featured_people[$x]['name'].'" height="57" width="50" />'."\n";
 					}
 				echo 	'			</div>';
 				echo '			</div>';
@@ -332,57 +341,34 @@
 			An increasing number of scientists are employed through innovative arrangements such as joint appointments, sponsored positions and sabbaticals from international institutions.
 		</div>
 	</div>
-	<div class="row">
-		<div class="heading"></div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/florence_l.jpg" />
-			</div>
-		</div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/steve_k.jpg" />
-			</div>
-		</div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/kohei.jpg" />
-			</div>
-		</div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/jenny.jpg" />
-			</div>
-		</div>
-	</div>
-	<div class="row">
-		<div class="heading"></div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/karl_r.jpg" />
-			</div>
-		</div>
-		<div class="person">
-		<?php
-			if( $media == 'video' ) {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="videos/eric_f.flv"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
+<?php
+		// print out two rows of "New Ways" people (eight people total)
+		foreach($newways_people as $elementnum => $person) {
+			if($elementnum == 0) {
+				echo '<div class="row">'."\n";
+				echo '	<div class="heading"></div>'."\n";
+			}
+			echo '<div class="person">'."\n";
+			if($elementnum == 5) { // element 5 = Eric Fevre
+				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person[$media].'" title="'.$person['name'].'"><img src="images/play.png" class="play" alt="Play icon" height="25" width="25" /></a>'."\n";
+				echo '</div>'."\n";
 			}
 			else {
-				echo '		<a class="'.$media.'" style="background-image: url(images/people/eric_f.jpg);" href="audio/eric_f.mp3"><img src="images/play.png" class="play" title="Eric Fevre" alt="Eric Fevre" height="25" width="25" /></a>'."\n";
+				echo '	<div class="img">'."\n";
+				echo '		<img class="person" src="'.$person['image'].'" height="150" width="130" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
+				echo '	</div>'."\n";
+				echo '</div>'."\n";
 			}
-		?>
-		</div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/tilahun_a.jpg" />
-			</div>
-		</div>
-		<div class="person">
-			<div class="img">
-				<img class="person" src="images/people/petr_h.jpg" />
-			</div>
-		</div>
-	</div>
+			if($elementnum == 3) { //element 3 is person 4, end row 1 and print row 2!
+				echo '</div>'."\n";
+				echo '<div class="row">'."\n";
+				echo '	<div class="heading"></div>'."\n";
+			}
+			if($elementnum == 7) { //element 7 is person 8, end row 2
+				echo '</div>'."\n";
+			}
+		}
+?>
 </div>
 <br style="clear: both;"/>
 </div>
@@ -411,13 +397,13 @@
 	echo 'var featured = new Array();'."\n";
 	for($x = 0; $x <3; $x++) {
 		echo "featured[$x] = new Array();\n";
-		echo "featured[$x]['image'] = \"".$featured[$x]['image']."\";\n";
-		echo "featured[$x]['name'] = \"".$featured[$x]['name']."\";\n";
-		echo "featured[$x]['startimage'] = \"".$featured[$x]['startimage']."\";\n";
-		echo "featured[$x]['description'] = \"".$featured[$x]['description']."\";\n";
+		echo "featured[$x]['image'] = \"".$featured_people[$x]['image']."\";\n";
+		echo "featured[$x]['name'] = \"".$featured_people[$x]['name']."\";\n";
+		echo "featured[$x]['startimage'] = \"".$featured_people[$x]['startimage']."\";\n";
+		echo "featured[$x]['description'] = \"".$featured_people[$x]['description']."\";\n";
 		// use keyword 'media' on client side so that we don't have to do anything special
 		// when swapping our featured people in javascript (just swap "media", whether it's audio or video)
-		echo "featured[$x]['media'] = \"";echo ($media == 'audio') ? $featured[$x]['audio'] : $featured[$x]['video'];echo "\";\n";
+		echo "featured[$x]['media'] = \"";echo ($media == 'audio') ? $featured_people[$x]['audio'] : $featured_people[$x]['video'];echo "\";\n";
 	}
 ?>
 </script>
