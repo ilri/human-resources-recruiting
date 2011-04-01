@@ -31,28 +31,28 @@
 	// Check if we're in "audio-only" mode and change the page behavior accordingly
 	if(!empty($_POST['media']) && $_POST['media'] == 'audio') {
 		// set the media type to audio
-		$media = 'audio';
+		$media_type = 'audio';
 	}
 	else if(!empty($_POST['media']) && $_POST['media'] == 'video') {
 		// set the media type to video
-		$media = 'video';
+		$media_type = 'video';
 	}
-	else $media = 'video'; // otherwise just default to 'video' mode
+	else $media_type = 'video'; // otherwise just default to 'video' mode
 ?>
 <form id="sortByLocation" class="sortby first" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="location" />
 	<?php // if we're in audio mode, set the media type of the button to audio so we maintain media mode when switching sort criteria ?>
-	<input type="hidden" name="media" value="<?php echo ($media == 'audio') ? 'audio' : 'video';?>" />
+	<input type="hidden" name="media" value="<?php echo ($media_type == 'audio') ? 'audio' : 'video';?>" />
 	<input type="image" name="submit" src="images/sort_by_location.png" />
 </form>
 <form id="sortByJobTitle" class="sortby" action="<?php echo $pageref; ?>" method="post">
 	<input type="hidden" name="sortby" value="jobtitle" />
-	<input type="hidden" name="media" value="<?php echo ($media == 'audio') ? 'audio' : 'video';?>" />
+	<input type="hidden" name="media" value="<?php echo ($media_type == 'audio') ? 'audio' : 'video';?>" />
 	<input type="image" name="submit" src="images/sort_by_job_title.png" />
 </form>
 <form id="mediaType" class="sortby" action="<?php echo $pageref; ?>" method="post">
 <?php
-	if($media == 'audio') {
+	if($media_type == 'audio') {
 		echo '	<input type="hidden" name="media" value="video" />'."\n";
 		echo '	<input type="image" name="submit" src="images/video_only.png" />'."\n";
 	}
@@ -138,7 +138,7 @@
 				echo '			<div id="crowdMemberDescription" style="color: #4d4d4d; height: 74px; width: 392px; text-align: right; float: left;">'.strtolower($featured_people[0]['description']).'</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftBottom">';
-				echo '			<a id="featured" href="';echo ($media == 'audio') ? $featured_people[0]['audio'] : $featured_people[0]['video'];echo '" style="background-image: url('.$featured_people[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
+				echo '			<a id="featured" href="';echo ($media_type == 'audio') ? $featured_people[0]['audio'] : $featured_people[0]['video'];echo '" style="background-image: url('.$featured_people[0]['startimage'].');"><img src="images/play.png" class="play" height="55" width="55" /></a>';
 				echo '		</div>';
 				echo '	</div>';
 				echo '	<div id="featureRight">';
@@ -285,11 +285,11 @@
 			echo '	<div class="img">'."\n";
 
 			// insert a person with a link to their interview (audio or video)
-			if( $media == 'video' && isset($person['video']) ) {
-				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
+			if( $media_type == 'video' && isset($person['video']) ) {
+				echo '		<a class="'.$media_type.'" style="background-image: url('.$person['image'].');" href="'.$person['video'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
 			}
-			else if( $media == 'audio' && isset($person['audio']) ) {
-				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person['audio'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
+			else if( $media_type == 'audio' && isset($person['audio']) ) {
+				echo '		<a class="'.$media_type.'" style="background-image: url('.$person['image'].');" href="'.$person['audio'].'"><img src="images/play.png" class="play" title="'.$person['name'].'" alt="'.$person['name'].'" height="25" width="25" /></a>'."\n";
 			}
 			else {
 				if(isset($person['link'])) {
@@ -350,7 +350,7 @@
 			}
 			echo '<div class="person">'."\n";
 			if($elementnum == 5) { // element 5 = Eric Fevre
-				echo '		<a class="'.$media.'" style="background-image: url('.$person['image'].');" href="'.$person[$media].'" title="'.$person['name'].'"><img src="images/play.png" class="play" alt="Play icon" height="25" width="25" /></a>'."\n";
+				echo '		<a class="'.$media_type.'" style="background-image: url('.$person['image'].');" href="'.$person[$media_type].'" title="'.$person['name'].'"><img src="images/play.png" class="play" alt="Play icon" height="25" width="25" /></a>'."\n";
 				echo '</div>'."\n";
 			}
 			else {
@@ -403,7 +403,7 @@
 		echo "featured[$x]['description'] = \"".$featured_people[$x]['description']."\";\n";
 		// use keyword 'media' on client side so that we don't have to do anything special
 		// when swapping our featured people in javascript (just swap "media", whether it's audio or video)
-		echo "featured[$x]['media'] = \"";echo ($media == 'audio') ? $featured_people[$x]['audio'] : $featured_people[$x]['video'];echo "\";\n";
+		echo "featured[$x]['media'] = \"";echo ($media_type == 'audio') ? $featured_people[$x]['audio'] : $featured_people[$x]['video'];echo "\";\n";
 	}
 ?>
 </script>
