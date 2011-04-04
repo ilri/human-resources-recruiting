@@ -355,6 +355,7 @@
 				echo '	<div class="img">'."\n";
 				echo '		<img class="person" src="'.$person['image'].'" height="150" width="130" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
 				echo '	</div>'."\n";
+				echo '	<div class="biography">'.$person['specialty'].'<br/><br/>'.$person['organization'].'</div>'."\n";
 				echo '	<span class="name">'.$person['name'].'</span>'."\n";
 				echo '</div>'."\n";
 			}

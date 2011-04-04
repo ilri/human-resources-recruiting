@@ -114,12 +114,19 @@ $(window).load(function() {
 	});
 
 	// select the black and white photos, and flip them on click
-	$('div.person div.img:not(:has(a))').click(function () {
+	$('#peopleGrid div.person div.img:not(:has(a))').click(function () {
 		var $person = $(this);
-		flip_person($person);
+		flip_person($person,'.currently'); // flip the photo to show what they are "currently" doing
 	});
 
-	function flip_person($person) {
+	$('#newWays div.person div.img:not(:has(a))').click(function () {
+		var $person = $(this);
+		flip_person($person,'.biography'); // flip the photo to show what their biographical information
+	});
+
+	// a generic function to "flip" photos
+	// takes a parameter "$element" which is the element to be printed on the "flipped" side
+	function flip_person($person,$element) {
 		// check if the personent is already "flipped"
 		if($person.data('flipped'))
 		{
@@ -135,7 +142,7 @@ $(window).load(function() {
 				color: '#9f9f9f',
 				onBefore: function(){
 					$person.addClass('text');
-					$person.html($person.siblings('.currently').html());
+					$person.html($person.siblings($element).html());
 				}
 			});
 
