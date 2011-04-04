@@ -347,13 +347,15 @@
 			}
 			echo '<div class="person">'."\n";
 			if($elementnum == 5) { // element 5 = Eric Fevre
-				echo '		<a class="'.$media_type.'" style="background-image: url('.$person['image'].');" href="'.$person[$media_type].'" title="'.$person['name'].'"><img src="images/play.png" class="play" alt="Play icon" height="25" width="25" /></a>'."\n";
+				echo '	<a class="'.$media_type.'" style="background-image: url('.$person['image'].');" href="'.$person[$media_type].'" title="'.$person['name'].'"><img src="images/play.png" class="play" alt="Play icon" height="25" width="25" /></a>'."\n";
+				echo '	<span class="name">'.$person['name'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 			else {
 				echo '	<div class="img">'."\n";
 				echo '		<img class="person" src="'.$person['image'].'" height="150" width="130" title="'.$person['name'].'" alt="'.$person['name'].'" />'."\n";
 				echo '	</div>'."\n";
+				echo '	<span class="name">'.$person['name'].'</span>'."\n";
 				echo '</div>'."\n";
 			}
 			if($elementnum == 3) { //element 3 is person 4, end row 1 and print row 2!

@@ -466,7 +466,7 @@ img.button.first {
 	background-position:
 	bottom left;
 	background-repeat: repeat-x;
-	height: 190px;
+	height: 200px;
 }
 
 #newWays .row1 {
@@ -515,6 +515,13 @@ img.button.first {
 
 #newWays div.person .text p {
 	color: #fff;
+}
+
+#newWays span.name {
+	font-weight: bold;
+	font-size: 10px;
+	display: block;
+	width: 130px;
 }
 
 #newWays .scientists {
