@@ -385,7 +385,7 @@
 
 </div> <!-- //#outer -->
 
-<script type="text/javascript" src="scripts/jquery-1.5.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-1.5.2.min.js"></script>
 <script type="text/javascript" src="scripts/jquery-ui-1.8.11.min.js"></script>
 <script type="text/javascript" src="scripts/jquery.flip.min.js"></script>
 <script type="text/javascript" src="scripts/flowplayer-3.2.6.min.js"></script>
