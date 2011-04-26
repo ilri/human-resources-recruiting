@@ -105,14 +105,6 @@ $(window).load(function() {
 		swapPeople(1);
 	});
 
-	// swap featured people
-	$('#features img.person2').live('click', function (event) {
-		// disable normal link behaviour
-		event.preventDefault();
-
-		swapPeople(2);
-	});
-
 	// select the black and white photos, and flip them on click
 	$('#peopleGrid div.person div.img:not(:has(a))').click(function () {
 		var $person = $(this);
