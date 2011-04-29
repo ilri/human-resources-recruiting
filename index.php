@@ -153,12 +153,9 @@
 				echo '				<div id="features">';
 				echo '				<span class="person">Click icons for more featured staff</span>'."\n";
 					// show the other 2 small
-					// (show only 1 for now, until Alan's video is fixed)
-					for($x = 1; $x <= 1; $x++) {
+					for($x = 1; $x <= 2; $x++) {
 						echo '				<img class="person person'.$x.'" src="'.$featured_people[$x]['image'].'" title="'.$featured_people[$x]['name'].'" alt="'.$featured_people[$x]['name'].'" height="57" width="50" />'."\n";
 					}
-						//temporary placeholder for "person2" while Alan's video is being fixed...
-						echo '				<img class="person person2" style="cursor: default;" src="images/people/person2_placeholder.jpg" height="57" width="50" />'."\n";
 				echo 	'			</div>';
 				echo '			</div>';
 				}
@@ -398,8 +395,7 @@
 <? 
 	// print out our featured people's information so we can swap it in javascript
 	echo 'var featured = new Array();'."\n";
-	// temporary: show only 2 while Alan's video is getting fixed
-	for($x = 0; $x <2; $x++) {
+	for($x = 0; $x <3; $x++) {
 		echo "featured[$x] = new Array();\n";
 		echo "featured[$x]['image'] = \"".$featured_people[$x]['image']."\";\n";
 		echo "featured[$x]['name'] = \"".$featured_people[$x]['name']."\";\n";
