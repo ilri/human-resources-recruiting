@@ -221,7 +221,7 @@
 		<nationality>Kenya</nationality>
 		<jobtitle>Social Scientist</jobtitle>
 		<image>images/people/jemimah_n.jpg</image>
-		<startimage>videos/jemimah_n.jpg</startimage>
+		<startimage>images/people/jemimah_n_video.jpg</startimage>
 		<video>videos/jemimah_n.flv</video>
 		<audio>audio/jemimah_n.mp3</audio>
 		<featured>true</featured>
@@ -233,7 +233,7 @@
 		<nationality>UK</nationality>
 		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/andy_and_phil.jpg</image>
-		<startimage>videos/andy_and_phil.jpg</startimage>
+		<startimage>images/people/andy_and_phil_video.jpg</startimage>
 		<description>watch a video about why they love working with ilri</description>
 		<featured>true</featured>
 		<video>videos/andy_and_phil.flv</video>
@@ -245,7 +245,7 @@
 		<nationality>USA</nationality>
 		<jobtitle>Computer Scientist</jobtitle>
 		<image>images/people/alan_o.jpg</image>
-		<startimage>videos/alan_o.jpg</startimage>
+		<startimage>images/people/alan_o_video.jpg</startimage>
 		<featured>true</featured>
 		<description>watch a video about why he likes being a computer systems specialist in a livestock institute</description>
 		<video>videos/alan_o.flv</video>
