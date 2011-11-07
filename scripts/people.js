@@ -81,7 +81,7 @@ $(window).load(function() {
 				$featuredPlayer.getClip().update({url: featured_people[x]['media'], coverImage: { url: featured_people[x]['startimage'], scaling: "orig" }});
 			}
 			else {
-				$featuredPlayer.getClip(0).update({url: featured_people[x]['media']});
+				$featuredPlayer.getClip(0).update({url: featured_people[x]['media'], coverImage: { url: featured_people[x]['startimage'], scaling: "orig" }});
 			}
 
 			// replace the values in the DOM
@@ -124,7 +124,7 @@ $(window).load(function() {
 				$featuredPlayer.getClip().update({url: featured_campuses[x]['media'], coverImage: { url: featured_campuses[x]['startimage'], scaling: "orig" }});
 			}
 			else {
-				$featuredPlayer.getClip(0).update({url: featured_campuses[x]['media']});
+				$featuredPlayer.getClip(0).update({url: featured_campuses[x]['media'], coverImage: { url: featured_campuses[x]['startimage'], scaling: "orig" }});
 			}
 
 			// replace the values in the DOM
