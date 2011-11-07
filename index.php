@@ -12,8 +12,7 @@
 
 <div id="outer">
 <div id="header">
-<?php require_once('navigation.php'); ?>
-<div id="banner"><a href="/" title="International Livestock Research Institute"><img src="http://ilri.org/sites/default/files/sky_logo.jpg" alt="International Livestock Research Institute" /></a></div>
+<div id="banner"><a href="/" title="International Livestock Research Institute"><img src="images/ilriBannerbioin.jpg" alt="International Livestock Research Institute" /></a></div>
 </div> <!-- //#header -->
 
 <div id="inner">
