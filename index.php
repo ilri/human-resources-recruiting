@@ -12,7 +12,7 @@
 
 <div id="outer">
 <div id="header">
-<div id="banner"><a href="/" title="International Livestock Research Institute"><img src="images/ilriBannerbioin.jpg" alt="International Livestock Research Institute" /></a></div>
+<div id="banner"><a href="/" title="International Livestock Research Institute homepage"><img src="images/ilriBannerbioin.jpg" alt="International Livestock Research Institute banner" /></a></div>
 </div> <!-- //#header -->
 
 <div id="inner">
