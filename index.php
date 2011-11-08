@@ -153,8 +153,8 @@
 				}
 				echo '			</div>';
 				echo '			<div id="featuredCampusesDesc">';
-				echo '				<h2>what is it like to work at ilri?</h2>';
-				echo '				<span class="text">click icons to take a campus tour and find out</span>';
+				echo '				<h2>Campus tours</h2>';
+				echo '				<span class="text">click icons to find out what it\'s like to work at ilri in nairobi and addis</span>';
 				echo '			</div>';
 				echo '		</div>';
 				echo '		<div id="featureLeftTopMeta">';
