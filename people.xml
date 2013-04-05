@@ -48,23 +48,6 @@
 		<audio>audio/siboniso_m.mp3</audio>
 	</person>
 	<person>
-		<name>Bruno Gerard</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<nationality>Belgium</nationality>
-		<jobtitle>Systems Agronomist</jobtitle>
-		<image>images/people/bruno_g.jpg</image>
-		<currently>... analysing crop residue uses and land use/land cover dynamics.</currently>
-	</person>
-	<person>
-		<name>Ranjitha Puskur</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<nationality>India</nationality>
-		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/ranjitha_p.jpg</image>
-		<video>video/ranjitha_p.flv</video>
-		<audio>audio/ranjitha_p.mp3</audio>
-	</person>
-	<person>
 		<name>Lucy Lapar</name>
 		<location>Manila, Philipines</location>
 		<nationality>Philipines</nationality>
@@ -81,15 +64,6 @@
 		<image>images/people/iain_w.jpg</image>
 		<video>video/iain_w.flv</video>
 		<audio>audio/iain_w.mp3</audio>
-	</person>
-	<person>
-		<name>Arindam Samaddar</name>
-		<location>New Delhi, India</location>
-		<nationality>India</nationality>
-		<jobtitle>Anthropologist</jobtitle>
-		<image>images/people/arindam_s.jpg</image>
-		<video>video/arindam_s.flv</video>
-		<audio>audio/arindam_s.mp3</audio>
 	</person>
 	<person>
 		<name>Appolinaire Djikeng</name>
@@ -126,15 +100,6 @@
 		<currently>... working on a project in West Africa.</currently>
 	</person>
 	<person>
-		<name>Martin Norling</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Sweden</nationality>
-		<jobtitle>Bioinformatician</jobtitle>
-		<image>images/people/martin_n.jpg</image>
-		<video>video/martin_n.flv</video>
-		<audio>audio/martin_n.mp3</audio>
-	</person>
-	<person>
 		<name>Polly Ericksen</name>
 		<location>Nairobi, Kenya</location>
 		<nationality>USA</nationality>
@@ -150,30 +115,6 @@
 		<jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
 		<image>images/people/azizi.jpg</image>
 		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
-	</person>
-	<person>
-		<name>Jane Poole</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>UK</nationality>
-		<jobtitle>Applied Statistician</jobtitle>
-		<image>images/people/jane_p.jpg</image>
-		<currently>... finding new ways to analyze data.</currently>
-	</person>
-	<person>
-		<name>Mario Herrero</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Costa Rica</nationality>
-		<jobtitle>Livestock Systems Scientist</jobtitle>
-		<image>images/people/mario_h.jpg</image>
-		<currently>... writing papers for &lt;em&gt;Science&lt;/em&gt;.</currently>
-	</person>
-	<person>
-		<name>Ayele Gelan</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Ethiopia</nationality>
-		<jobtitle>Economist</jobtitle>
-		<image>images/people/ayele_g.jpg</image>
-		<currently>... supporting an East African dairy project.</currently>
 	</person>
 	<person>
 		<name>Fred Unger</name>
