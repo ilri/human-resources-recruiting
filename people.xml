@@ -11,6 +11,15 @@
         <audio>audio/abdou_f.mp3</audio>
     </person>
     <person>
+        <name>Kathy Colverson</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>USA</nationality>
+        <jobtitle>Programme Leader, Livelihoods, Gender, Innovation and Impact</jobtitle>
+        <image>images/people/kathy_c.jpg</image>
+        <video>video/kathy_c.flv</video>
+        <audio>audio/kathy_c.mp3</audio>
+    </person>
+    <person>
         <name>Andrew Mude</name>
         <location>Nairobi, Kenya</location>
         <nationality>Kenya</nationality>
@@ -66,6 +75,15 @@
         <audio>audio/iain_w.mp3</audio>
     </person>
     <person>
+        <name>Tom Randolph</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>USA</nationality>
+        <jobtitle>CRP 3.7 Director</jobtitle>
+        <image>images/people/tom_r.jpg</image>
+        <video>video/tom_r.flv</video>
+        <audio>audio/tom_r.mp3</audio>
+    </person>
+    <person>
         <name>Appolinaire Djikeng</name>
         <location>Nairobi, Kenya</location>
         <nationality>Cameroon</nationality>
@@ -107,6 +125,15 @@
         <image>images/people/polly_e.jpg</image>
         <video>video/polly_e.flv</video>
         <audio>audio/polly_e.mp3</audio>
+    </person>
+    <person>
+        <name>Yu Mingyan</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>China</nationality>
+        <jobtitle>Post Doctoral Scientist – Animal Biosciences</jobtitle>
+        <image>images/people/yu_m.jpg</image>
+        <video>video/yu_m.flv</video>
+        <audio>audio/yu_m.mp3</audio>
     </person>
     <person>
         <name>Azizi Biobank</name>
@@ -155,6 +182,15 @@
         <jobtitle>Immunologist</jobtitle>
         <image>images/people/lucilla_s.jpg</image>
         <currently>... working on livestock vaccines.</currently>
+    </person>
+    <person>
+        <name>Stuart Worsley</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>UK</nationality>
+        <jobtitle>CRP 3.7 Head of Development Partnerships</jobtitle>
+        <image>images/people/stuart_w.jpg</image>
+        <video>video/stuart_w.flv</video>
+        <audio>audio/stuart_w.mp3</audio>
     </person>
     <person>
         <name>Jemimah Njuki</name>
