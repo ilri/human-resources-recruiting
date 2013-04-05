@@ -1,281 +1,281 @@
 <?xml version="1.0"?>
 <people>
-	<person>
-		<name>Abdou Fall</name>
-		<region>West Africa</region>
-		<location>Bamako, Mali</location>
-		<nationality>Senegal</nationality>
-		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/abdou_f.jpg</image>
-		<video>video/abdou_f.flv</video>
-		<audio>audio/abdou_f.mp3</audio>
-	</person>
-	<person>
-		<name>Andrew Mude</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Kenya</nationality>
-		<jobtitle>Economist</jobtitle>
-		<image>images/people/andrew_m.jpg</image>
-		<video>video/andrew_m.flv</video>
-		<audio>audio/andrew_m.mp3</audio>
-	</person>
-	<person>
-		<name>Purvi Mehta-Bhatt</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>India</nationality>
-		<jobtitle>Capacity Builder</jobtitle>
-		<image>images/people/purvi_m.jpg</image>
-		<video>video/purvi_m.flv</video>
-		<audio>audio/purvi_m.mp3</audio>
-	</person>
-	<person>
-		<name>Delia Grace</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Ireland</nationality>
-		<jobtitle>Epidemiologist</jobtitle>
-		<image>images/people/delia_g.jpg</image>
-		<video>video/delia_g.flv</video>
-		<audio>audio/delia_g.mp3</audio>
-	</person>
-	<person>
-		<name>Siboniso Moyo</name>
-		<region>Southern Africa</region>
-		<location>Maputo, Mozambique</location>
-		<nationality>Zimbabwe</nationality>
-		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/siboniso_m.jpg</image>
-		<video>video/siboniso_m.flv</video>
-		<audio>audio/siboniso_m.mp3</audio>
-	</person>
-	<person>
-		<name>Lucy Lapar</name>
-		<location>Manila, Philipines</location>
-		<nationality>Philipines</nationality>
-		<jobtitle>Agricultural Economist</jobtitle>
-		<image>images/people/lucy_l.jpg</image>
-		<currently>... researching pigs in Southeast Asia.</currently>
-	</person>
-	<person>
-		<name>Iain Wright</name>
-		<location>New Delhi, India</location>
-		<region>Asia</region>
-		<nationality>Scotland</nationality>
-		<jobtitle>Regional Representative</jobtitle>
-		<image>images/people/iain_w.jpg</image>
-		<video>video/iain_w.flv</video>
-		<audio>audio/iain_w.mp3</audio>
-	</person>
-	<person>
-		<name>Appolinaire Djikeng</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Cameroon</nationality>
-		<jobtitle>Genomicist</jobtitle>
-		<image>images/people/appolinaire_d.jpg</image>
-		<currently>... working with cutting edge genetic technology.</currently>
-	</person>
-	<person>
-		<name>Saskia Hendrickx</name>
-		<location>Maputo, Mozambique</location>
-		<nationality>Netherlands</nationality>
-		<jobtitle>Veterinarian</jobtitle>
-		<image>images/people/saskia_h.jpg</image>
-		<video>video/saskia_h.flv</video>
-		<audio>audio/saskia_h.mp3</audio>
-	</person>
-	<person>
-		<name>Peter Ballantyne</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<jobtitle>Knowledge Sharer</jobtitle>
-		<nationality>Scotland</nationality>
-		<image>images/people/peter_b.jpg</image>
-		<video>video/peter_b.flv</video>
-		<audio>audio/peter_b.mp3</audio>
-	</person>
-	<person>
-		<name>Karen Marshall</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Australia</nationality>
-		<jobtitle>Geneticist</jobtitle>
-		<image>images/people/karen_m.jpg</image>
-		<currently>... working on a project in West Africa.</currently>
-	</person>
-	<person>
-		<name>Polly Ericksen</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>USA</nationality>
-		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/polly_e.jpg</image>
-		<video>video/polly_e.flv</video>
-		<audio>audio/polly_e.mp3</audio>
-	</person>
-	<person>
-		<name>Azizi Biobank</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>North Pole</nationality>
-		<jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
-		<image>images/people/azizi.jpg</image>
-		<link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
-	</person>
-	<person>
-		<name>Fred Unger</name>
-		<location>Bangkok, Thailand</location>
-		<nationality>Germany</nationality>
-		<jobtitle>Veterinary epidemiologist</jobtitle>
-		<image>images/people/fred_u.jpg</image>
-		<currently>... researching bird flu in Asia.</currently>
-	</person>
-	<person>
-		<name>Acho Okike</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Nigeria</nationality>
-		<jobtitle>Economist + Epidemiologist</jobtitle>
-		<image>images/people/acho_o.jpg</image>
-		<currently>... working on food safety and animal diseases in West Africa.</currently>
-	</person>
-	<person>
-		<name>Jeff Gilbert</name>
-		<location>Vientiane, Laos</location>
-		<nationality>Ireland</nationality>
-		<jobtitle>Medical Doctor + Veterinarian</jobtitle>
-		<image>images/people/jeff_g.jpg</image>
-		<currently>... coordinating an eco-health project in Southeast Asia.</currently>
-	</person>
-	<person>
-		<name>Mohammed Said</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Kenya</nationality>
-		<jobtitle>Livestock Ecologist</jobtitle>
-		<image>images/people/mohammed_s.jpg</image>
-		<currently>... working on human, wildlife and livestock interactions.</currently>
-	</person>
-	<person>
-		<name>Lucilla Steinaa</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Denmark</nationality>
-		<jobtitle>Immunologist</jobtitle>
-		<image>images/people/lucilla_s.jpg</image>
-		<currently>... working on livestock vaccines.</currently>
-	</person>
-	<person>
-		<name>Jemimah Njuki</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>Kenya</nationality>
-		<jobtitle>Social Scientist</jobtitle>
-		<image>images/people/jemimah_n.jpg</image>
-		<startimage>images/people/jemimah_n_video.jpg</startimage>
-		<video>video/jemimah_n.flv</video>
-		<audio>audio/jemimah_n.mp3</audio>
-		<featured>true</featured>
-		<description>watch a video about why her work with ilri matters to her</description>
-	</person>
-	<person>
-		<name>Andy and Phil</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>UK</nationality>
-		<jobtitle>Computer Scientist</jobtitle>
-		<image>images/people/andy_and_phil.jpg</image>
-		<startimage>images/people/andy_and_phil_video.jpg</startimage>
-		<description>watch a video about why they love working with ilri</description>
-		<featured>true</featured>
-		<video>video/andy_and_phil.flv</video>
-		<audio>audio/andy_and_phil.mp3</audio>
-	</person>
-	<person>
-		<name>Alan Orth</name>
-		<location>Nairobi, Kenya</location>
-		<nationality>USA</nationality>
-		<jobtitle>Computer Scientist</jobtitle>
-		<image>images/people/alan_o.jpg</image>
-		<startimage>images/people/alan_o_video.jpg</startimage>
-		<featured>true</featured>
-		<description>watch a video about why he likes being a computer systems specialist in a livestock institute</description>
-		<video>video/alan_o.flv</video>
-		<audio>audio/alan_o.mp3</audio>
-	</person>
-	<person>
-		<name>Nairobi</name>
-		<location>Nairobi, Kenya</location>
-		<image>images/people/nairobi_campus.jpg</image>
-		<startimage>images/people/nairobi_campus_video.jpg</startimage>
-		<description>watch a video about what makes the Nairobi campus special</description>
-		<video>video/nairobi_campus.flv</video>
-		<audio>audio/nairobi_campus.mp3</audio>
-		<iscampus>true</iscampus>
-	</person>
-	<person>
-		<name>Addis Ababa</name>
-		<location>Addis Ababa, Ethiopia</location>
-		<image>images/people/addis_campus.jpg</image>
-		<startimage>images/people/addis_campus_video.jpg</startimage>
-		<description>watch a video about what makes the Addis campus special</description>
-		<video>video/addis_campus.flv</video>
-		<audio>audio/addis_campus.mp3</audio>
-		<iscampus>true</iscampus>
-	</person>
-	<person>
-		<name>Florence Landsburg</name>
-		<image>images/people/florence_l.jpg</image>
-		<nationality>?</nationality>
-		<organization>World Resources Institute</organization>
-		<specialty>GIS Expert</specialty>
-		<newways>true</newways>
-	</person>
     <person>
-		<name>Steve Kemp</name>
-		<image>images/people/steve_k.jpg</image>
-		<nationality>UK</nationality>
-		<organization>University of Liverpool</organization>
-		<specialty>Geneticist</specialty>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Kohei Makita</name>
-		<image>images/people/kohei_m.jpg</image>
-		<organization>Rakuno Gakuen University</organization>
-		<nationality>Japan</nationality>
-		<specialty>Veterinary Epidemiologist</specialty>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Jenny Olson</name>
-		<image>images/people/jenny_o.jpg</image>
-		<organization>Michigan State University</organization>
-		<nationality>USA</nationality>
-		<specialty>Human Geographer</specialty>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Karl Rich</name>
-		<image>images/people/karl_r.jpg</image>
-		<nationality>USA</nationality>
-		<organization>Norweigian Institute of International Affairs</organization>
-		<specialty>Economist</specialty>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Eric Fèvre</name>
-		<image>images/people/eric_f.jpg</image>
-		<nationality>French</nationality>
-		<specialty>Epidedimiologist</specialty>
-		<organization>Institute of Immunology and Infection Research, University of Edinburgh</organization>
-		<video>video/eric_f.flv</video>
-		<audio>audio/eric_f.mp3</audio>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Tilahun Amede</name>
-		<image>images/people/tilahun_a.jpg</image>
-		<organization>International Water Management Institute</organization>
-		<nationality>Ethiopia</nationality>
-		<specialty>Agronomist - Water Management</specialty>
-		<newways>true</newways>
-	</person>
-	<person>
-		<name>Petr Halvik</name>
-		<image>images/people/petr_h.jpg</image>
-		<organization>International Institute for Applied Systems Analysis</organization>
-		<nationality>Czech Republic</nationality>
-		<specialty>Livestock Futures Scientist</specialty>
-		<newways>true</newways>
-	</person>
+        <name>Abdou Fall</name>
+        <region>West Africa</region>
+        <location>Bamako, Mali</location>
+        <nationality>Senegal</nationality>
+        <jobtitle>Regional Representative</jobtitle>
+        <image>images/people/abdou_f.jpg</image>
+        <video>video/abdou_f.flv</video>
+        <audio>audio/abdou_f.mp3</audio>
+    </person>
+    <person>
+        <name>Andrew Mude</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Kenya</nationality>
+        <jobtitle>Economist</jobtitle>
+        <image>images/people/andrew_m.jpg</image>
+        <video>video/andrew_m.flv</video>
+        <audio>audio/andrew_m.mp3</audio>
+    </person>
+    <person>
+        <name>Purvi Mehta-Bhatt</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>India</nationality>
+        <jobtitle>Capacity Builder</jobtitle>
+        <image>images/people/purvi_m.jpg</image>
+        <video>video/purvi_m.flv</video>
+        <audio>audio/purvi_m.mp3</audio>
+    </person>
+    <person>
+        <name>Delia Grace</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Ireland</nationality>
+        <jobtitle>Epidemiologist</jobtitle>
+        <image>images/people/delia_g.jpg</image>
+        <video>video/delia_g.flv</video>
+        <audio>audio/delia_g.mp3</audio>
+    </person>
+    <person>
+        <name>Siboniso Moyo</name>
+        <region>Southern Africa</region>
+        <location>Maputo, Mozambique</location>
+        <nationality>Zimbabwe</nationality>
+        <jobtitle>Regional Representative</jobtitle>
+        <image>images/people/siboniso_m.jpg</image>
+        <video>video/siboniso_m.flv</video>
+        <audio>audio/siboniso_m.mp3</audio>
+    </person>
+    <person>
+        <name>Lucy Lapar</name>
+        <location>Manila, Philipines</location>
+        <nationality>Philipines</nationality>
+        <jobtitle>Agricultural Economist</jobtitle>
+        <image>images/people/lucy_l.jpg</image>
+        <currently>... researching pigs in Southeast Asia.</currently>
+    </person>
+    <person>
+        <name>Iain Wright</name>
+        <location>New Delhi, India</location>
+        <region>Asia</region>
+        <nationality>Scotland</nationality>
+        <jobtitle>Regional Representative</jobtitle>
+        <image>images/people/iain_w.jpg</image>
+        <video>video/iain_w.flv</video>
+        <audio>audio/iain_w.mp3</audio>
+    </person>
+    <person>
+        <name>Appolinaire Djikeng</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Cameroon</nationality>
+        <jobtitle>Genomicist</jobtitle>
+        <image>images/people/appolinaire_d.jpg</image>
+        <currently>... working with cutting edge genetic technology.</currently>
+    </person>
+    <person>
+        <name>Saskia Hendrickx</name>
+        <location>Maputo, Mozambique</location>
+        <nationality>Netherlands</nationality>
+        <jobtitle>Veterinarian</jobtitle>
+        <image>images/people/saskia_h.jpg</image>
+        <video>video/saskia_h.flv</video>
+        <audio>audio/saskia_h.mp3</audio>
+    </person>
+    <person>
+        <name>Peter Ballantyne</name>
+        <location>Addis Ababa, Ethiopia</location>
+        <jobtitle>Knowledge Sharer</jobtitle>
+        <nationality>Scotland</nationality>
+        <image>images/people/peter_b.jpg</image>
+        <video>video/peter_b.flv</video>
+        <audio>audio/peter_b.mp3</audio>
+    </person>
+    <person>
+        <name>Karen Marshall</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Australia</nationality>
+        <jobtitle>Geneticist</jobtitle>
+        <image>images/people/karen_m.jpg</image>
+        <currently>... working on a project in West Africa.</currently>
+    </person>
+    <person>
+        <name>Polly Ericksen</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>USA</nationality>
+        <jobtitle>Social Scientist</jobtitle>
+        <image>images/people/polly_e.jpg</image>
+        <video>video/polly_e.flv</video>
+        <audio>audio/polly_e.mp3</audio>
+    </person>
+    <person>
+        <name>Azizi Biobank</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>North Pole</nationality>
+        <jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
+        <image>images/people/azizi.jpg</image>
+        <link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
+    </person>
+    <person>
+        <name>Fred Unger</name>
+        <location>Bangkok, Thailand</location>
+        <nationality>Germany</nationality>
+        <jobtitle>Veterinary epidemiologist</jobtitle>
+        <image>images/people/fred_u.jpg</image>
+        <currently>... researching bird flu in Asia.</currently>
+    </person>
+    <person>
+        <name>Acho Okike</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Nigeria</nationality>
+        <jobtitle>Economist + Epidemiologist</jobtitle>
+        <image>images/people/acho_o.jpg</image>
+        <currently>... working on food safety and animal diseases in West Africa.</currently>
+    </person>
+    <person>
+        <name>Jeff Gilbert</name>
+        <location>Vientiane, Laos</location>
+        <nationality>Ireland</nationality>
+        <jobtitle>Medical Doctor + Veterinarian</jobtitle>
+        <image>images/people/jeff_g.jpg</image>
+        <currently>... coordinating an eco-health project in Southeast Asia.</currently>
+    </person>
+    <person>
+        <name>Mohammed Said</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Kenya</nationality>
+        <jobtitle>Livestock Ecologist</jobtitle>
+        <image>images/people/mohammed_s.jpg</image>
+        <currently>... working on human, wildlife and livestock interactions.</currently>
+    </person>
+    <person>
+        <name>Lucilla Steinaa</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Denmark</nationality>
+        <jobtitle>Immunologist</jobtitle>
+        <image>images/people/lucilla_s.jpg</image>
+        <currently>... working on livestock vaccines.</currently>
+    </person>
+    <person>
+        <name>Jemimah Njuki</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>Kenya</nationality>
+        <jobtitle>Social Scientist</jobtitle>
+        <image>images/people/jemimah_n.jpg</image>
+        <startimage>images/people/jemimah_n_video.jpg</startimage>
+        <video>video/jemimah_n.flv</video>
+        <audio>audio/jemimah_n.mp3</audio>
+        <featured>true</featured>
+        <description>watch a video about why her work with ilri matters to her</description>
+    </person>
+    <person>
+        <name>Andy and Phil</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>UK</nationality>
+        <jobtitle>Computer Scientist</jobtitle>
+        <image>images/people/andy_and_phil.jpg</image>
+        <startimage>images/people/andy_and_phil_video.jpg</startimage>
+        <description>watch a video about why they love working with ilri</description>
+        <featured>true</featured>
+        <video>video/andy_and_phil.flv</video>
+        <audio>audio/andy_and_phil.mp3</audio>
+    </person>
+    <person>
+        <name>Alan Orth</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>USA</nationality>
+        <jobtitle>Computer Scientist</jobtitle>
+        <image>images/people/alan_o.jpg</image>
+        <startimage>images/people/alan_o_video.jpg</startimage>
+        <featured>true</featured>
+        <description>watch a video about why he likes being a computer systems specialist in a livestock institute</description>
+        <video>video/alan_o.flv</video>
+        <audio>audio/alan_o.mp3</audio>
+    </person>
+    <person>
+        <name>Nairobi</name>
+        <location>Nairobi, Kenya</location>
+        <image>images/people/nairobi_campus.jpg</image>
+        <startimage>images/people/nairobi_campus_video.jpg</startimage>
+        <description>watch a video about what makes the Nairobi campus special</description>
+        <video>video/nairobi_campus.flv</video>
+        <audio>audio/nairobi_campus.mp3</audio>
+        <iscampus>true</iscampus>
+    </person>
+    <person>
+        <name>Addis Ababa</name>
+        <location>Addis Ababa, Ethiopia</location>
+        <image>images/people/addis_campus.jpg</image>
+        <startimage>images/people/addis_campus_video.jpg</startimage>
+        <description>watch a video about what makes the Addis campus special</description>
+        <video>video/addis_campus.flv</video>
+        <audio>audio/addis_campus.mp3</audio>
+        <iscampus>true</iscampus>
+    </person>
+    <person>
+        <name>Florence Landsburg</name>
+        <image>images/people/florence_l.jpg</image>
+        <nationality>?</nationality>
+        <organization>World Resources Institute</organization>
+        <specialty>GIS Expert</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Steve Kemp</name>
+        <image>images/people/steve_k.jpg</image>
+        <nationality>UK</nationality>
+        <organization>University of Liverpool</organization>
+        <specialty>Geneticist</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Kohei Makita</name>
+        <image>images/people/kohei_m.jpg</image>
+        <organization>Rakuno Gakuen University</organization>
+        <nationality>Japan</nationality>
+        <specialty>Veterinary Epidemiologist</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Jenny Olson</name>
+        <image>images/people/jenny_o.jpg</image>
+        <organization>Michigan State University</organization>
+        <nationality>USA</nationality>
+        <specialty>Human Geographer</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Karl Rich</name>
+        <image>images/people/karl_r.jpg</image>
+        <nationality>USA</nationality>
+        <organization>Norweigian Institute of International Affairs</organization>
+        <specialty>Economist</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Eric Fèvre</name>
+        <image>images/people/eric_f.jpg</image>
+        <nationality>French</nationality>
+        <specialty>Epidedimiologist</specialty>
+        <organization>Institute of Immunology and Infection Research, University of Edinburgh</organization>
+        <video>video/eric_f.flv</video>
+        <audio>audio/eric_f.mp3</audio>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Tilahun Amede</name>
+        <image>images/people/tilahun_a.jpg</image>
+        <organization>International Water Management Institute</organization>
+        <nationality>Ethiopia</nationality>
+        <specialty>Agronomist - Water Management</specialty>
+        <newways>true</newways>
+    </person>
+    <person>
+        <name>Petr Halvik</name>
+        <image>images/people/petr_h.jpg</image>
+        <organization>International Institute for Applied Systems Analysis</organization>
+        <nationality>Czech Republic</nationality>
+        <specialty>Livestock Futures Scientist</specialty>
+        <newways>true</newways>
+    </person>
 </people>
