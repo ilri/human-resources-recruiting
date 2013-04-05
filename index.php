@@ -428,7 +428,7 @@
 	})();
 </script>
 <script type="text/javascript">
-<? 
+<?php
 	// print out our featured people's information so we can swap it in javascript
 	echo 'var featured_people = new Array();'."\n";
 	for($x = 0; $x <3; $x++) {
