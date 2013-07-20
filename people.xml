@@ -154,20 +154,22 @@
         <audio>audio/silvia_s.mp3</audio>
     </person>
     <person>
-        <name>Azizi Biobank</name>
+        <name>Susan MacMillan</name>
         <location>Nairobi, Kenya</location>
-        <nationality>North Pole</nationality>
-        <jobtitle>Freezing samples at -186 degrees centigrade</jobtitle>
-        <image>images/people/azizi.jpg</image>
-        <link>http://www.facebook.com/homep.php?#!/profile.php?id=100000854301509</link>
+        <nationality>USA</nationality>
+        <jobtitle>Head of Public Awareness</jobtitle>
+        <image>images/people/susan_m.jpg</image>
+        <video>video/susan_m.flv</video>
+        <audio>audio/susan_m.mp3</audio>
     </person>
     <person>
-        <name>Fred Unger</name>
-        <location>Bangkok, Thailand</location>
-        <nationality>Germany</nationality>
-        <jobtitle>Veterinary epidemiologist</jobtitle>
-        <image>images/people/fred_u.jpg</image>
-        <currently>... researching bird flu in Asia.</currently>
+        <name>Jo Cadilhon</name>
+        <location>Nairobi, Kenya</location>
+        <nationality>France</nationality>
+        <jobtitle>Agricultural Economist</jobtitle>
+        <image>images/people/jo_c.jpg</image>
+        <video>video/jo_c.flv</video>
+        <audio>audio/jo_c.mp3</audio>
     </person>
     <person>
         <name>Acho Okike</name>
